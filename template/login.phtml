@@ -1,18 +1,18 @@
 <section>
     <h3>Logowanie</h3>
-    <form>
+    <form action="/Auth/login" method="post">
         <div class="input_wrapping">
             <label>
                 nick
-                <input type="text" name="nick-name">
+                <input type="text" name="nick">
             </label>
         </div>
         <div class="input_wrapping">
         <label>
             hasło
-            <input type="password" name="password-name">
+            <input type="password" name="password">
         </label>
         </div>
-        <input type="button" name="login-name" value="login-value">
+        <input type="submit" name="login" value="Loguj">
     </form>
 </section>

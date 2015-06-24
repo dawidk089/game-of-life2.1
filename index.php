@@ -1,6 +1,6 @@
 <?php
 
-include_once "appl/Prepare_class.php";
+include_once "appl/PrepareClass.php";
 
 new PrepareClass(array(
     "/",

@@ -8,6 +8,7 @@ class View{
     public function __construct($template_paths, $data){
         $this->templates = $template_paths;
         $this->data = $data;
+        //var_dump($this->data);
     }
 
     private $path = array(

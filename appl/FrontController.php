@@ -13,6 +13,9 @@ class FrontController
 
     private $name_controller = null;
     public function __construct(){
+        // rozpozananie metody
+        // przekierowanie
+
         $params = explode('/', $_GET['target']);
         //var_dump($params);
 

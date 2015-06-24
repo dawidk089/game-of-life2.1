@@ -1,6 +1,6 @@
 <?php
 
-class Auth extends FrontController implements Rest {
+class Main extends FrontController implements Rest {
 
     private $params = null;
     private $rest_method = null;
@@ -24,36 +24,60 @@ class Auth extends FrontController implements Rest {
                 break;
         }
     }
-    
+
     public function get(Array $params){
         $view = new View(
             array(
-                "template/login.phtml",
-                "template/registration.phtml",
+                "template/board.phtml",
+                "template/control_panel.phtml",
             ),
             array(
-                "title"=>"Game of life -- Autoryzacja dostępu",
-                "csss"=>array("auth.css",),
+                "title"=>"Game of life -- Symulator automatu komórkowego",
+                //"csss"=>array("auth.css")
             )
         );
 
         $view->show();
         //print "wywolano get";
     }
-    
+
     public function post(Array $params){
-        print "wywolano post</br>";
-        var_dump(explode('/', $_GET['target']));
+        print "wywolano post";
     }
-    
+
     public function put(Array $params){
         print "wywolano put";
     }
-    
+
     public function delete(Array $params){
         print "wywolano delete";
     }
-    
 
-
+    //--------------------------------------------------
+//
+//    public function set_view(){
+//        $this->view = new View(
+//            array(
+//                "template/board.phtml",
+//                "template/control_panel.phtml",),
+//            array(
+//                "csss"=>array("login/css/login.css"),
+//                "title"=>"Symulacje")
+//        );
+//    }
+//
+//    public function login(){
+//        $_SESSION["logged"] = "yes";
+//        $this->execute();
+//    }
+//
+//
+//    public function logout(){
+//        session_unset("logged");
+//        session_destroy();
+//    }
+//
+//    public function test(){
+//        echo "test";
+//    }
 }

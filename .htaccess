@@ -2,6 +2,9 @@ RewriteEngine On
 
 RewriteBase /.
 
+RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg)$
+RewriteRule ^(.*)$ $1 [QSA,NC,L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-s
 RewriteRule ^(.*)$ /index.php?target=$1 [L]
