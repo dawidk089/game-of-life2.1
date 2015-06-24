@@ -26,7 +26,19 @@ class Auth extends FrontController implements Rest {
     }
     
     public function get(Array $params){
-        print "wywolano get";
+        $view = new View(
+            array(
+                "template/login.phtml",
+                "template/registration.phtml",
+            ),
+            array(
+                "title"=>"Game of life -- Autoryzacja dostępu",
+                "csss"=>array("auth/css/auth.css")
+            )
+        );
+
+        $view->show();
+        //print "wywolano get";
     }
     
     public function post(Array $params){

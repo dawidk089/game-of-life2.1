@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="application-name" content="a simple web application using templates, can be offline and database"/>
+    <meta name="description" content="cellular automaton, the game of life with ability to record your own simulation"/>
+    <meta name="keywords" content="phtml, templates, database, offline, registration, TI, gr. czwartkowa"/>
+    <meta name="author" content="Dawid Karminski"/>
+
+
+    <title><?=$title ?></title>
+
+    <!-- tutaj include'owane sa pliki js -->
+    <!-- TODO deklaracje zmiennej php do wstawiania js -->
+    <!-- tutaj include'owane sa pliki css -->
+    <?php foreach ($csss as $css): ?>
+        <link href=<?= $css ?> rel="stylesheet" />
+    <?php endforeach; ?>
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Gra w życie</h1>
+    <h2>Automat komórkowy</h2>
+</header>
+
+<!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="../index.php">Strona główna</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN -->
+<main>
