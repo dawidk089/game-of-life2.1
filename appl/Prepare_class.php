@@ -1,6 +1,6 @@
 <?php
 
-class prepareClass{
+class PrepareClass{
 
     private $path;
 

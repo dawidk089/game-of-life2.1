@@ -5,3 +5,4 @@ class A{
         print '>wywolano konstruktor klasy A';
     }
 }
+

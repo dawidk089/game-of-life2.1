@@ -1,5 +1,12 @@
 <?php
 
-include_once "appl/prepare_class.php";
+include_once "appl/Prepare_class.php";
 
-echo "dziala";
+new PrepareClass(array(
+    "/",
+    "appl/",
+    "auth/",
+    "login/",
+    "testy/",
+));
+
