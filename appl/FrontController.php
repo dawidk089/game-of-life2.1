@@ -13,13 +13,8 @@ class FrontController
 
     private $name_controller = null;
     public function __construct(){
-        //$params = explode('/', $_GET['target']);
+        $params = explode('/', $_GET['target']);
         //var_dump($params);
-        if(!isset($_GET['target']))
-            echo "target jest pusty";
-        else
-            var_dump($_GET['target']);
-
 
         // rozpoznanie kontrolera wraz z sprawdzenie czy istnieje
         // oraz ewentualny przekierowaniem na autoryzacje
@@ -29,12 +24,12 @@ class FrontController
 //            $this->redirect("/".$this->default_controller);
 //        else if(!array_search($params[0], $this->controlers))
 //            $this->redirect();
-//        else $this->name_controller = $params[0];
+        /*else */$this->name_controller = $params[0];
     }
 
     public final function execute(){
-        var_dump($this->name_controller);
-        //return new $this->name_controller();
+        //var_dump($this->name_controller);
+        return new $this->name_controller();
     }
 
     // sprawdzanie czy zalogowany

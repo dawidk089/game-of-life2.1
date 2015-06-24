@@ -1,6 +1,6 @@
 <?php
 
-class ProtoView{
+class View{
 
     private $templates = null;
     private $data = null;

@@ -10,3 +10,5 @@ new PrepareClass(array(
     "testy/",
 ));
 
+$front_controller = new FrontController();
+$front_controller->execute();
