@@ -1,0 +1,31 @@
+<aside>
+    <fieldset>
+        <legend>Parametry</legend>
+        <form>
+            <h4>ilość komórek:</h4>
+            <div class="input_wrapping">
+                <label>w poziomie
+                    <input type="number" name="side_size" min="50" max="800">
+                </label>
+                <label>w pionie
+                    <input type="number" name="cell_radius" step="0.1" min="0.1" max="50">
+                </label>
+            </div>
+            <div class="input_wrapping">
+                <label>szybkość symulacji
+                    <input type="range" value="10" min="0.5" max="20" step="0.1">
+                </label>
+            </div>
+            <div class="input_wrapping">
+                <input type="button" name="start-name" value="start">
+                <input type="button" name="stop-name" value="stop">
+            </div>
+            <div class="input_wrapping">
+                <input type="button" name="previous-name" value="poprzedni krok">
+                <input type="button" name="next-name" value="następny krok">
+            </div>
+            <input type="button" value="Zapisz" name="save-name">
+            <p>Efektywna szybkość: <span></span> fps</p>
+        </form>
+    </fieldset>
+</aside>

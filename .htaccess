@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteBase /.
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteRule ^(.*)$ /index.php?target=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ index.php [QSA,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} -s
+RewriteRule ^(.*)$ index.php [QSA,NC,L]

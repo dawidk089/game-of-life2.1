@@ -1,0 +1,8 @@
+*~
+*.p[cod]
+*.log
+*.pyc
+.idea/
+*.tar.gz
+*.swp
+__pycache__/
