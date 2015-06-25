@@ -1,12 +1,12 @@
 <?php
 
-class Main extends FrontController implements Rest {
+class Main extends FrontController /*implements Rest*/ {
 
     private $params = null;
     private $rest_method = null;
 
 
-    public function __construct(){
+    public function __construct($params){
         $this->params = explode('/', $_GET['target']);
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         switch($this->rest_method){
@@ -14,15 +14,16 @@ class Main extends FrontController implements Rest {
                 $this->get(array());
                 break;
             case "post":
-                $this->get(array());
+                $this->post(array());
                 break;
             case "put":
-                $this->get(array());
+                $this->put(array());
                 break;
             case "delete":
-                $this->get(array());
+                $this->delete(array());
                 break;
         }
+        echo "koniec konstruktor Main </br>";
     }
 
     public function get(Array $params){
@@ -33,7 +34,7 @@ class Main extends FrontController implements Rest {
             ),
             array(
                 "title"=>"Game of life -- Symulator automatu komórkowego",
-                //"csss"=>array("auth.css")
+                "csss"=>array("auth.css")
             )
         );
 

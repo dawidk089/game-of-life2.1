@@ -6,7 +6,7 @@ class Auth extends FrontController implements Rest {
     private $rest_method = null;
 
 
-    public function __construct(){
+    public function __construct($params){
         $this->params = explode('/', $_GET['target']);
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         switch($this->rest_method){
@@ -14,15 +14,16 @@ class Auth extends FrontController implements Rest {
                 $this->get(array());
                 break;
             case "post":
-                $this->get(array());
+                $this->post($params);
                 break;
             case "put":
-                $this->get(array());
+                $this->put(array());
                 break;
             case "delete":
-                $this->get(array());
+                $this->delete(array());
                 break;
         }
+        echo "koniec konstruktora Auth";
     }
     
     public function get(Array $params){
@@ -33,7 +34,7 @@ class Auth extends FrontController implements Rest {
             ),
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
-                "csss"=>array("auth.css",),
+                "csss"=>array("auth/css/auth.css",),
             )
         );
 
@@ -42,8 +43,11 @@ class Auth extends FrontController implements Rest {
     }
     
     public function post(Array $params){
-        print "wywolano post</br>";
-        var_dump(explode('/', $_GET['target']));
+        $_SESSION["logged"] = $_POST["login"]; // TODO do walidacji z baz danych
+        //print "wywolano post</br>";
+        //echo "jego parametry: "; var_dump($params); echo "</br>";
+        //echo "post: "; var_dump($_POST); echo "</br>";
+        $this->redirect("Main");
     }
     
     public function put(Array $params){
