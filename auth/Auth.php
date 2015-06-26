@@ -34,7 +34,8 @@ class Auth extends FrontController implements Rest {
             ),
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
-                "csss"=>array("auth/css/auth.css",),
+                "csss"=>array("auth/css/main.css",),
+                "jss"=>array(),
             )
         );
 
@@ -44,9 +45,6 @@ class Auth extends FrontController implements Rest {
     
     public function post(Array $params){
         $_SESSION["logged"] = $_POST["login"]; // TODO do walidacji z baz danych
-        //print "wywolano post</br>";
-        //echo "jego parametry: "; var_dump($params); echo "</br>";
-        //echo "post: "; var_dump($_POST); echo "</br>";
         $this->redirect("Main");
     }
     

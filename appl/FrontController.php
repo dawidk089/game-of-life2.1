@@ -25,23 +25,20 @@ class FrontController
 
         // pobranie url i rozpakowanie
         // obsluzenie ulr
-        $params = explode('/', $_GET['target']); // [200] OK
+        $params = explode('/', $_GET['target']);
         log::logging("FrontController/ rozsplitowanie \$_GET: ".log::varb($this->params));
 
-        switch ($controller = $this->valid_controller($params)) { // [200] OK
+        switch ($controller = $this->valid_controller($params)) {
             case "not_specified":
             case "not_exist":
                 log::logging("FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <$this->default_controller>\n" );
-                $this->redirect($this->default_controller); // [200] OK
-//                $_SESSION["mistake_counter"] += 1;
+                $this->redirect($this->default_controller);
                 break;
             default:
-                echo "correct</br>";
                 log::logging("FrontController/ poprawny kontroler\n" );
                 if(!$this->check_log() && $params[0] !== "Auth") {
                     log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
-//                    $_SESSION["unlogged_counter"] += 1;
                 }
                 else {
                     $this->name_controller = $controller;
@@ -53,9 +50,6 @@ class FrontController
     }
 
     public final function execute(){
-        echo "execute controller: ";
-        var_dump($this->name_controller);
-        echo "</br>";
         return new $this->name_controller($this->params);
     }
 
@@ -67,6 +61,7 @@ class FrontController
     }
 
     protected function redirect($ulr=""){
+        log::logging("FrontController/ redirect/ przekierowanie na: Location: ".$this->appl_path.$ulr."\n");
         header("Location: ".$this->appl_path.$ulr);
     }
 

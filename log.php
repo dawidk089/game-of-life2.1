@@ -12,7 +12,6 @@ class log{
             $czas = date("H:i:s");
             fwrite($handle, $data . " " . $czas . " >" . $str);
             fclose($handle);
-            echo "zapis do logu</br>";
         }
     }
 

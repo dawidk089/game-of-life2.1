@@ -1,0 +1,131 @@
+/*globalne*/
+* {
+    box-sizing: border-box;
+}
+
+/*ogolne*/
+body{
+    color: #c8c8c8;
+    background: black;
+    min-width: 600px;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: table;
+    width: 100%;
+    position: relative;
+
+    padding-right: 50px;
+    margin: 50px;
+}
+
+main > *{
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer{
+    border-top: gray 1px solid;
+}
+
+/*#fast_game_chart{*/
+    /*max-width: 100%;*/
+    /*margin: 0 auto;*/
+    /*display: block;*/
+/*}*/
+
+
+
+/*nav{*/
+    /*text-align: center;*/
+/*margin-bottom: 50px;*/
+
+/*}*/
+
+ /*game wrapper */
+
+
+/*.halfed > section,*/
+/*.halfed > aside {*/
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+/*}*/
+
+/*section {*/
+    /*padding: 4px;*/
+/*}*/
+
+/*aside {*/
+    /*width: 30%;*/
+    /*margin: 0;*/
+    /*padding: 10px;*/
+    /*padding-top: 32px;*/
+    /*position: relative;*/
+
+/*}*/
+
+ /*form aside */
+
+/*label{*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*margin: 10px 0;*/
+/*}*/
+
+/*label input{*/
+    /*display: block;*/
+    /*width: 75px;*/
+/*}*/
+
+/*label select{*/
+    /*display: block;*/
+    /*width: 30%;*/
+/*}*/
+
+/*.box_title{*/
+    /*text-align: center;*/
+/*}*/
+
+/*fieldset{*/
+    /*border: #ff9900 2px dashed;*/
+    /*padding: 20px;*/
+/*}*/
+
+/*legend{*/
+    /*position: relative;*/
+    /*left: 20px;*/
+/*}*/
+
+/*legend, h2{*/
+    /*font-size: 2em;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*main{*/
+    /*display: table;*/
+    /*width: 100%;*/
+    /*padding-right: 50px;*/
+    /*margin: 50px;*/
+/*}*/
+
+/*footer p{*/
+    /*margin: 0;*/
+/*}*/
+
+/*footer{*/
+    /*border-top: gray 1px solid;*/
+/*}*/
+
+/*#freerunning_button, #one_step_button{*/
+    /*margin: 5px;*/
+    /*text-align: center;*/
+/*}*/

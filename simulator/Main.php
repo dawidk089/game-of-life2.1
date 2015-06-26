@@ -34,10 +34,19 @@ class Main extends FrontController /*implements Rest*/ {
             ),
             array(
                 "title"=>"Game of life -- Symulator automatu komórkowego",
-                "csss"=>array("auth.css")
+                "csss"=>array(
+                    "simulator/css/main.css",
+                    //"auth/css/main.css",
+                    ),
+                "jss"=>array(
+                    "simulator/js/cell.js",
+                    "simulator/js/board.js",
+                    "simulator/js/game.js",
+                    "simulator/js/init.js",
+                )
             )
         );
-
+        log::logging("Main/ get/ przygotowano widok, wywoluje view->show()\n" );
         $view->show();
         //print "wywolano get";
     }

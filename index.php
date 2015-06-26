@@ -13,7 +13,7 @@ new PrepareClass(array(
     "simulator/",
 ));
 
-log::logging("\n");
+log::logging("NOWE WYWOLANIE INDEX\n");
 log::logging("index, wywoluje FrontController\n");
 
 $front_controller = new FrontController();

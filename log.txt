@@ -1,39 +1,375 @@
-2015-06-26 19:16:08 >
-2015-06-26 19:16:08 >index, wywoluje FrontController
-2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
-2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
-2015-06-26 19:16:08 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
-2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-06-26 19:16:08 >
-2015-06-26 19:16:08 >index, wywoluje FrontController
-2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
-2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
-2015-06-26 19:16:08 >FrontController/ poprawny kontroler
-2015-06-26 19:16:08 >FrontController/ nie zalogowany lub nie autoryzuje, przekirowanie na <Auth>
-2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-06-26 19:16:08 >
-2015-06-26 19:16:08 >index, wywoluje FrontController
-2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
-2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
-2015-06-26 19:16:08 >FrontController/ poprawny kontroler
-2015-06-26 19:16:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: <array(0) {
+2015-06-26 22:26:15 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:15 >index, wywoluje FrontController
+2015-06-26 22:26:15 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:15 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:15 >FrontController/ poprawny kontroler
+2015-06-26 22:26:15 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
 }
-2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-06-26 19:35:28 >
-2015-06-26 19:35:28 >index, wywoluje FrontController
-2015-06-26 19:35:28 >FrontController/ pobranie rest_method: post 
-2015-06-26 19:35:28 >FrontController/ rozsplitowanie $_GET: NULL
-2015-06-26 19:35:28 >FrontController/ poprawny kontroler
-2015-06-26 19:35:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: <array(1) {
-  [0]=>
-  string(5) "login"
+2015-06-26 22:26:15 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:15 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
 }
-2015-06-26 19:35:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-06-26 19:35:28 >
-2015-06-26 19:35:28 >index, wywoluje FrontController
-2015-06-26 19:35:28 >FrontController/ pobranie rest_method: get 
-2015-06-26 19:35:28 >FrontController/ rozsplitowanie $_GET: NULL
-2015-06-26 19:35:28 >FrontController/ poprawny kontroler
-2015-06-26 19:35:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+2015-06-26 22:26:15 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:26:17 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:17 >index, wywoluje FrontController
+2015-06-26 22:26:17 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:17 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:17 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:26:17 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:26:17 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:17 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:17 >index, wywoluje FrontController
+2015-06-26 22:26:17 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:17 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:17 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:26:17 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:26:17 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:17 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:17 >index, wywoluje FrontController
+2015-06-26 22:26:17 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:17 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:17 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:26:17 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:26:17 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:17 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:17 >index, wywoluje FrontController
+2015-06-26 22:26:17 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:17 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:17 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:26:17 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:26:17 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:18 >index, wywoluje FrontController
+2015-06-26 22:26:18 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:18 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:18 >FrontController/ poprawny kontroler
+2015-06-26 22:26:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
 }
-2015-06-26 19:35:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:26:18 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:26:18 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:18 >index, wywoluje FrontController
+2015-06-26 22:26:18 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:18 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:18 >FrontController/ poprawny kontroler
+2015-06-26 22:26:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:26:18 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:26:18 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:26:18 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:18 >index, wywoluje FrontController
+2015-06-26 22:26:18 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:18 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:18 >FrontController/ poprawny kontroler
+2015-06-26 22:26:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:26:18 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:26:18 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:26:18 >NOWE WYWOLANIE INDEX
+2015-06-26 22:26:18 >index, wywoluje FrontController
+2015-06-26 22:26:18 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:26:18 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:26:18 >FrontController/ poprawny kontroler
+2015-06-26 22:26:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:26:18 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:26:18 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:26:18 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:29:22 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:22 >index, wywoluje FrontController
+2015-06-26 22:29:22 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:22 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:22 >FrontController/ poprawny kontroler
+2015-06-26 22:29:22 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:29:22 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:22 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:29:22 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:29:24 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:29:24 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:29:24 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 22:29:24 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ poprawny kontroler
+2015-06-26 22:29:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:29:24 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ poprawny kontroler
+2015-06-26 22:29:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:29:24 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ poprawny kontroler
+2015-06-26 22:29:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:29:24 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:29:24 >NOWE WYWOLANIE INDEX
+2015-06-26 22:29:24 >index, wywoluje FrontController
+2015-06-26 22:29:24 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:29:24 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:29:24 >FrontController/ poprawny kontroler
+2015-06-26 22:29:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:29:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:29:24 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(10) "js/cell.js"
+    [1]=>
+    string(11) "js/board.js"
+    [2]=>
+    string(10) "js/game.js"
+    [3]=>
+    string(10) "js/init.js"
+  }
+}
+2015-06-26 22:29:24 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-06-26 22:31:31 >NOWE WYWOLANIE INDEX
+2015-06-26 22:31:31 >index, wywoluje FrontController
+2015-06-26 22:31:31 >FrontController/ pobranie rest_method: get 
+2015-06-26 22:31:31 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 22:31:31 >FrontController/ poprawny kontroler
+2015-06-26 22:31:31 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 22:31:31 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 22:31:31 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(4) {
+    [0]=>
+    string(20) "simulator/js/cell.js"
+    [1]=>
+    string(21) "simulator/js/board.js"
+    [2]=>
+    string(20) "simulator/js/game.js"
+    [3]=>
+    string(20) "simulator/js/init.js"
+  }
+}
+2015-06-26 22:31:31 >Main/ get/ przygotowano widok, wywoluje view->show()
