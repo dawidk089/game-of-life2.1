@@ -20,43 +20,35 @@ class FrontController
 
         // pobranie metody
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
+        log::logging("FrontController/ pobranie rest_method: $this->rest_method \n");
+
 
         // pobranie url i rozpakowanie
         // obsluzenie ulr
         $params = explode('/', $_GET['target']); // [200] OK
+        log::logging("FrontController/ rozsplitowanie \$_GET: ".log::varb($this->params));
 
         switch ($controller = $this->valid_controller($params)) { // [200] OK
             case "not_specified":
             case "not_exist":
-                echo "mistake</br>";
+                log::logging("FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <$this->default_controller>\n" );
                 $this->redirect($this->default_controller); // [200] OK
 //                $_SESSION["mistake_counter"] += 1;
                 break;
             default:
                 echo "correct</br>";
+                log::logging("FrontController/ poprawny kontroler\n" );
                 if(!$this->check_log() && $params[0] !== "Auth") {
+                    log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
 //                    $_SESSION["unlogged_counter"] += 1;
                 }
                 else {
                     $this->name_controller = $controller;
                     $this->params = array_slice($params, 1);
-                    echo "log or auth, ok</br>";
+                    log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: <".log::varb($this->params));
                 }
         }
-        echo "Name of controller: ";
-        var_dump($this->name_controller);
-        echo "</br>";
-        echo "Name of params: ";
-        var_dump($this->params);
-        echo "</br>";
-        echo "Method: ";
-        var_dump($this->rest_method);
-        echo "</br>";
-
-
-
-        echo "end of controller</br>";
 
     }
 

@@ -1,0 +1,39 @@
+2015-06-26 19:16:08 >
+2015-06-26 19:16:08 >index, wywoluje FrontController
+2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
+2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 19:16:08 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 19:16:08 >
+2015-06-26 19:16:08 >index, wywoluje FrontController
+2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
+2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 19:16:08 >FrontController/ poprawny kontroler
+2015-06-26 19:16:08 >FrontController/ nie zalogowany lub nie autoryzuje, przekirowanie na <Auth>
+2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 19:16:08 >
+2015-06-26 19:16:08 >index, wywoluje FrontController
+2015-06-26 19:16:08 >FrontController/ pobranie rest_method: get 
+2015-06-26 19:16:08 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 19:16:08 >FrontController/ poprawny kontroler
+2015-06-26 19:16:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: <array(0) {
+}
+2015-06-26 19:16:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 19:35:28 >
+2015-06-26 19:35:28 >index, wywoluje FrontController
+2015-06-26 19:35:28 >FrontController/ pobranie rest_method: post 
+2015-06-26 19:35:28 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 19:35:28 >FrontController/ poprawny kontroler
+2015-06-26 19:35:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: <array(1) {
+  [0]=>
+  string(5) "login"
+}
+2015-06-26 19:35:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-06-26 19:35:28 >
+2015-06-26 19:35:28 >index, wywoluje FrontController
+2015-06-26 19:35:28 >FrontController/ pobranie rest_method: get 
+2015-06-26 19:35:28 >FrontController/ rozsplitowanie $_GET: NULL
+2015-06-26 19:35:28 >FrontController/ poprawny kontroler
+2015-06-26 19:35:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: <array(0) {
+}
+2015-06-26 19:35:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
