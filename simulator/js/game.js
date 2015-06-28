@@ -3,6 +3,12 @@
  */
 
 game = {
+
+    //OBJECT FIELDS
+    interval_id: null,
+    time_step: null,
+
+    //OBJECT METHODS
     /**
      *pobranie danych z formularza i zaktualizowanie planszy
      */
@@ -12,8 +18,9 @@ game = {
             board.canvas_h = side_size;
             board.canvas_w = side_size;
         }
-        beggining()
+        // TODO tu byl beggening
     },
+
     /**
      *pobranie danych z formularza i zaktualizowanie planszy
      */
@@ -22,8 +29,9 @@ game = {
         if( cell_radius ){
             board.cell_radius = cell_radius;
         }
-        beggining()
+        // TODO tu byl beggening
     },
+
     /**
      *pobranie danych z formularza
      */
@@ -34,20 +42,34 @@ game = {
         }
         console.warn('change time step to: ', this.time_step);
     },
+
     /**
      * wywolanie inicjalizacji planszy pod ewolucje
      * wykonanie kroku ewolucji
      */
     next_step_button: function(){
-        //zablokowanie editlinow
         board.init_cells();
-        this.next_step_op();
+        game.next_step_op();
     },
+
+    /**
+     * inicjuje start trybu freeruning ewolucji ukladu
+     * @param event
+     */
+    start: function(event){
+    // TODO schowac/wylaczyc wszystkie inputy jakie trzeba przy starcie gry
+        $("aside input[name='start']").hide();
+        $("aside input[name='stop']").show();
+        board.canvas_id.removeEventListener('click', board.set_cell_event );
+        board.init_cells();
+        game.start_evolution(event);
+    },
+
     /**
      * uruchomienie interwalu, ktory wywoluje funkcje nastepnego kroku ewolucji...
      * ...z zadanym czasem
      */
-    start: function (event) {
+    start_evolution: function (event) {
         /*//TODO set count neighbours on cells
          board.c.font = "15px Arial";
          board.c.textAlign = "center";
@@ -64,15 +86,20 @@ game = {
 
          board.c.fillStyle = old_fillstyle;*/
 
-        console.warn('evolutation start with: ', this.time_step, 'ms time step');
-        this.interval_id = window.setInterval(this.next_step_op, this.time_step)
+        console.log('start evolutation with: ', game.time_step, 'ms time step');
+        game.interval_id = window.setInterval(game.next_step_op, game.time_step);
     },
+
     /**
      * funkcja zatrzymujaca interwal
      */
     stop: function (event) {
-        window.clearInterval(this.interval_id)
+        $("aside input[name='start']").show();
+        $("aside input[name='stop']").hide();
+        window.clearInterval(game.interval_id);
+        board.canvas_id.addEventListener('click', board.set_cell_event );
     },
+
     /**
      * wykonanie nastepnego kroku ewolucji, tzn...
      * ...zbadanie sasiadow wszystkich komorek opoerujac na...
@@ -85,7 +112,7 @@ game = {
         //console.log('board.cells: ', board.cells);
         //console.log('in next step i, j', board.size_i, board.size_j);
         for (var i = 0; i < board.size_i; i++) {
-            row = [];
+            var row = [];
             for (var j = 0; j < board.size_j; j++)
                 row.push(new Cell(board.cells[i][j].is_alive, i, j));
             cell_copy.push(row);
@@ -120,7 +147,10 @@ game = {
 
         //console.log('next step -- board.cells: ', JSON.stringify(board.cells));
     },
-    interval_id: null,
-    time_step: 1000
+
+    set_time_step: function(){
+        game.time_step = 1000.0/document.forms[0].frequency.value;
+        console.log("set time_step: ", game.time_step);
+    }
 
 };

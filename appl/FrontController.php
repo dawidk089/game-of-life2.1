@@ -63,11 +63,15 @@ class FrontController
     protected function redirect($ulr=""){
         log::logging("FrontController/ redirect/ przekierowanie na: Location: ".$this->appl_path.$ulr."\n");
         header("Location: ".$this->appl_path.$ulr);
+        log::logging("FrontController/ redirect/ przekierowanie nie nastapilo\n");
+
     }
 
     private function valid_controller($exp_url){
-        if($exp_url[0] === "")
+        if($exp_url[0] === "") {
+            log::logging("FrontController/ valid_controller/ zauwazyl pusty \$_GET\n");
             return "not_specified";
+        }
         else if(array_search($exp_url[0], $this->controlers) === false)
             return "not_exist";
         else

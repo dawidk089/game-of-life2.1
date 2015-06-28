@@ -1,3 +1,4 @@
+Options FollowSymLinks
 RewriteEngine On
 
 RewriteBase /.
@@ -14,3 +15,10 @@ RewriteRule ^(.*)$ index.php [QSA,NC,L]
 
 RewriteCond %{REQUEST_FILENAME} -s
 RewriteRule ^(.*)$ index.php [QSA,NC,L]
+
+#Options FollowSymLinks
+#RewriteEngine On
+#
+##RewriteRule ^index/([^-]+)/([^-]+)/([^-]+)/$ http://strona.pl/index.php?action=$1&mode=$2&tmp=$3 [L]
+#RewriteCond %{REQUEST_FILENAME} !-s
+#RewriteRule ^(.*)$ $1 http://localhost/index.php?target=$1 [L]
