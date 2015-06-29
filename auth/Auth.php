@@ -34,6 +34,7 @@ class Auth extends FrontController implements Rest {
             ),
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
+                "appl_path"=>appl_path::$appl_path,
                 "csss"=>array("auth/css/main.css",),
                 "jss"=>array(),
             )

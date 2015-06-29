@@ -40,6 +40,7 @@ class Main extends FrontController /*implements Rest*/ {
                     ),
                 "jss"=>array(
                     "simulator/js/cell.js",
+                    "simulator/js/period_finder.js",
                     "simulator/js/board.js",
                     "simulator/js/game.js",
                     "simulator/js/init.js",

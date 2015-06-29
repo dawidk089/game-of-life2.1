@@ -169,6 +169,13 @@ board = {
      * rysowanie martwych komórek -- zapełnianie planszy
      */
     init_draw_cells: function(){
+        board.clear();
+
+        board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;
+        board.canvas_h = 2*(board.cell_radius+board.cell_padding)*document.forms[0].vertical_amount.value;
+
+        console.log("set canvas_w: ", board.canvas_w);
+        console.log("set canvas_h: ", board.canvas_h);
 
         var min_pos_x = board.cell_padding + board.cell_radius;
         var max_pos_x = board.canvas_w - (board.cell_padding + board.cell_radius);
@@ -201,6 +208,10 @@ board = {
             }
 
 
+    },
+
+    clear: function(){
+        board.c.clearRect(0,0,board.canvas_w, board.canvas_h);
     }
 
 };

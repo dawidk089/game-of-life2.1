@@ -7,7 +7,7 @@ class FrontController
         "Main",
         "Auth",
     );
-    private $appl_path = "http://localhost/";
+    //private $appl_path = "http://localhost/";
     private $default_controller = "Main";
     private $rest_method = null;
     private $name_controller = null;
@@ -61,8 +61,8 @@ class FrontController
     }
 
     protected function redirect($ulr=""){
-        log::logging("FrontController/ redirect/ przekierowanie na: Location: ".$this->appl_path.$ulr."\n");
-        header("Location: ".$this->appl_path.$ulr);
+        log::logging("FrontController/ redirect/ przekierowanie na: Location: ".appl_path::$appl_path.$ulr."\n");
+        header("Location: ".appl_path::$appl_path.$ulr);
         log::logging("FrontController/ redirect/ przekierowanie nie nastapilo\n");
 
     }
