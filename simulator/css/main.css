@@ -145,3 +145,8 @@ legend {
     left: 15px;
     font-weight: bold;
 }
+
+*:disabled {
+    border-color: #333;
+    color: #666;
+}

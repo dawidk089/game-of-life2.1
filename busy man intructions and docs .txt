@@ -1,0 +1,48 @@
+Wskazowki uruchomienia:
+opcja 1:
+>projekt jest umieszczony na serwerze pascal i z serwera taurus (zalecane ze wzgledu na szybkosc serwera) mozna sie do niego dostac poprzez adres przegladarki:
+	http://pascal.fis.agh.edu.pl/~3karminski/projekt2/
+
+opcja 2:
+>poprzez zmiane adresu w polu $appl_path klasy znajdujacej sie w pliku appl/appl_path.php mozna uruchomic projekt przez wlasny serwer lokalny
+>nalezy wtedy dolaczyc plik .htaccess z zawartoscia:
+
+//---------------------------------------
+RewriteEngine On
+
+RewriteBase /~3karminski/projekt2
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^(.*)$ index.php?target=$1 [QSA,NC,L]
+//---------------------------------------
+	oraz zmienic sciezke RewriteBase
+
+
+Zalozenia projektowe:
+>strona autoryzacji
+>strona glowna z plansza i panelem kontrolnym
+	-w panelu ustawia sie ilosc komorek w poziomie i pionie
+	-poprzez klikniecie przycisku ustaw mozna uruchomic automat (start/stop, nastepny krok), zmienic jego predkosc
+	-gdy gra jest zatrzymana mozna zmienic tryb gry na symulacje i uruchomic je, ewentualnie zapisac plansze na serwer
+	-w panelu widac takze aktualny stan ukladu
+>po stronie serwera wyslana plansza zostaje dokonczona i zapisana w bazie danych
+>strona z lista rekordow zycia uklady (wykres ilosci komorek i histogramy wiekow komorek)
+>strona z zapisanymi symulacjami, mozliwosc przywrocenia zapisanej symulacji (wykres ilosci komorek i histogramy wiekow komorek)
+
+javascript:
+>obiekt game -- obsluguje operacje przeprowadzane w grze
+>obiekt board -- wspiera obsluge i ustawianie planszy
+>obiekt prototypowany cell -- przechowuje wlasciwosci komorek (stan, wiek, pozycje)
+>obiekt prototypowany periodfinder -- wspiera znajdywanie okresowosci w historii plansz gry
+>init -- przygotowuje gre przy pierwszym uzyciu (tzn po zaladowaniu strony), podpina odpowiednie funkcje pod zdarzenia w html'u
+
+repozytorium:
+
+https://github.com/dawidk089/game-of-life2.1.git
+
+
+

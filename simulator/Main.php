@@ -41,6 +41,7 @@ class Main extends FrontController /*implements Rest*/ {
                     "jquery_js/jquery.js",
                     "simulator/js/cell.js",
                     "simulator/js/period_finder.js",
+                    "simulator/js/storage.js",
                     "simulator/js/board.js",
                     "simulator/js/game.js",
                     "simulator/js/init.js",
