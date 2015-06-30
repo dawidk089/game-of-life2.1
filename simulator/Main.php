@@ -23,7 +23,6 @@ class Main extends FrontController /*implements Rest*/ {
                 $this->delete(array());
                 break;
         }
-        echo "koniec konstruktor Main </br>";
     }
 
     public function get(Array $params){

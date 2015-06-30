@@ -16,7 +16,7 @@ new PrepareClass(array(
 log::logging("NOWE WYWOLANIE INDEX\n");
 log::logging("index, wywoluje FrontController\n");
 
-echo "To nie jest jeszcze wersja skońcozna";
+echo "To nie jest jeszcze wersja skończona.";
 
 $front_controller = new FrontController();
 log::logging("koniec wywolania FrontController'a, wywoluje execute FrontController'a\n");

@@ -1,18 +1,17 @@
 <aside>
+
     <fieldset>
         <legend>Parametry</legend>
         <form>
-            <h4>Ilość komórek:</h4>
             <div class="input_wrapping">
+                <h4>Ilość komórek:</h4>
                 <label>w poziomie
-                    <input type="number" name="horizontal_amount" value="15" <!--min="100" max="800"-->>
+                    <input type="number" name="horizontal_amount" value="20" min="20" max="800">
                 </label>
                 <label>w pionie
-                    <input type="number" name="vertical_amount" value="10" <!--min="75" max="600"-->>
+                    <input type="number" name="vertical_amount" value="10" min="10" max="600">
                 </label>
-                <div class="input_wrapping">
-                    <input type="button" name="set" value="ustaw">
-                </div>
+                <input type="button" name="set" value="ustaw">
             </div>
             <div class="input_wrapping">
                 <label>szybkość symulacji
@@ -21,16 +20,12 @@
             </div>
             <div class="input_wrapping">
                 <input type="button" name="start" value="start">
-            </div>
-            <div class="input_wrapping">
                 <input type="button" name="next" value="następny krok">
-            </div>
 
             <!--<div class="input_wrapping">
                 <input type="button" name="test" value="test">
             </div>-->
 
-            <div class="input_wrapping">
                 <input type="button" name="reset" value="reset">
             </div>
             <div class="input_wrapping">
@@ -41,8 +36,17 @@
                     </select>
                 </label>
             </div>
-            <input type="button" value="Zapisz" name="save">
-            <p>Efektywna szybkość: <span></span> fps</p>
+            <div class="input_wrapping">
+                <input type="button" value="Zapisz" name="save">
+            </div>
         </form>
     </fieldset>
+
+    <fieldset>
+        <legend>Stan układu</legend>
+        <p>Efektywna szybkość: <span id="frequency"></span> fps</p>
+        <p>Ilość żywych komórek: <span id="lived_amount"></span></p>
+        <p>Stan układu: <span id="game_state"></span></p>
+    </fieldset>
+
 </aside>

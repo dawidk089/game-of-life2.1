@@ -1,7 +1,3 @@
-/**
- * Created by mcmushroom on 14.06.15.
- */
-
 game = {
 
     //OBJECT FIELDS
@@ -22,7 +18,6 @@ game = {
             board.canvas_h = side_size;
             board.canvas_w = side_size;
         }
-        // TODO tu byl beggening
     },
 
     /**
@@ -33,7 +28,6 @@ game = {
         if( cell_radius ){
             board.cell_radius = cell_radius;
         }
-        // TODO tu byl beggening
     },
 
     /**
@@ -126,7 +120,8 @@ game = {
 
         board.set_cells();
 
-       /* //TODO set count neighbours on cells
+        //TODO set count neighbours on cells
+       /*
         board.c.font = "15px Arial";
         board.c.textAlign = "center";
         old_fillstyle = board.c.fillStyle;
@@ -142,8 +137,6 @@ game = {
 
         board.c.fillStyle = old_fillstyle;*/
 
-        //console.log('next step -- board.cells: ', JSON.stringify(board.cells));
-
         console.error('state game: ', game.check_end());
     },
 
@@ -156,6 +149,10 @@ game = {
         console.log("set time_step: ", game.time_step);
     },
 
+    //TODO sprawdzic poprawnosc zmiany stanu elementow
+    //TODO poprawic mode by sprawdzanie warunkow byla tylko w trybie symulacji
+    //TODO ukryc stan uklad w trybie zabawy
+    //TODO zablokowac zmiane planszy w trybie symulacje
     switch_control_panel: function(event, mode_param){
         var mode = mode_param;
         if( mode == undefined )
@@ -229,20 +226,18 @@ game = {
     },
 
     check_end: function () {
-        // TODO id ostatniego elementu do zmiany na prarametr
+        // TODO id ostatniego elementu do zmiany na parametr
         var last_id = game.memento.length-1;
-        console.log('last_id: ', last_id);
+        //console.warn('current id: ', last_id);
 
         if(last_id == 0) return undefined;
 
-
         // czy period_finder'y cos znalazly
         for(var i = 0; i < game.periods_finders.length; i++){
-            var state = game.periods_finders[i].condition();
+            var state = game.periods_finders[i].condition(game.memento.length-1);
             if(state == true) return 'periodic';
             else if(state == false) game.periods_finders.splice(i, 1);
         }
-
 
         // czy uklad wymarl
         var lived_amount = 0;
@@ -252,7 +247,8 @@ game = {
                     lived_amount++;
             }
         }
-        console.warn("uklad posiada ", lived_amount, " komorek");
+        $('#lived_amount').text(lived_amount);
+
         if(lived_amount == 0) return 'died';
 
         // czy jest staly
@@ -266,11 +262,11 @@ game = {
             }
             if(!is_identical) break;
         }
-        console.warn("uklad ", is_identical? "jest staly" : "nie jest staly");
+
         if(is_identical) return 'const';
 
         // czy podejrzany o okresowosc
-        for(var k = 0; k < last_id-1; k++) {
+        for(var k = 0; k < last_id; k++) {
             is_identical = true;
             for (var i = 0; i < board.size_i; i++) {
                 for (var j = 0; j < board.size_j; j++) {
@@ -281,7 +277,10 @@ game = {
                 }
                 if (!is_identical) break;
             }
-            if(is_identical) game.periods_finders.push(new PeriodFinder(k));
+            if(is_identical){
+                game.periods_finders.push(new PeriodFinder(k, last_id));
+                console.warn('create PeriodFinder')
+            }
         }
 
         return undefined;

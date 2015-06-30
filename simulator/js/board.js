@@ -1,15 +1,15 @@
 /**
  * Created by mcmushroom on 14.06.15.
  */
-// TODO index i, j => j, i
 board = {
 
     //OBJECT FIELDS
     c: undefined,
     pos_tab: null,
     cell_radius: null,
-    canvas_h: null,
-    canvas_w: null,
+    canvas_h: undefined,
+    canvas_w: undefined,
+    prescaler: undefined,
     cell_padding: null,
     size_i: 0,
     size_j: 0,
@@ -36,7 +36,6 @@ board = {
                     row.push(new Cell(false, i, j));
             board.cells.push(row);
         }
-        console.log('board init done');
     },
 
     /**
@@ -116,8 +115,8 @@ board = {
      */
     set_cell_event: function(event) {
 
-        var x = event.layerX - board.canvas_id.offsetLeft, // - elemLeft,
-            y = event.layerY - board.canvas_id.offsetTop; // - elemTop;
+        var x = (event.layerX - board.canvas_id.offsetLeft)*board.prescaler, // - elemLeft,
+            y = (event.layerY - board.canvas_id.offsetTop)*board.prescaler; // - elemTop;
 
         console.log('clicked coordination: ['+x + '; ' + y + ']');
 
@@ -148,6 +147,11 @@ board = {
      */
     drawing: function() {
 
+        board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;
+        board.canvas_h = 2*(board.cell_radius+board.cell_padding)*document.forms[0].vertical_amount.value;
+
+        console.log(board.canvas_w);
+
         var canvas_init_text = '\
         <canvas id="game_canvas"  \
         width="' + board.canvas_w + '" \
@@ -174,6 +178,10 @@ board = {
         board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;
         board.canvas_h = 2*(board.cell_radius+board.cell_padding)*document.forms[0].vertical_amount.value;
 
+        var ref = $("#game_canvas")[0];
+        ref.width = board.canvas_w;
+        ref.height = board.canvas_h;
+
         console.log("set canvas_w: ", board.canvas_w);
         console.log("set canvas_h: ", board.canvas_h);
 
@@ -186,9 +194,9 @@ board = {
 
         board.pos_tab = [];
 
-        for (var x = min_pos_x; x < max_pos_x; x += distance) {
+        for (var x = min_pos_x; x <= max_pos_x; x += distance) {
             var pos_row = [];
-            for (var y = min_pos_y; y < max_pos_y; y += distance) {
+            for (var y = min_pos_y; y <= max_pos_y; y += distance) {
                 pos_row.push({'x': x, 'y': y, 'state': 'dead'});
             }
 
@@ -212,6 +220,10 @@ board = {
 
     clear: function(){
         board.c.clearRect(0,0,board.canvas_w, board.canvas_h);
+    },
+
+    set_canvas_dimension: function(){
+        board.prescaler = board.canvas_w/$("canvas").width();
     }
 
 };

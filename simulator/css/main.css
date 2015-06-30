@@ -1,3 +1,7 @@
+/*TODO zmiejszyc szerokosc input number horizontal_amount i  vertical_amount*/
+/*TODO mozliwie ustawic pomarancozwy kolor paska dla range i napisu dla listy rozwijanej*/
+/*TODO ustawic inny styl dla zablokowanych elementow*/
+
 /*globalne*/
 * {
     box-sizing: border-box;
@@ -8,6 +12,13 @@ body{
     color: #c8c8c8;
     background: black;
     min-width: 600px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body > header {
+    background: linear-gradient(to right, #222, #630);
+    overflow: hidden;
 }
 
 header{
@@ -16,116 +27,121 @@ header{
 
 main{
     display: table;
-    width: 100%;
     position: relative;
-
-    padding-right: 50px;
-    margin: 50px;
+    width: 100%;
+    table-layout: fixed;
+    padding: 15px;
 }
 
-main > *{
+main > * {
     display: table-cell;
+    position: relative;
     vertical-align: top;
-    width: 50%;
 }
 
-footer p{
-    margin: 0;
+aside {
+    width: 25%;
+    padding-left: 15px;
+}
+
+aside fieldset {
+    margin: 15px 0;
+    padding: 0;
+    border: dashed 1px #f90;
+}
+
+#game_canvas {
+    max-width: 100%;
 }
 
 footer{
     border-top: gray 1px solid;
 }
 
-/*#fast_game_chart{*/
-    /*max-width: 100%;*/
-    /*margin: 0 auto;*/
-    /*display: block;*/
-/*}*/
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 15px;
+}
 
+.input_wrapping {
+    border-bottom: dashed 1px #f90;
+}
 
+.input_wrapping:last-of-type {
+    border-bottom: none;
+}
 
-/*nav{*/
-    /*text-align: center;*/
-/*margin-bottom: 50px;*/
+h1 {
+    color: #f90;
+    font-weight: normal;
+}
 
-/*}*/
+h2 {
+    color: #999;
+    font-weight: normal;
+    text-transform: uppercase;
+}
 
- /*game wrapper */
+a {
+    color: #f90;
+}
 
+a:hover {
+    color: #ff0;
+}
 
-/*.halfed > section,*/
-/*.halfed > aside {*/
-    /*display: table-cell;*/
-    /*vertical-align: top;*/
-/*}*/
+input {
+    border: solid 1px #f90;
+    background: black;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px 0 0 15px;
+}
 
-/*section {*/
-    /*padding: 4px;*/
-/*}*/
+input:last-of-type {
+    margin-bottom: 15px;
+}
 
-/*aside {*/
-    /*width: 30%;*/
-    /*margin: 0;*/
-    /*padding: 10px;*/
-    /*padding-top: 32px;*/
-    /*position: relative;*/
+input[type=button],
+input[type=submit] {
+    cursor: pointer;
+}
 
-/*}*/
+input[type=button]:hover,
+input[type=submit]:hover {
+    background: #222;
+}
 
- /*form aside */
+input[type=range] {
+    border: none;
+}
 
-/*label{*/
-    /*display: block;*/
-    /*width: 100%;*/
-    /*margin: 10px 0;*/
-/*}*/
+label {
+    display: block;
+    margin: 15px;
+    text-transform: uppercase;
+}
 
-/*label input{*/
-    /*display: block;*/
-    /*width: 75px;*/
-/*}*/
+label input {
+    display: block;
+    margin: 0;
+}
 
-/*label select{*/
-    /*display: block;*/
-    /*width: 30%;*/
-/*}*/
+label input:last-of-type {
+    margin-bottom: 0;
+}
 
-/*.box_title{*/
-    /*text-align: center;*/
-/*}*/
+form {
+    margin: 0;
+    padding: 0;
+}
 
-/*fieldset{*/
-    /*border: #ff9900 2px dashed;*/
-    /*padding: 20px;*/
-/*}*/
-
-/*legend{*/
-    /*position: relative;*/
-    /*left: 20px;*/
-/*}*/
-
-/*legend, h2{*/
-    /*font-size: 2em;*/
-    /*font-weight: bold;*/
-/*}*/
-
-/*main{*/
-    /*display: table;*/
-    /*width: 100%;*/
-    /*padding-right: 50px;*/
-    /*margin: 50px;*/
-/*}*/
-
-/*footer p{*/
-    /*margin: 0;*/
-/*}*/
-
-/*footer{*/
-    /*border-top: gray 1px solid;*/
-/*}*/
-
-/*#freerunning_button, #one_step_button{*/
-    /*margin: 5px;*/
-    /*text-align: center;*/
-/*}*/
+legend {
+    position: relative;
+    left: 15px;
+    font-weight: bold;
+}

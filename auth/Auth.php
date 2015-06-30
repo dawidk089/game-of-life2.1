@@ -45,7 +45,7 @@ class Auth extends FrontController implements Rest {
     }
     
     public function post(Array $params){
-        $_SESSION["logged"] = $_POST["login"]; // TODO do walidacji z baz danych
+        $_SESSION["logged"] = $_POST["login"];
         $this->redirect("Main");
     }
     
