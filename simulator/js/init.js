@@ -22,7 +22,6 @@ window.onload = function () {
     $("aside input[name='reset']").on('click', board.init_draw_cells).data('mode', 'init').on('click', game.switch_control_panel);
 
     $(window).resize( board.set_canvas_dimension).resize();
-
 };
 
 

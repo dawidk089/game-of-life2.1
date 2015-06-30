@@ -173,6 +173,10 @@ board = {
      * rysowanie martwych komórek -- zapełnianie planszy
      */
     init_draw_cells: function(){
+
+        board.set_canvas_dimension();
+
+
         board.clear();
 
         board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;

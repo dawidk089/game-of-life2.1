@@ -4,7 +4,7 @@ class log{
 
     static public function logging($str)
     {
-        $handle = fopen("log.txt", "a+");
+        $handle = fopen("log/log.txt", "a+");
         if ($handle === false)
             echo "nie otwarto pliku log </br>";
         else {
