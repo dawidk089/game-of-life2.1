@@ -14,7 +14,7 @@ new PrepareClass(array(
     "simulator/",
     "model/",
 ));
-/*
+
 log::logging("NOWE WYWOLANIE INDEX\n");
 log::logging("index, wywoluje FrontController\n");
 
@@ -23,7 +23,7 @@ echo "To nie jest jeszcze wersja skończona.";
 $front_controller = new FrontController();
 log::logging("koniec wywolania FrontController'a, wywoluje execute FrontController'a\n");
 $front_controller->execute();
-*/
+
 
 //$conn = new Mongo("mongodb://3karminski:pass@pascal.fis.agh.edu.pl/3karminski");
 //$dbase = $conn->selectDB("3karminski");
@@ -36,6 +36,6 @@ $front_controller->execute();
 //}
 //
 
-$users_data = new BaseModel('users');
-$users_data->main();
+//$users_data = new BaseModel('users');
+//$users_data->main();
 
