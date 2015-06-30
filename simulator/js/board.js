@@ -175,7 +175,7 @@ board = {
     init_draw_cells: function(){
 
         board.set_canvas_dimension();
-
+        //console.warn("canvas_dimension changed: ", board.prescaler);
 
         board.clear();
 

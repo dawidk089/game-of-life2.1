@@ -23,16 +23,3 @@ window.onload = function () {
 
     $(window).resize( board.set_canvas_dimension).resize();
 };
-
-
-
-
-/**
- * wyznacza ile komórek zmieści się w planszy
- * wyznacza szerokość marginesów planszy
- * ustawia canvas
- * ustawia tło planszy
- * wyznacza pozycje komórek
- * rysuje komórki
- */
-

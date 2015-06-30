@@ -38,6 +38,7 @@ class Main extends FrontController /*implements Rest*/ {
                     //"auth/css/main.css",
                     ),
                 "jss"=>array(
+                    "jquery_js/jquery.js",
                     "simulator/js/cell.js",
                     "simulator/js/period_finder.js",
                     "simulator/js/board.js",
