@@ -1,24 +1,10 @@
-Options FollowSymLinks
 RewriteEngine On
 
-RewriteBase /.
+RewriteBase /~3karminski/projekt2
 
-RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg)$
-RewriteRule ^(.*)$ $1 [QSA,NC,L]
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-s
-RewriteRule ^(.*)$ /index.php?target=$1 [L]
-
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.*)$ index.php [QSA,NC,L]
+RewriteRule ^.*$ - [NC,L]
 
-RewriteCond %{REQUEST_FILENAME} -s
-RewriteRule ^(.*)$ index.php [QSA,NC,L]
-
-#Options FollowSymLinks
-#RewriteEngine On
-#
-##RewriteRule ^index/([^-]+)/([^-]+)/([^-]+)/$ http://strona.pl/index.php?action=$1&mode=$2&tmp=$3 [L]
-#RewriteCond %{REQUEST_FILENAME} !-s
-#RewriteRule ^(.*)$ $1 http://localhost/index.php?target=$1 [L]
+RewriteRule ^(.*)$ index.php?target=$1 [QSA,NC,L]
