@@ -58,7 +58,8 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function put(Array $params){
-        print "wywolano put";
+        log::logging("Main/ put/ otrzymane parametry z rest'a: ".log::varb($params));
+        log::logging("Main/ put/ \$_GET: ".log::varb($_GET));
     }
 
     public function delete(Array $params){

@@ -1,3 +1,5 @@
+var appl_path = "http://pascal.fis.agh.edu.pl/~3karminski/projekt2/";
+
 window.onload = function () {
 
     board.cell_padding = 2;
@@ -20,6 +22,7 @@ window.onload = function () {
     $("aside input[name='start']").on('click', game.start);
     $("aside input[name='next']").on('click', game.next_step_button);
     $("aside input[name='reset']").on('click', board.init_draw_cells).data('mode', 'init').on('click', game.switch_control_panel);
+    $("aside input[name='save']").on('click', memento.send_to_server);
 
     $(window).resize( board.set_canvas_dimension).resize();
 

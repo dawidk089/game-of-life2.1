@@ -1,6 +1,23 @@
 memento = {
     history: [],
-    
+
+    send_to_server: function() {
+        $.ajax( appl_path + "BaseModel/add_simulation", {
+            type: "PUT",
+            data: JSON.stringify(memento.history),
+            statusCode: {
+                404: function() {
+                    console.error("[404]");
+                },
+                200: function() {
+                    console.error("[200]");
+                },
+                0: function () {
+                    console.error("[000]");
+                }
+            }
+        });
+    },
     
     check_end: function () {
     // TODO id ostatniego elementu do zmiany na parametr

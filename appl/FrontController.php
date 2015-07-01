@@ -6,6 +6,7 @@ class FrontController
     private $controlers = array(
         "Main",
         "Auth",
+        "BaseModel",
     );
     //private $appl_path = "http://localhost/";
     private $default_controller = "Main";
@@ -43,13 +44,18 @@ class FrontController
                 else {
                     $this->name_controller = $controller;
                     $this->params = array_slice($params, 1);
-                    log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: <".log::varb($this->params));
+                    $this->params[] = file_get_contents('php://input');
+
+                    log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: ".log::varb($this->params));
+                    log::logging("FrontController/ file get contents: ".log::varb(file_get_contents('php://input')));
+                    log::logging("FrontController/ spakowane dane: ".log::varb($this->params));
                 }
         }
 
     }
 
     public final function execute(){
+        log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
         return new $this->name_controller($this->params);
     }
 
