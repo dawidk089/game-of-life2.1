@@ -1,1772 +1,233 @@
-2015-07-01 21:24:24 >NOWE WYWOLANIE INDEX
-2015-07-01 21:24:24 >index, wywoluje FrontController
-2015-07-01 21:24:24 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:24:24 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:24:24 >FrontController/ poprawny kontroler
-2015-07-01 21:24:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:22:11 >NOWE WYWOLANIE INDEX
+2015-07-04 04:22:11 >index, wywoluje FrontController
+2015-07-04 04:22:11 >FrontController/ pobranie rest_method: get 
+2015-07-04 04:22:11 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
 }
-2015-07-01 21:24:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:24:24 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:22:11 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:22:11 >FrontController/ poprawny kontroler
+2015-07-04 04:22:11 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
 }
-2015-07-01 21:24:24 >Auth/ post/ tryb: register
-2015-07-01 21:24:24 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
+2015-07-04 04:22:11 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:22:11 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
 }
-2015-07-01 21:24:24 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:24:24 >BaseModel/ constructor/ poczatek
-2015-07-01 21:24:24 >BaseModel/ constructor/ koniec
-2015-07-01 21:24:24 >Auth/ post/ register/ wczytana baza danych: object(BaseModel)#5 (8) {
-  ["user":"BaseModel":private]=>
-  string(10) "3karminski"
-  ["pass":"BaseModel":private]=>
-  string(4) "pass"
-  ["host":"BaseModel":private]=>
-  string(21) "pascal.fis.agh.edu.pl"
-  ["base":"BaseModel":private]=>
-  string(10) "3karminski"
-  ["coll":"BaseModel":private]=>
-  string(5) "users"
-  ["conn":"BaseModel":private]=>
-  object(Mongo)#6 (4) {
-    ["connected"]=>
-    bool(true)
-    ["status"]=>
-    NULL
-    ["server":protected]=>
-    NULL
-    ["persistent":protected]=>
-    NULL
-  }
-  ["dbase":"BaseModel":private]=>
-  object(MongoDB)#7 (2) {
-    ["w"]=>
-    int(0)
-    ["wtimeout"]=>
-    int(10000)
-  }
-  ["collection":"BaseModel":private]=>
-  object(MongoCollection)#8 (2) {
-    ["w"]=>
-    int(0)
-    ["wtimeout"]=>
-    int(10000)
-  }
-}
-2015-07-01 21:25:06 >NOWE WYWOLANIE INDEX
-2015-07-01 21:25:06 >index, wywoluje FrontController
-2015-07-01 21:25:06 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:25:06 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:25:06 >FrontController/ poprawny kontroler
-2015-07-01 21:25:06 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:25:06 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:25:06 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:25:06 >Auth/ post/ tryb: register
-2015-07-01 21:25:06 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:25:06 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:25:06 >BaseModel/ constructor/ poczatek
-2015-07-01 21:25:06 >BaseModel/ constructor/ koniec
-2015-07-01 21:26:48 >NOWE WYWOLANIE INDEX
-2015-07-01 21:26:48 >index, wywoluje FrontController
-2015-07-01 21:26:48 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:26:48 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:26:48 >FrontController/ poprawny kontroler
-2015-07-01 21:26:48 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:26:48 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:26:48 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:26:48 >Auth/ post/ tryb: register
-2015-07-01 21:26:48 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:26:48 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:26:48 >BaseModel/ constructor/ poczatek
-2015-07-01 21:26:48 >BaseModel/ constructor/ koniec
-2015-07-01 21:26:48 >BaseModel/ get/ key: name, values: 2015-07-01 21:26:48 >Auth/ post/ register/ users: 2015-07-01 21:34:12 >NOWE WYWOLANIE INDEX
-2015-07-01 21:34:12 >index, wywoluje FrontController
-2015-07-01 21:34:12 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:34:12 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:34:12 >FrontController/ poprawny kontroler
-2015-07-01 21:34:12 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:34:12 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:34:12 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:34:12 >Auth/ post/ tryb: register
-2015-07-01 21:34:12 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:34:12 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:34:12 >BaseModel/ constructor/ poczatek
-2015-07-01 21:34:12 >BaseModel/ constructor/ koniec
-2015-07-01 21:34:12 >BaseModel/ get/ key: name, values: ...
-2015-07-01 21:34:12 >Auth/ post/ register/ users: 2015-07-01 21:38:59 >NOWE WYWOLANIE INDEX
-2015-07-01 21:38:59 >index, wywoluje FrontController
-2015-07-01 21:38:59 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:38:59 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:38:59 >FrontController/ poprawny kontroler
-2015-07-01 21:38:59 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:38:59 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:38:59 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:38:59 >Auth/ post/ tryb: register
-2015-07-01 21:38:59 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:38:59 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:38:59 >BaseModel/ constructor/ poczatek
-2015-07-01 21:38:59 >BaseModel/ constructor/ koniec
-2015-07-01 21:38:59 >BaseModel/ get/ key: name, values: ...
-2015-07-01 21:41:28 >NOWE WYWOLANIE INDEX
-2015-07-01 21:41:28 >index, wywoluje FrontController
-2015-07-01 21:41:28 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:41:28 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:41:28 >FrontController/ poprawny kontroler
-2015-07-01 21:41:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:41:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:41:28 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:41:28 >Auth/ post/ tryb: register
-2015-07-01 21:41:28 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:41:28 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:41:28 >BaseModel/ constructor/ poczatek
-2015-07-01 21:41:28 >BaseModel/ constructor/ koniec
-2015-07-01 21:42:45 >NOWE WYWOLANIE INDEX
-2015-07-01 21:42:45 >index, wywoluje FrontController
-2015-07-01 21:42:45 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:42:45 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:42:45 >FrontController/ poprawny kontroler
-2015-07-01 21:42:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:42:45 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:42:45 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:42:45 >Auth/ post/ tryb: register
-2015-07-01 21:42:45 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:42:45 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:42:45 >BaseModel/ constructor/ poczatek
-2015-07-01 21:42:45 >BaseModel/ constructor/ koniec
-2015-07-01 21:42:45 >Auth/ post/ register/ users: ...
-2015-07-01 21:48:56 >NOWE WYWOLANIE INDEX
-2015-07-01 21:48:56 >index, wywoluje FrontController
-2015-07-01 21:48:56 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:48:56 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:48:56 >FrontController/ poprawny kontroler
-2015-07-01 21:48:56 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:48:56 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:48:56 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:48:56 >Auth/ post/ tryb: register
-2015-07-01 21:48:56 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:48:56 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:48:56 >BaseModel/ constructor/ poczatek
-2015-07-01 21:48:56 >BaseModel/ constructor/ koniec
-2015-07-01 21:48:56 >Dawid2015-07-01 21:52:42 >NOWE WYWOLANIE INDEX
-2015-07-01 21:52:42 >index, wywoluje FrontController
-2015-07-01 21:52:42 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:52:42 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:52:42 >FrontController/ poprawny kontroler
-2015-07-01 21:52:42 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:52:42 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:52:42 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:52:42 >Auth/ post/ tryb: register
-2015-07-01 21:52:42 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:52:42 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:52:42 >BaseModel/ constructor/ poczatek
-2015-07-01 21:52:42 >BaseModel/ constructor/ koniec
-2015-07-01 21:52:42 >BaseModel/ get/ cursor: object(MongoCursor)#9 (0) {
-}
-2015-07-01 21:54:02 >NOWE WYWOLANIE INDEX
-2015-07-01 21:54:02 >index, wywoluje FrontController
-2015-07-01 21:54:02 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:54:02 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:54:02 >FrontController/ poprawny kontroler
-2015-07-01 21:54:02 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:54:02 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:54:02 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:54:02 >Auth/ post/ tryb: register
-2015-07-01 21:54:02 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:54:02 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:54:02 >BaseModel/ constructor/ poczatek
-2015-07-01 21:54:02 >BaseModel/ constructor/ koniec
-2015-07-01 21:55:30 >NOWE WYWOLANIE INDEX
-2015-07-01 21:55:30 >index, wywoluje FrontController
-2015-07-01 21:55:30 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:55:30 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:55:30 >FrontController/ poprawny kontroler
-2015-07-01 21:55:30 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:55:30 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:55:30 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:55:30 >Auth/ post/ tryb: register
-2015-07-01 21:55:30 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:55:30 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:55:30 >BaseModel/ constructor/ poczatek
-2015-07-01 21:55:30 >BaseModel/ constructor/ koniec
-2015-07-01 21:55:30 >Array2015-07-01 21:56:28 >NOWE WYWOLANIE INDEX
-2015-07-01 21:56:28 >index, wywoluje FrontController
-2015-07-01 21:56:28 >FrontController/ pobranie rest_method: post 
-2015-07-01 21:56:28 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 21:56:28 >FrontController/ poprawny kontroler
-2015-07-01 21:56:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:56:28 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 21:56:28 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 21:56:28 >Auth/ post/ tryb: register
-2015-07-01 21:56:28 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 21:56:28 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 21:56:28 >BaseModel/ constructor/ poczatek
-2015-07-01 21:56:28 >BaseModel/ constructor/ koniec
-2015-07-01 21:56:28 >BaseModel/ get/ cursor foreach: array(2) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5592d53d4ba7d05504db4abc"
-  }
-  ["name"]=>
-  string(5) "Dawid"
-}
-2015-07-01 22:00:01 >NOWE WYWOLANIE INDEX
-2015-07-01 22:00:01 >index, wywoluje FrontController
-2015-07-01 22:00:01 >FrontController/ pobranie rest_method: get 
-2015-07-01 22:00:01 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:00:01 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
-2015-07-01 22:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-01 22:00:01 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:00:01 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: NULL
-2015-07-01 22:00:01 >NOWE WYWOLANIE INDEX
-2015-07-01 22:00:01 >index, wywoluje FrontController
-2015-07-01 22:00:01 >FrontController/ pobranie rest_method: get 
-2015-07-01 22:00:01 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:00:01 >FrontController/ poprawny kontroler
-2015-07-01 22:00:01 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
-2015-07-01 22:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
-2015-07-01 22:00:01 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:00:01 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: NULL
-2015-07-01 22:00:01 >NOWE WYWOLANIE INDEX
-2015-07-01 22:00:01 >index, wywoluje FrontController
-2015-07-01 22:00:01 >FrontController/ pobranie rest_method: get 
-2015-07-01 22:00:01 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:00:01 >FrontController/ poprawny kontroler
-2015-07-01 22:00:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(1) {
-  [0]=>
-  string(0) ""
-}
-2015-07-01 22:00:01 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:00:01 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(1) {
-  [0]=>
-  string(0) ""
-}
-2015-07-01 22:00:01 >View/ pobrane parametry: array(4) {
+2015-07-04 04:22:11 >View/ pobrane parametry: array(3) {
   ["title"]=>
-  string(36) "Game of life -- Autoryzacja dostępu"
-  ["appl_path"]=>
-  string(50) "http://pascal.fis.agh.edu.pl/~3karminski/projekt2/"
+  string(47) "Game of life -- Symulator automatu komórkowego"
   ["csss"]=>
   array(1) {
     [0]=>
-    string(17) "auth/css/main.css"
+    string(22) "simulator/css/main.css"
   }
   ["jss"]=>
-  array(1) {
+  array(7) {
     [0]=>
-    string(15) "auth/js/auth.js"
+    string(19) "jquery_js/jquery.js"
+    [1]=>
+    string(20) "simulator/js/cell.js"
+    [2]=>
+    string(29) "simulator/js/period_finder.js"
+    [3]=>
+    string(23) "simulator/js/storage.js"
+    [4]=>
+    string(21) "simulator/js/board.js"
+    [5]=>
+    string(20) "simulator/js/game.js"
+    [6]=>
+    string(20) "simulator/js/init.js"
   }
 }
-2015-07-01 22:18:54 >NOWE WYWOLANIE INDEX
-2015-07-01 22:18:54 >index, wywoluje FrontController
-2015-07-01 22:18:54 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:18:54 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:18:54 >FrontController/ poprawny kontroler
-2015-07-01 22:18:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
+2015-07-04 04:22:11 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-04 04:22:16 >NOWE WYWOLANIE INDEX
+2015-07-04 04:22:16 >index, wywoluje FrontController
+2015-07-04 04:22:16 >FrontController/ pobranie rest_method: put 
+2015-07-04 04:22:16 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-04 04:22:16 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:22:16 >FrontController/ poprawny kontroler
+2015-07-04 04:22:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
   [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+  string(14) "add_simulation"
 }
-2015-07-01 22:18:54 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:18:54 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
+2015-07-04 04:22:16 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:22:16 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
   [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+  string(14) "add_simulation"
 }
-2015-07-01 22:18:54 >Auth/ post/ tryb: register
-2015-07-01 22:18:54 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
+2015-07-04 04:22:16 >Main/ put/ $params: array(0) {
 }
-2015-07-01 22:18:54 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 22:18:54 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5592d53d4ba7d05504db4abc"
-    }
-    ["name"]=>
-    string(5) "Dawid"
-  }
+2015-07-04 04:22:16 >Main/ put/ ajax: string(24) "boards=%5B%5D&state=done"
+2015-07-04 04:24:04 >NOWE WYWOLANIE INDEX
+2015-07-04 04:24:04 >index, wywoluje FrontController
+2015-07-04 04:24:04 >FrontController/ pobranie rest_method: get 
+2015-07-04 04:24:04 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
 }
-2015-07-01 22:22:15 >NOWE WYWOLANIE INDEX
-2015-07-01 22:22:15 >index, wywoluje FrontController
-2015-07-01 22:22:15 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:22:15 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:22:15 >FrontController/ poprawny kontroler
-2015-07-01 22:22:15 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:24:04 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:24:04 >FrontController/ poprawny kontroler
+2015-07-04 04:24:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
 }
-2015-07-01 22:22:15 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:22:15 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:24:04 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:24:04 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
 }
-2015-07-01 22:22:15 >Auth/ post/ tryb: register
-2015-07-01 22:22:15 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:22:15 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 22:25:36 >NOWE WYWOLANIE INDEX
-2015-07-01 22:25:36 >index, wywoluje FrontController
-2015-07-01 22:25:36 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:25:36 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:25:36 >FrontController/ poprawny kontroler
-2015-07-01 22:25:36 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:25:36 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:25:36 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:25:36 >Auth/ post/ tryb: register
-2015-07-01 22:25:36 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:25:36 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 22:25:36 >BaseModel/ read/ $result: array(3) {
-  [0]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "55944ba1947b39218bdece54"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-  [1]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#13 (1) {
-      ["$id"]=>
-      string(24) "55944ba5947b39218bdece55"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-  [2]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#14 (1) {
-      ["$id"]=>
-      string(24) "55944baa947b39218bdece56"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-}
-2015-07-01 22:30:26 >NOWE WYWOLANIE INDEX
-2015-07-01 22:30:26 >index, wywoluje FrontController
-2015-07-01 22:30:26 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:30:26 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:30:26 >FrontController/ poprawny kontroler
-2015-07-01 22:30:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:30:26 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:30:26 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:30:26 >Auth/ post/ tryb: register
-2015-07-01 22:30:26 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:30:26 >Auth/ post/ register/ przed utwzorzeniem obiektu BaseModel
-2015-07-01 22:30:26 >Auth/ post/ register/ users="Kasia": array(3) {
-  [0]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "55944ba1947b39218bdece54"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-  [1]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#13 (1) {
-      ["$id"]=>
-      string(24) "55944ba5947b39218bdece55"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-  [2]=>
-  array(2) {
-    ["_id"]=>
-    object(MongoId)#14 (1) {
-      ["$id"]=>
-      string(24) "55944baa947b39218bdece56"
-    }
-    ["name"]=>
-    string(5) "Kasia"
-  }
-}
-2015-07-01 22:34:20 >NOWE WYWOLANIE INDEX
-2015-07-01 22:34:20 >index, wywoluje FrontController
-2015-07-01 22:34:20 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:34:20 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:34:20 >FrontController/ poprawny kontroler
-2015-07-01 22:34:20 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:34:20 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:34:20 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:34:20 >Auth/ post/ tryb: register
-2015-07-01 22:34:20 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:34:20 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:44:08 >NOWE WYWOLANIE INDEX
-2015-07-01 22:44:08 >index, wywoluje FrontController
-2015-07-01 22:44:08 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:44:08 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:44:08 >FrontController/ poprawny kontroler
-2015-07-01 22:44:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:44:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:44:08 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:44:08 >Auth/ post/ tryb: register
-2015-07-01 22:44:08 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:44:08 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:44:08 >Auth/ post/ register/ nie ma takiego nicku
-2015-07-01 22:46:04 >NOWE WYWOLANIE INDEX
-2015-07-01 22:46:04 >index, wywoluje FrontController
-2015-07-01 22:46:04 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:46:04 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:46:04 >FrontController/ poprawny kontroler
-2015-07-01 22:46:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:46:04 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:46:04 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:46:04 >Auth/ post/ tryb: register
-2015-07-01 22:46:04 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:46:04 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:46:04 >Auth/ post/ register/ searched users: array(0) {
-}
-2015-07-01 22:46:04 >Auth/ post/ register/ nie ma takiego nicku
-2015-07-01 22:47:46 >NOWE WYWOLANIE INDEX
-2015-07-01 22:47:46 >index, wywoluje FrontController
-2015-07-01 22:47:46 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:47:46 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:47:46 >FrontController/ poprawny kontroler
-2015-07-01 22:47:46 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:47:46 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:47:46 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:47:46 >Auth/ post/ tryb: register
-2015-07-01 22:47:46 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:47:46 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:47:46 >Auth/ post/ register/ searched users: array(0) {
-}
-2015-07-01 22:47:46 >Auth/ post/ register/ nie ma takiego nicku
-2015-07-01 22:50:39 >NOWE WYWOLANIE INDEX
-2015-07-01 22:50:39 >index, wywoluje FrontController
-2015-07-01 22:50:39 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:50:39 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:50:39 >FrontController/ poprawny kontroler
-2015-07-01 22:50:39 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:50:39 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:50:39 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:50:39 >Auth/ post/ tryb: register
-2015-07-01 22:50:39 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:50:39 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:50:39 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 22:52:23 >NOWE WYWOLANIE INDEX
-2015-07-01 22:52:23 >index, wywoluje FrontController
-2015-07-01 22:52:23 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:52:23 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:52:23 >FrontController/ poprawny kontroler
-2015-07-01 22:52:23 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:52:23 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:52:23 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:52:23 >Auth/ post/ tryb: register
-2015-07-01 22:52:23 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:52:23 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:52:23 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 22:55:31 >NOWE WYWOLANIE INDEX
-2015-07-01 22:55:31 >index, wywoluje FrontController
-2015-07-01 22:55:31 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:55:31 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:55:31 >FrontController/ poprawny kontroler
-2015-07-01 22:55:31 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:55:31 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:55:31 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:55:31 >Auth/ post/ tryb: register
-2015-07-01 22:55:31 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:55:31 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:55:31 >BaseModel/ read/ $row: string(9) "dawidk089"
-2015-07-01 22:56:16 >NOWE WYWOLANIE INDEX
-2015-07-01 22:56:16 >index, wywoluje FrontController
-2015-07-01 22:56:16 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:56:16 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:56:16 >FrontController/ poprawny kontroler
-2015-07-01 22:56:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:56:16 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:56:16 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:56:16 >Auth/ post/ tryb: register
-2015-07-01 22:56:16 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:56:16 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:56:16 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 22:57:13 >NOWE WYWOLANIE INDEX
-2015-07-01 22:57:13 >index, wywoluje FrontController
-2015-07-01 22:57:13 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:57:13 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:57:13 >FrontController/ poprawny kontroler
-2015-07-01 22:57:13 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:57:13 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:57:13 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:57:13 >Auth/ post/ tryb: register
-2015-07-01 22:57:13 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:57:13 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:57:13 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 22:59:18 >NOWE WYWOLANIE INDEX
-2015-07-01 22:59:18 >index, wywoluje FrontController
-2015-07-01 22:59:18 >FrontController/ pobranie rest_method: post 
-2015-07-01 22:59:18 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 22:59:18 >FrontController/ poprawny kontroler
-2015-07-01 22:59:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:59:18 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 22:59:18 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 22:59:18 >Auth/ post/ tryb: register
-2015-07-01 22:59:18 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 22:59:18 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 22:59:18 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 22:59:18 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:00:02 >NOWE WYWOLANIE INDEX
-2015-07-01 23:00:02 >index, wywoluje FrontController
-2015-07-01 23:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-01 23:00:02 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:00:02 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
-2015-07-01 23:00:02 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-01 23:00:02 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:00:02 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: NULL
-2015-07-01 23:00:02 >NOWE WYWOLANIE INDEX
-2015-07-01 23:00:02 >index, wywoluje FrontController
-2015-07-01 23:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-01 23:00:02 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:00:02 >FrontController/ poprawny kontroler
-2015-07-01 23:00:02 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
-2015-07-01 23:00:02 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
-2015-07-01 23:00:02 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:00:02 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: NULL
-2015-07-01 23:00:02 >NOWE WYWOLANIE INDEX
-2015-07-01 23:00:02 >index, wywoluje FrontController
-2015-07-01 23:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-01 23:00:02 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:00:02 >FrontController/ poprawny kontroler
-2015-07-01 23:00:02 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(1) {
-  [0]=>
-  string(0) ""
-}
-2015-07-01 23:00:02 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:00:02 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(1) {
-  [0]=>
-  string(0) ""
-}
-2015-07-01 23:00:02 >View/ pobrane parametry: array(4) {
+2015-07-04 04:24:04 >View/ pobrane parametry: array(3) {
   ["title"]=>
-  string(36) "Game of life -- Autoryzacja dostępu"
-  ["appl_path"]=>
-  string(50) "http://pascal.fis.agh.edu.pl/~3karminski/projekt2/"
+  string(47) "Game of life -- Symulator automatu komórkowego"
   ["csss"]=>
   array(1) {
     [0]=>
-    string(17) "auth/css/main.css"
+    string(22) "simulator/css/main.css"
   }
   ["jss"]=>
+  array(7) {
+    [0]=>
+    string(19) "jquery_js/jquery.js"
+    [1]=>
+    string(20) "simulator/js/cell.js"
+    [2]=>
+    string(29) "simulator/js/period_finder.js"
+    [3]=>
+    string(23) "simulator/js/storage.js"
+    [4]=>
+    string(21) "simulator/js/board.js"
+    [5]=>
+    string(20) "simulator/js/game.js"
+    [6]=>
+    string(20) "simulator/js/init.js"
+  }
+}
+2015-07-04 04:24:04 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-04 04:24:08 >NOWE WYWOLANIE INDEX
+2015-07-04 04:24:08 >index, wywoluje FrontController
+2015-07-04 04:24:08 >FrontController/ pobranie rest_method: put 
+2015-07-04 04:24:08 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-04 04:24:08 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:24:08 >FrontController/ poprawny kontroler
+2015-07-04 04:24:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
+  [0]=>
+  string(14) "add_simulation"
+}
+2015-07-04 04:24:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:24:08 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
+  [0]=>
+  string(14) "add_simulation"
+}
+2015-07-04 04:24:08 >Main/ put/ $params: array(0) {
+}
+2015-07-04 04:24:08 >Main/ put/ ajax: string(24) "boards=%5B%5D&state=done"
+2015-07-04 04:24:08 >Main/ put/ ajax_decode: NULL
+2015-07-04 04:30:32 >NOWE WYWOLANIE INDEX
+2015-07-04 04:30:32 >index, wywoluje FrontController
+2015-07-04 04:30:32 >FrontController/ pobranie rest_method: get 
+2015-07-04 04:30:32 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-04 04:30:32 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:30:32 >FrontController/ poprawny kontroler
+2015-07-04 04:30:32 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
+}
+2015-07-04 04:30:32 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:30:32 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
+}
+2015-07-04 04:30:32 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
   array(1) {
     [0]=>
-    string(15) "auth/js/auth.js"
+    string(22) "simulator/css/main.css"
+  }
+  ["jss"]=>
+  array(7) {
+    [0]=>
+    string(19) "jquery_js/jquery.js"
+    [1]=>
+    string(20) "simulator/js/cell.js"
+    [2]=>
+    string(29) "simulator/js/period_finder.js"
+    [3]=>
+    string(23) "simulator/js/storage.js"
+    [4]=>
+    string(21) "simulator/js/board.js"
+    [5]=>
+    string(20) "simulator/js/game.js"
+    [6]=>
+    string(20) "simulator/js/init.js"
   }
 }
-2015-07-01 23:00:12 >NOWE WYWOLANIE INDEX
-2015-07-01 23:00:12 >index, wywoluje FrontController
-2015-07-01 23:00:12 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:00:12 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:00:12 >FrontController/ poprawny kontroler
-2015-07-01 23:00:12 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:30:32 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-04 04:30:35 >NOWE WYWOLANIE INDEX
+2015-07-04 04:30:35 >index, wywoluje FrontController
+2015-07-04 04:30:35 >FrontController/ pobranie rest_method: get 
+2015-07-04 04:30:35 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
 }
-2015-07-01 23:00:12 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:00:12 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:30:35 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:30:35 >FrontController/ poprawny kontroler
+2015-07-04 04:30:35 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
 }
-2015-07-01 23:00:12 >Auth/ post/ tryb: register
-2015-07-01 23:00:12 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
+2015-07-04 04:30:35 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:30:35 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
 }
-2015-07-01 23:00:12 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:00:12 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
+2015-07-04 04:30:35 >View/ pobrane parametry: array(3) {
+  ["title"]=>
+  string(47) "Game of life -- Symulator automatu komórkowego"
+  ["csss"]=>
+  array(1) {
+    [0]=>
+    string(22) "simulator/css/main.css"
   }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 23:00:12 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
+  ["jss"]=>
+  array(7) {
+    [0]=>
+    string(19) "jquery_js/jquery.js"
+    [1]=>
+    string(20) "simulator/js/cell.js"
+    [2]=>
+    string(29) "simulator/js/period_finder.js"
+    [3]=>
+    string(23) "simulator/js/storage.js"
+    [4]=>
+    string(21) "simulator/js/board.js"
+    [5]=>
+    string(20) "simulator/js/game.js"
+    [6]=>
+    string(20) "simulator/js/init.js"
   }
 }
-2015-07-01 23:00:12 >Auth/ post/ register/ searched users: array(1) {
+2015-07-04 04:30:35 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-04 04:30:41 >NOWE WYWOLANIE INDEX
+2015-07-04 04:30:41 >index, wywoluje FrontController
+2015-07-04 04:30:41 >FrontController/ pobranie rest_method: put 
+2015-07-04 04:30:41 >FrontController/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-04 04:30:41 >FrontController/ rozsplitowanie $_GET: NULL
+2015-07-04 04:30:41 >FrontController/ poprawny kontroler
+2015-07-04 04:30:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
   [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
+  string(14) "add_simulation"
 }
-2015-07-01 23:00:42 >NOWE WYWOLANIE INDEX
-2015-07-01 23:00:42 >index, wywoluje FrontController
-2015-07-01 23:00:42 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:00:42 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:00:42 >FrontController/ poprawny kontroler
-2015-07-01 23:00:42 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
+2015-07-04 04:30:41 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-04 04:30:41 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
   [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+  string(14) "add_simulation"
 }
-2015-07-01 23:00:42 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:00:42 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
+2015-07-04 04:30:41 >Main/ put/ $params: array(0) {
 }
-2015-07-01 23:00:42 >Auth/ post/ tryb: register
-2015-07-01 23:00:42 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
+2015-07-04 04:30:41 >Main/ put/ ajax_decode: array(2) {
+  ["boards"]=>
+  NULL
+  ["state"]=>
+  NULL
 }
-2015-07-01 23:00:42 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:00:42 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 23:00:42 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:00:42 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:05:33 >NOWE WYWOLANIE INDEX
-2015-07-01 23:05:33 >index, wywoluje FrontController
-2015-07-01 23:05:33 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:05:33 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:05:33 >FrontController/ poprawny kontroler
-2015-07-01 23:05:33 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:05:33 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:05:33 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:05:33 >Auth/ post/ tryb: register
-2015-07-01 23:05:33 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 23:05:33 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:05:33 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 23:05:33 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:05:33 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:07:24 >NOWE WYWOLANIE INDEX
-2015-07-01 23:07:24 >index, wywoluje FrontController
-2015-07-01 23:07:24 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:07:24 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:07:24 >FrontController/ poprawny kontroler
-2015-07-01 23:07:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:07:24 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:07:24 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:07:24 >Auth/ post/ tryb: register
-2015-07-01 23:07:24 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 23:07:24 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:07:24 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594565b943e50de359503b9"
-  }
-  ["user_name"]=>
-  string(10) "drzazga888"
-  ["password"]=>
-  string(7) "makaron"
-  ["email"]=>
-  string(19) "drzaga888@gmail.com"
-}
-2015-07-01 23:07:24 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594565b943e50de359503b9"
-    }
-    ["user_name"]=>
-    string(10) "drzazga888"
-    ["password"]=>
-    string(7) "makaron"
-    ["email"]=>
-    string(19) "drzaga888@gmail.com"
-  }
-}
-2015-07-01 23:07:24 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594565b943e50de359503b9"
-    }
-    ["user_name"]=>
-    string(10) "drzazga888"
-    ["password"]=>
-    string(7) "makaron"
-    ["email"]=>
-    string(19) "drzaga888@gmail.com"
-  }
-}
-2015-07-01 23:09:12 >NOWE WYWOLANIE INDEX
-2015-07-01 23:09:12 >index, wywoluje FrontController
-2015-07-01 23:09:12 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:09:12 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:09:12 >FrontController/ poprawny kontroler
-2015-07-01 23:09:12 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:09:12 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:09:12 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:09:12 >Auth/ post/ tryb: register
-2015-07-01 23:09:12 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 23:09:12 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:09:12 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594565b943e50de359503b9"
-  }
-  ["user_name"]=>
-  string(10) "drzazga888"
-  ["password"]=>
-  string(7) "makaron"
-  ["email"]=>
-  string(19) "drzaga888@gmail.com"
-}
-2015-07-01 23:09:12 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594565b943e50de359503b9"
-    }
-    ["user_name"]=>
-    string(10) "drzazga888"
-    ["password"]=>
-    string(7) "makaron"
-    ["email"]=>
-    string(19) "drzaga888@gmail.com"
-  }
-}
-2015-07-01 23:09:12 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594565b943e50de359503b9"
-    }
-    ["user_name"]=>
-    string(10) "drzazga888"
-    ["password"]=>
-    string(7) "makaron"
-    ["email"]=>
-    string(19) "drzaga888@gmail.com"
-  }
-}
-2015-07-01 23:09:54 >NOWE WYWOLANIE INDEX
-2015-07-01 23:09:54 >index, wywoluje FrontController
-2015-07-01 23:09:54 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:09:54 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:09:54 >FrontController/ poprawny kontroler
-2015-07-01 23:09:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:09:54 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:09:54 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:09:54 >Auth/ post/ tryb: register
-2015-07-01 23:09:54 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 23:09:54 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:09:54 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 23:09:54 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:09:54 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:10:31 >NOWE WYWOLANIE INDEX
-2015-07-01 23:10:31 >index, wywoluje FrontController
-2015-07-01 23:10:31 >FrontController/ pobranie rest_method: post 
-2015-07-01 23:10:31 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-01 23:10:31 >FrontController/ poprawny kontroler
-2015-07-01 23:10:31 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:10:31 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-01 23:10:31 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(2) {
-  [0]=>
-  string(8) "register"
-  [1]=>
-  string(134) "email=dawidk089%40o2&email_repeat=dawidk089%40o2&nick=dawidk089&password=makarena&password_repeat=makarena&registration-name=Rejestruj"
-}
-2015-07-01 23:10:31 >Auth/ post/ tryb: register
-2015-07-01 23:10:31 >Auth/ post/ register/ $form_param: array(6) {
-  ["email"]=>
-  string(14) "dawidk089%40o2"
-  ["email_repeat"]=>
-  string(14) "dawidk089%40o2"
-  ["nick"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["password_repeat"]=>
-  string(8) "makarena"
-  ["registration-name"]=>
-  string(9) "Rejestruj"
-}
-2015-07-01 23:10:31 >Auth/ post/ register/ post/ nick: dawidk089
-2015-07-01 23:10:31 >BaseModel/ read/ $row: array(4) {
-  ["_id"]=>
-  object(MongoId)#12 (1) {
-    ["$id"]=>
-    string(24) "5594504b947b39218bdece57"
-  }
-  ["user_name"]=>
-  string(9) "dawidk089"
-  ["password"]=>
-  string(8) "makarena"
-  ["email"]=>
-  string(9) "dawidk089"
-}
-2015-07-01 23:10:31 >BaseModel/ read/ $result: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:10:31 >Auth/ post/ register/ searched users: array(1) {
-  [0]=>
-  array(4) {
-    ["_id"]=>
-    object(MongoId)#12 (1) {
-      ["$id"]=>
-      string(24) "5594504b947b39218bdece57"
-    }
-    ["user_name"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["email"]=>
-    string(9) "dawidk089"
-  }
-}
-2015-07-01 23:10:31 >Auth/ post/ register/ jest taki nick

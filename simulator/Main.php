@@ -58,8 +58,15 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function put(Array $params){
-        log::logging("Main/ put/ otrzymane parametry z rest'a: ".log::varb($params));
-        log::logging("Main/ put/ \$_GET: ".log::varb($_GET));
+        //$ajax = file_get_contents('php://input');
+        //odebranie danych ajax
+        log::logging("Main/ put/ \$params: ".log::varb($params));
+        //log::logging("Main/ put/ ajax: ".log::varb($ajax));
+
+        //przetworzenie ajax
+        $ajax = new AJAX_JSON(file_get_contents('php://input'));
+        log::logging("Main/ put/ ajax_decode: ".log::varb($ajax->dict));
+
     }
 
     public function delete(Array $params){

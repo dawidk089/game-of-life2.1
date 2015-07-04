@@ -2,9 +2,15 @@ memento = {
     history: [],
 
     send_to_server: function() {
-        $.ajax( appl_path + "BaseModel/add_simulation", {
+        $data_to_send = {
+            'boards': JSON.stringify(memento.history),
+            'state': JSON.stringify('done')
+        };
+
+        $.ajax( appl_path + "Main/add_simulation", {
             type: "PUT",
-            data: JSON.stringify(memento.history),
+            //data: JSON.stringify(memento.history),
+            data: $data_to_send,
             statusCode: {
                 404: function() {
                     console.error("[404]");

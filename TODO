@@ -1,0 +1,54 @@
+#Rejestracja/Logowanie
+
+>metody dostepowe do baz danych
+    -[DONE]metoda read, sprawdzanie czy login istnieje w bazie
+    -[DONE]metoda create, dodawania rejestrowanych uzytkownikow do bazy
+>walidowanie formularza po stronie js
+    -na email
+    -na haslo
+    -na powtorzenie hasla i emial'a
+>walidowanie formularza po stronie php
+    -czy nick istnieje <logowanie>
+    -czy nick nie istnieje <rejestracja>
+    -na email <rejestracja>
+    -na haslo <rejestracja>
+    -zgodnosc hasla <logowanie>
+
+#Wysylanie planszy na serwer
+
+>podpiecie wysylania post
+
+>podpiecie funkcji konczacej
+
+>zapis w bazie
+    -metoda put -- dodawanie planszy do bazy
+
+#strona z rekordami
+
+>adaptacja szablonow uzupelnianych z php <lista>
+>csss
+>usuwanie z bazy
+>podpiecie przycisku test
+
+#funkcjonalnosc testowania gotowych plansz
+
+>modyfikacja szblonow
+>zmiany reguly wyswietlania
+
+#podpiecie wykresow
+
+>rozkminka framework'a do wykresow
+>rysowanie wykresow
+>rysowanie histogramu
+>rysowanie dynamicznego histogramu
+
+#local storage
+
+>rozkminka dzialania -- wpiecie w szablon diody i span'u z informacja
+    o pracy offline
+>przesyl danych po uzyskaniu polaczenia - zmiana przycisku, mryganie
+
+#docs
+
+>strona dokumentacji
+>obkomentowanie kodu

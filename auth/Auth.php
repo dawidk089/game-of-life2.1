@@ -11,7 +11,7 @@ class Auth extends FrontController implements Rest {
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         switch($this->rest_method){
             case "get":
-                $this->get(array());
+                $this->get($params);
                 break;
             case "post":
                 $this->post($params);
@@ -27,6 +27,17 @@ class Auth extends FrontController implements Rest {
     }
     
     public function get(Array $params){
+        log::logging("Auth/ get/ \$params: ".log::varb($params));
+
+        $status = '';
+        switch($params[0]){
+            case 'nick_exist':
+                $status = 'Wprowadzony nick już istnieje.';
+                break;
+            case 'nick_nexist':
+                $status = 'Wprowadzony nick nie istnieje.';
+        }
+
         $view = new View(
             array(
                 "template/login.phtml",
@@ -34,8 +45,9 @@ class Auth extends FrontController implements Rest {
             ),
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
+                "status"=>$status,
                 "appl_path"=>appl_path::$appl_path,
-                "csss"=>array("auth/css/main.css",),
+                "csss"=>array(appl_path::$appl_path."auth/css/main.css",),
                 "jss"=>array("auth/js/auth.js"),
             )
         );
@@ -70,26 +82,63 @@ class Auth extends FrontController implements Rest {
     }
 
     private function register($data){
+        //przetworzenie formularza rejestracji
         $form_param = new FORM($data);
         log::logging("Auth/ post/ register/ \$form_param: ".log::varb($form_param->dict));
         $nick = $form_param->dict['nick'];
         log::logging("Auth/ post/ register/ post/ nick: $nick\n");
 
+        //otwarcie bazy danych
         $database = new BaseModel('users');
-        $users = $database->read(array('user_name'=>$nick));
-        //$database->read(array('name'=>$nick));
+        $users = $database->read(array('nick'=>$nick));
         log::logging("Auth/ post/ register/ searched users: ".log::varb($users));
+
+        //sprawdzenie czy uzytkownik istnieje
+        //dodanie uzytkownika
         if(count($users) === 0){
             log::logging("Auth/ post/ register/ nie ma takiego nicku\n");
+            $database->create(array(
+                    'email'=>$form_param->dict['email'],
+                    'nick'=>$form_param->dict['nick'],
+                    'password'=>$form_param->dict['password'],
+                    'simulation'=>array(),
+                )
+            );
+            log::logging("Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych\n");
         }
+        //przekierowanie z informacja zwrotna o niepowodzeniu
         else{
             log::logging("Auth/ post/ register/ jest taki nick\n");
+            $this->redirect("Auth/nick_exist/");
         }
     }
 
     private function login($data){
+        //przetworzenie formularza rejestracji
         $form_param = new FORM($data);
         log::logging("Auth/ post/ login/ \$form_param: ".log::varb($form_param->dict));
+        $nick = $form_param->dict['nick'];
+        log::logging("Auth/ post/ login/ post/ nick: $nick\n");
+
+        //otwarcie bazy danych
+        $database = new BaseModel('users');
+        $users = $database->read(array('nick'=>$nick));
+        log::logging("Auth/ post/ login/ searched users: ".log::varb($users));
+
+        //sprawdzenie czy uzytkownik istnieje
+        //przekierowanie z informacja zwrotna o niepowodzeniu
+        if(count($users) === 0){
+            log::logging("Auth/ post/ login/ nie ma takiego nicku\n");
+            $this->redirect("Auth/nick_nexist/");
+        }
+        //zalogowanie id w sesji, przekierowanie na strone glowna
+        else{
+            log::logging("Auth/ post/ login/ przekierowanie na main\n");
+            $id = $users[0]['_id'];
+            $_SESSION['logged'] = $id;
+            $this->redirect("Main");
+        }
+
     }
 
 }

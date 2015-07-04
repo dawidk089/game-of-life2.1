@@ -25,6 +25,7 @@ class FrontController
 
 
         // pobranie url i rozpakowanie
+        log::logging("FrontController/ \$_GET: ".log::varb($_GET));
         // obsluzenie ulr
         $params = explode('/', $_GET['target']);
         log::logging("FrontController/ rozsplitowanie \$_GET: ".log::varb($this->params));
@@ -44,11 +45,9 @@ class FrontController
                 else {
                     $this->name_controller = $controller;
                     $this->params = array_slice($params, 1);
-                    $this->params[] = file_get_contents('php://input');
+                    //$this->params[] = file_get_contents('php://input');
 
                     log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: ".log::varb($this->params));
-                    //log::logging("FrontController/ file get contents: ".log::varb(file_get_contents('php://input')));
-                    //log::logging("FrontController/ spakowane dane: ".log::varb($this->params));
                 }
         }
 
@@ -69,7 +68,6 @@ class FrontController
     protected function redirect($ulr=""){
         log::logging("FrontController/ redirect/ przekierowanie na: Location: ".appl_path::$appl_path.$ulr."\n");
         header("Location: ".appl_path::$appl_path.$ulr);
-        //log::logging("FrontController/ redirect/ przekierowanie nie nastapilo\n");
     }
 
     private function valid_controller($exp_url){
