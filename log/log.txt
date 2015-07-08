@@ -1,233 +1,40 @@
-2015-07-04 04:22:11 >NOWE WYWOLANIE INDEX
-2015-07-04 04:22:11 >index, wywoluje FrontController
-2015-07-04 04:22:11 >FrontController/ pobranie rest_method: get 
-2015-07-04 04:22:11 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(4) "Main"
-}
-2015-07-04 04:22:11 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:22:11 >FrontController/ poprawny kontroler
-2015-07-04 04:22:11 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
-}
-2015-07-04 04:22:11 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:22:11 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
-}
-2015-07-04 04:22:11 >View/ pobrane parametry: array(3) {
-  ["title"]=>
-  string(47) "Game of life -- Symulator automatu komórkowego"
-  ["csss"]=>
+2015-07-09 01:18:12 >NOWE WYWOLANIE INDEX
+2015-07-09 01:18:12 >index, wywoluje FrontController
+2015-07-09 01:18:12 >FrontController/ pobranie rest_method: get 
+2015-07-09 01:18:12 >FrontController/ pobranie danych: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(0) ""
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
   array(1) {
-    [0]=>
-    string(22) "simulator/css/main.css"
-  }
-  ["jss"]=>
-  array(7) {
-    [0]=>
-    string(19) "jquery_js/jquery.js"
-    [1]=>
-    string(20) "simulator/js/cell.js"
-    [2]=>
-    string(29) "simulator/js/period_finder.js"
-    [3]=>
-    string(23) "simulator/js/storage.js"
-    [4]=>
-    string(21) "simulator/js/board.js"
-    [5]=>
-    string(20) "simulator/js/game.js"
-    [6]=>
-    string(20) "simulator/js/init.js"
+    [""]=>
+    NULL
   }
 }
-2015-07-04 04:22:11 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-04 04:22:16 >NOWE WYWOLANIE INDEX
-2015-07-04 04:22:16 >index, wywoluje FrontController
-2015-07-04 04:22:16 >FrontController/ pobranie rest_method: put 
-2015-07-04 04:22:16 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(19) "Main/add_simulation"
-}
-2015-07-04 04:22:16 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:22:16 >FrontController/ poprawny kontroler
-2015-07-04 04:22:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:22:16 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:22:16 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:22:16 >Main/ put/ $params: array(0) {
-}
-2015-07-04 04:22:16 >Main/ put/ ajax: string(24) "boards=%5B%5D&state=done"
-2015-07-04 04:24:04 >NOWE WYWOLANIE INDEX
-2015-07-04 04:24:04 >index, wywoluje FrontController
-2015-07-04 04:24:04 >FrontController/ pobranie rest_method: get 
-2015-07-04 04:24:04 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(4) "Main"
-}
-2015-07-04 04:24:04 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:24:04 >FrontController/ poprawny kontroler
-2015-07-04 04:24:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
-}
-2015-07-04 04:24:04 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:24:04 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
-}
-2015-07-04 04:24:04 >View/ pobrane parametry: array(3) {
-  ["title"]=>
-  string(47) "Game of life -- Symulator automatu komórkowego"
-  ["csss"]=>
+2015-07-09 01:18:12 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
+2015-07-09 01:18:12 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(0) ""
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
   array(1) {
-    [0]=>
-    string(22) "simulator/css/main.css"
+    [""]=>
+    NULL
   }
-  ["jss"]=>
-  array(7) {
-    [0]=>
-    string(19) "jquery_js/jquery.js"
-    [1]=>
-    string(20) "simulator/js/cell.js"
-    [2]=>
-    string(29) "simulator/js/period_finder.js"
-    [3]=>
-    string(23) "simulator/js/storage.js"
-    [4]=>
-    string(21) "simulator/js/board.js"
-    [5]=>
-    string(20) "simulator/js/game.js"
-    [6]=>
-    string(20) "simulator/js/init.js"
-  }
-}
-2015-07-04 04:24:04 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-04 04:24:08 >NOWE WYWOLANIE INDEX
-2015-07-04 04:24:08 >index, wywoluje FrontController
-2015-07-04 04:24:08 >FrontController/ pobranie rest_method: put 
-2015-07-04 04:24:08 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(19) "Main/add_simulation"
-}
-2015-07-04 04:24:08 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:24:08 >FrontController/ poprawny kontroler
-2015-07-04 04:24:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:24:08 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:24:08 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:24:08 >Main/ put/ $params: array(0) {
-}
-2015-07-04 04:24:08 >Main/ put/ ajax: string(24) "boards=%5B%5D&state=done"
-2015-07-04 04:24:08 >Main/ put/ ajax_decode: NULL
-2015-07-04 04:30:32 >NOWE WYWOLANIE INDEX
-2015-07-04 04:30:32 >index, wywoluje FrontController
-2015-07-04 04:30:32 >FrontController/ pobranie rest_method: get 
-2015-07-04 04:30:32 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(4) "Main"
-}
-2015-07-04 04:30:32 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:30:32 >FrontController/ poprawny kontroler
-2015-07-04 04:30:32 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
-}
-2015-07-04 04:30:32 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:30:32 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
-}
-2015-07-04 04:30:32 >View/ pobrane parametry: array(3) {
-  ["title"]=>
-  string(47) "Game of life -- Symulator automatu komórkowego"
-  ["csss"]=>
-  array(1) {
-    [0]=>
-    string(22) "simulator/css/main.css"
-  }
-  ["jss"]=>
-  array(7) {
-    [0]=>
-    string(19) "jquery_js/jquery.js"
-    [1]=>
-    string(20) "simulator/js/cell.js"
-    [2]=>
-    string(29) "simulator/js/period_finder.js"
-    [3]=>
-    string(23) "simulator/js/storage.js"
-    [4]=>
-    string(21) "simulator/js/board.js"
-    [5]=>
-    string(20) "simulator/js/game.js"
-    [6]=>
-    string(20) "simulator/js/init.js"
-  }
-}
-2015-07-04 04:30:32 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-04 04:30:35 >NOWE WYWOLANIE INDEX
-2015-07-04 04:30:35 >index, wywoluje FrontController
-2015-07-04 04:30:35 >FrontController/ pobranie rest_method: get 
-2015-07-04 04:30:35 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(4) "Main"
-}
-2015-07-04 04:30:35 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:30:35 >FrontController/ poprawny kontroler
-2015-07-04 04:30:35 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(0) {
-}
-2015-07-04 04:30:35 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:30:35 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(0) {
-}
-2015-07-04 04:30:35 >View/ pobrane parametry: array(3) {
-  ["title"]=>
-  string(47) "Game of life -- Symulator automatu komórkowego"
-  ["csss"]=>
-  array(1) {
-    [0]=>
-    string(22) "simulator/css/main.css"
-  }
-  ["jss"]=>
-  array(7) {
-    [0]=>
-    string(19) "jquery_js/jquery.js"
-    [1]=>
-    string(20) "simulator/js/cell.js"
-    [2]=>
-    string(29) "simulator/js/period_finder.js"
-    [3]=>
-    string(23) "simulator/js/storage.js"
-    [4]=>
-    string(21) "simulator/js/board.js"
-    [5]=>
-    string(20) "simulator/js/game.js"
-    [6]=>
-    string(20) "simulator/js/init.js"
-  }
-}
-2015-07-04 04:30:35 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-04 04:30:41 >NOWE WYWOLANIE INDEX
-2015-07-04 04:30:41 >index, wywoluje FrontController
-2015-07-04 04:30:41 >FrontController/ pobranie rest_method: put 
-2015-07-04 04:30:41 >FrontController/ $_GET: array(1) {
-  ["target"]=>
-  string(19) "Main/add_simulation"
-}
-2015-07-04 04:30:41 >FrontController/ rozsplitowanie $_GET: NULL
-2015-07-04 04:30:41 >FrontController/ poprawny kontroler
-2015-07-04 04:30:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:30:41 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-04 04:30:41 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(1) {
-  [0]=>
-  string(14) "add_simulation"
-}
-2015-07-04 04:30:41 >Main/ put/ $params: array(0) {
-}
-2015-07-04 04:30:41 >Main/ put/ ajax_decode: array(2) {
-  ["boards"]=>
-  NULL
-  ["state"]=>
-  NULL
 }

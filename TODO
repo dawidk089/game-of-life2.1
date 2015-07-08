@@ -1,3 +1,9 @@
+#SuDDEN CHanGE
+>poprawic wyciaganie parametrow (params przeszlo w tablice asocjacyjna)
+    -Auth
+    -Main
+    -BaseModel
+
 #Rejestracja/Logowanie
 
 >metody dostepowe do baz danych

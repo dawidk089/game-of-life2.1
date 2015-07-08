@@ -1,6 +1,6 @@
 <?php
 
-
+// glowny kontroler, ktory ma pierwszy kontakt z przychodzacym zadaniem
 class FrontController
 {
     private $controlers = array(
@@ -8,29 +8,25 @@ class FrontController
         "Auth",
         "BaseModel",
     );
-    //private $appl_path = "http://localhost/";
     private $default_controller = "Main";
     private $rest_method = null;
     private $name_controller = null;
     private $params = null;
 
     public function __construct(){
-        // rozpozananie metody
-        // rozpozananie kontrolera
-        // rozpozananie parametrow
+        // rozpoznanie metody
+        // rozpoznanie kontrolera
+        // rozpoznanie parametrow
 
         // pobranie metody
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         log::logging("FrontController/ pobranie rest_method: $this->rest_method \n");
 
+        $this->params = $this->prepare_params();
 
-        // pobranie url i rozpakowanie
-        log::logging("FrontController/ \$_GET: ".log::varb($_GET));
-        // obsluzenie ulr
-        $params = explode('/', $_GET['target']);
-        log::logging("FrontController/ rozsplitowanie \$_GET: ".log::varb($this->params));
+        // obsluga interpretacja otrzymanych danych -- get, post, ajax
 
-        switch ($controller = $this->valid_controller($params)) {
+        switch ($controller = $this->valid_controller($this->params['controller'])) {
             case "not_specified":
             case "not_exist":
                 log::logging("FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <$this->default_controller>\n" );
@@ -38,15 +34,12 @@ class FrontController
                 break;
             default:
                 log::logging("FrontController/ poprawny kontroler\n" );
-                if(!$this->check_log() && $params[0] !== "Auth") {
+                if(!$this->check_log() && $this->params['controller'] !== "Auth") {
                     log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
                 }
                 else {
                     $this->name_controller = $controller;
-                    $this->params = array_slice($params, 1);
-                    //$this->params[] = file_get_contents('php://input');
-
                     log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: ".log::varb($this->params));
                 }
         }
@@ -70,15 +63,44 @@ class FrontController
         header("Location: ".appl_path::$appl_path.$ulr);
     }
 
-    private function valid_controller($exp_url){
-        if($exp_url[0] === "") {
+    private function valid_controller($controller){
+        if($controller === "") {
             log::logging("FrontController/ valid_controller/ zauwazyl pusty \$_GET\n");
             return "not_specified";
         }
-        else if(array_search($exp_url[0], $this->controlers) === false)
+        else if(array_search($controller, $this->controlers) === false)
             return "not_exist";
         else
-            return $exp_url[0];
+            return $controller;
+    }
+
+    private function prepare_params(){
+
+        $get_dict = [];
+        $post_dict = [];
+        $ajax_dict = [];
+
+        $arr_url = explode('/', $_GET['target']);
+        $get_dict['controller'] = $arr_url[0];
+        $get_dict['params'] = array_slice($arr_url, 1);
+
+        foreach (explode('&', $_POST) as $val) {
+            $arr_form = explode('=', $val);
+            $post_dict[$arr_form[0]] = $arr_form[1];
+        }
+
+        foreach (explode('&', file_get_contents('php://input')) as $val) {
+            $arr_ajax = explode('=', $val);
+            $ajax_dict[$arr_ajax[0]] = json_decode($arr_ajax[1]);
+        }
+
+        $dict = array(
+            'get' => $get_dict,
+            'post' => $post_dict,
+            'ajax' => $ajax_dict
+        );
+
+        return $dict;
     }
 
 }
