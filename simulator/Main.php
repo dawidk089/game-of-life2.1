@@ -11,21 +11,24 @@ class Main extends FrontController /*implements Rest*/ {
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         switch($this->rest_method){
             case "get":
-                $this->get(array());
+                $this->get($params);
                 break;
             case "post":
-                $this->post(array());
+                $this->post($params);
                 break;
             case "put":
-                $this->put(array());
+                $this->put($params);
                 break;
             case "delete":
-                $this->delete(array());
+                $this->delete($params);
                 break;
         }
     }
 
     public function get(Array $params){
+        //if( )
+
+        log::logging("Main/ get/ \$params: ".log::varb($params));
         $view = new View(
             array(
                 "template/board.phtml",
@@ -33,6 +36,7 @@ class Main extends FrontController /*implements Rest*/ {
             ),
             array(
                 "title"=>"Game of life -- Symulator automatu komórkowego",
+                "status"=>"nothing now",//$status,
                 "csss"=>array(
                     "simulator/css/main.css",
                     //"auth/css/main.css",

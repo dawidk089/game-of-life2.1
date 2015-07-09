@@ -1,45 +1,502 @@
-2015-07-09 08:42:10 >
-2015-07-09 08:42:10 >
-2015-07-09 08:42:10 >
-2015-07-09 08:42:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-09 08:42:10 >FrontController/ pobranie rest_method: post 
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(5) "email"
-  [1]=>
-  string(15) "dawidk089@o2.pl"
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 13:44:03 >FrontController/ pobranie rest_method: get 
+2015-07-09 13:44:03 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(0) ""
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(12) "email_repeat"
-  [1]=>
-  string(15) "dwaidk089@o2.pl"
+2015-07-09 13:44:03 >FrontController/ pobrany kontroler: string(0) ""
+2015-07-09 13:44:03 >FrontController/ valid_controller/ zauwazyl pusty $_GET
+2015-07-09 13:44:03 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-07-09 13:44:03 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >
+2015-07-09 13:44:03 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 13:44:03 >FrontController/ pobranie rest_method: get 
+2015-07-09 13:44:03 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(4) "nick"
-  [1]=>
-  string(9) "dawidk089"
+2015-07-09 13:44:03 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 13:44:03 >FrontController/ poprawny kontroler
+2015-07-09 13:44:03 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(8) "password"
-  [1]=>
-  string(8) "makarena"
+2015-07-09 13:44:03 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(15) "password_repeat"
-  [1]=>
-  string(8) "makarena"
+2015-07-09 13:44:03 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 14:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 14:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(10) "index.html"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
-  [0]=>
-  string(17) "registration-name"
-  [1]=>
-  string(9) "Rejestruj"
+2015-07-09 14:00:01 >FrontController/ pobrany kontroler: string(10) "index.html"
+2015-07-09 14:00:01 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-07-09 14:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 14:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 14:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >FrontController/ pobrane parametry: array(3) {
+2015-07-09 14:00:01 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 14:00:01 >FrontController/ poprawny kontroler
+2015-07-09 14:00:01 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-09 14:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >
+2015-07-09 14:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 14:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 14:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 14:00:01 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 14:00:01 >FrontController/ poprawny kontroler
+2015-07-09 14:00:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 14:00:01 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(10) "index.html"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:00:01 >FrontController/ pobrany kontroler: string(10) "index.html"
+2015-07-09 15:00:01 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-07-09 15:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:00:01 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:00:01 >FrontController/ poprawny kontroler
+2015-07-09 15:00:01 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-09 15:00:01 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >
+2015-07-09 15:00:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:00:01 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:00:01 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:00:01 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 15:00:01 >FrontController/ poprawny kontroler
+2015-07-09 15:00:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:00:01 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:03:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:03:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:03:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:03:45 >FrontController/ poprawny kontroler
+2015-07-09 15:03:45 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-09 15:03:45 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >
+2015-07-09 15:03:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:03:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:03:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:03:45 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 15:03:45 >FrontController/ poprawny kontroler
+2015-07-09 15:03:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:03:45 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:04:39 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:04:39 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:04:39 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:04:39 >FrontController/ poprawny kontroler
+2015-07-09 15:04:39 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-09 15:04:39 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >
+2015-07-09 15:04:39 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:04:39 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:04:39 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:04:39 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 15:04:39 >FrontController/ poprawny kontroler
+2015-07-09 15:04:39 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:04:39 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:44 >FrontController/ pobranie rest_method: post 
+2015-07-09 15:24:44 >FrontController/ pobrane parametry: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -55,7 +512,7 @@
     ["email"]=>
     string(15) "dawidk089@o2.pl"
     ["email_repeat"]=>
-    string(15) "dwaidk089@o2.pl"
+    string(15) "dawidk089@o2.pl"
     ["nick"]=>
     string(9) "dawidk089"
     ["password"]=>
@@ -81,9 +538,9 @@
     NULL
   }
 }
-2015-07-09 08:42:10 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-09 08:42:10 >FrontController/ poprawny kontroler
-2015-07-09 08:42:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+2015-07-09 15:24:44 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 15:24:44 >FrontController/ poprawny kontroler
+2015-07-09 15:24:44 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -99,7 +556,7 @@
     ["email"]=>
     string(15) "dawidk089@o2.pl"
     ["email_repeat"]=>
-    string(15) "dwaidk089@o2.pl"
+    string(15) "dawidk089@o2.pl"
     ["nick"]=>
     string(9) "dawidk089"
     ["password"]=>
@@ -125,15 +582,1028 @@
     NULL
   }
 }
-2015-07-09 08:42:10 >Auth/ post/ tryb: register
-2015-07-09 08:42:10 >Auth/ post/ register/ $form_param: array(1) {
-  [""]=>
-  NULL
+2015-07-09 15:24:44 >Auth/ post/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(8) "register"
+    }
+  }
+  ["post"]=>
+  array(6) {
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
+    ["email_repeat"]=>
+    string(15) "dawidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["password_repeat"]=>
+    string(8) "makarena"
+    ["registration-name"]=>
+    string(9) "Rejestruj"
+  }
+  ["ajax"]=>
+  array(6) {
+    ["email"]=>
+    NULL
+    ["email_repeat"]=>
+    NULL
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["password_repeat"]=>
+    NULL
+    ["registration-name"]=>
+    NULL
+  }
 }
-2015-07-09 08:42:10 >Auth/ post/ register/ post/ nick: 
-2015-07-09 08:42:10 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-09 08:42:10 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-09 08:42:10 >Auth/ post/ register/ searched users: array(0) {
+2015-07-09 15:24:44 >Auth/ post/ tryb: register
+2015-07-09 15:24:44 >Auth/ post/ register/ post/ nick: dawidk089
+2015-07-09 15:24:44 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-09 15:24:44 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-09 15:24:44 >Auth/ post/ register/ searched users: array(0) {
 }
-2015-07-09 08:42:10 >Auth/ post/ register/ nie ma takiego nicku
-2015-07-09 08:42:10 >Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych
+2015-07-09 15:24:44 >Auth/ post/ register/ nie ma takiego nicku
+2015-07-09 15:24:44 >Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych
+2015-07-09 15:24:44 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new/
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >
+2015-07-09 15:24:44 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:44 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:44 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(2) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:44 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:44 >FrontController/ poprawny kontroler
+2015-07-09 15:24:44 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(2) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:44 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(2) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:44 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(3) "css"
+      [3]=>
+      string(8) "main.css"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(3) "css"
+      [3]=>
+      string(8) "main.css"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(3) "css"
+      [3]=>
+      string(8) "main.css"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(10) "storage.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(10) "storage.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(10) "storage.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(8) "board.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(8) "board.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(8) "board.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(16) "period_finder.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(16) "period_finder.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(16) "period_finder.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "game.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "game.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "game.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "cell.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "cell.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "cell.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(3) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "jquery_js"
+      [2]=>
+      string(9) "jquery.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(3) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "jquery_js"
+      [2]=>
+      string(9) "jquery.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(3) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "jquery_js"
+      [2]=>
+      string(9) "jquery.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >
+2015-07-09 15:24:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:24:45 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:24:45 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "init.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:24:45 >FrontController/ poprawny kontroler
+2015-07-09 15:24:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "init.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(4) {
+      [0]=>
+      string(3) "new"
+      [1]=>
+      string(9) "simulator"
+      [2]=>
+      string(2) "js"
+      [3]=>
+      string(7) "init.js"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:24:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:28:16 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:28:16 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(0) ""
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:28:16 >FrontController/ pobrany kontroler: string(0) ""
+2015-07-09 15:28:16 >FrontController/ valid_controller/ zauwazyl pusty $_GET
+2015-07-09 15:28:16 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-07-09 15:28:16 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >
+2015-07-09 15:28:16 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:28:16 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:28:16 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:28:16 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:28:16 >FrontController/ poprawny kontroler
+2015-07-09 15:28:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:28:16 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:28:16 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:43:29 >
+2015-07-09 15:43:29 >
+2015-07-09 15:43:29 >
+2015-07-09 15:43:29 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:43:29 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:43:29 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:43:29 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-09 15:43:29 >FrontController/ poprawny kontroler
+2015-07-09 15:43:29 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:43:29 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:43:29 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-09 15:43:35 >
+2015-07-09 15:43:35 >
+2015-07-09 15:43:35 >
+2015-07-09 15:43:35 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 15:43:35 >FrontController/ pobranie rest_method: get 
+2015-07-09 15:43:35 >FrontController/ pobrane parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:43:35 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 15:43:35 >FrontController/ poprawny kontroler
+2015-07-09 15:43:35 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-09 15:43:35 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}

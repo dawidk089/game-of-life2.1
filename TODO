@@ -23,9 +23,7 @@
 #Wysylanie planszy na serwer
 
 >podpiecie wysylania post
-
 >podpiecie funkcji konczacej
-
 >zapis w bazie
     -metoda put -- dodawanie planszy do bazy
 

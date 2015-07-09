@@ -1,6 +1,5 @@
 <?php
 
-
 session_start();
 
 require_once "appl/PrepareClass.php";
@@ -14,6 +13,7 @@ new PrepareClass(array(
     "simulator/",
     "model/",
 ));
+
 
 log::logging("\n");
 log::logging("\n");

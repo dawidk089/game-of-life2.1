@@ -36,6 +36,11 @@ class Auth extends FrontController implements Rest {
                 break;
             case 'nick_nexist':
                 $status = 'Wprowadzony nick nie istnieje.';
+                break;
+            case 'logout':
+                $this->logout();
+                $status = 'Zostałeś wylogowany pomyślnie.';
+                break;
         }
 
         $view = new View(
@@ -57,20 +62,21 @@ class Auth extends FrontController implements Rest {
     }
     
     public function post(Array $params){
+        log::logging("Auth/ post/ \$params: ".log::varb($params));
+
         $mode = $params['get']['params'][0];
         log::logging("Auth/ post/ tryb: $mode\n");
         switch($mode){
             case 'login':
-                $this->login($params['get']['params'][1]);
+                $this->login($params['post']);
                 break;
             case 'register':
-                $this->register($params['get']['params'][1]);
+                $this->register($params['post']);
                 break;
             // TODO tu dac blad [np 404]
         }
-
-        //$_SESSION["logged"] = $_POST["login"];
-        //$this->redirect("Main");
+        $_SESSION["logged"] = $params['post']['nick'];
+        $this->redirect("Main/new");
     }
     
     public function put(Array $params){
@@ -82,10 +88,7 @@ class Auth extends FrontController implements Rest {
     }
 
     private function register($data){
-        //przetworzenie formularza rejestracji
-        $form_param = new FORM($data);
-        log::logging("Auth/ post/ register/ \$form_param: ".log::varb($form_param->dict));
-        $nick = $form_param->dict['nick'];
+        $nick = $data['nick'];
         log::logging("Auth/ post/ register/ post/ nick: $nick\n");
 
         //otwarcie bazy danych
@@ -98,9 +101,9 @@ class Auth extends FrontController implements Rest {
         if(count($users) === 0){
             log::logging("Auth/ post/ register/ nie ma takiego nicku\n");
             $database->create(array(
-                    'email'=>$form_param->dict['email'],
-                    'nick'=>$form_param->dict['nick'],
-                    'password'=>$form_param->dict['password'],
+                    'email'=>$data['email'],
+                    'nick'=>$data['nick'],
+                    'password'=>$data['password'],
                     'simulation'=>array(),
                 )
             );
@@ -115,9 +118,7 @@ class Auth extends FrontController implements Rest {
 
     private function login($data){
         //przetworzenie formularza rejestracji
-        $form_param = new FORM($data);
-        log::logging("Auth/ post/ login/ \$form_param: ".log::varb($form_param->dict));
-        $nick = $form_param->dict['nick'];
+        $nick = $data['nick'];
         log::logging("Auth/ post/ login/ post/ nick: $nick\n");
 
         //otwarcie bazy danych
@@ -139,6 +140,10 @@ class Auth extends FrontController implements Rest {
             $this->redirect("Main");
         }
 
+    }
+
+    private function logout(){
+        unset($_SESSION['logged']);
     }
 
 }
