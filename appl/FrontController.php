@@ -40,6 +40,10 @@ class FrontController
                     log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
                 }
+                else if($this->check_log() && $this->params['get']['controller'] === "Auth" && $this->params['get']['params'][0] !== 'logout'){
+                    log::logging("FrontController/ zalogowany, przekierowanie na <Main>\n" );
+                    $this->redirect("Main");
+                }
                 else {
                     $this->name_controller = $controller;
                     log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: ".log::varb($this->params));
@@ -85,6 +89,7 @@ class FrontController
         $ajax_data = urldecode($ajax_data);
 
         $arr_url = explode('/', $_GET['target']);
+        log::logging("FrontContorller/ prepare_params/ \$arr_url".log::varb($arr_url));
         $get_dict['controller'] = $arr_url[0];
         $get_dict['params'] = array_slice($arr_url, 1);
 

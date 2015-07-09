@@ -52,9 +52,11 @@ class BaseModel{
         $this->collection->insert($data);
     }
 
-    public function put(){
-
-        log::logging("BaseModel/ put/ wejscie do metody\n");
+    public function update(Array $where, Array $what){
+        $this->collection->update(
+            $where,
+            $what
+        );
     }
 }
 

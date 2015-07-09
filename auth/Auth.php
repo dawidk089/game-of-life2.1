@@ -41,6 +41,9 @@ class Auth extends FrontController implements Rest {
                 $this->logout();
                 $status = 'Zostałeś wylogowany pomyślnie.';
                 break;
+            case 'new_logged':
+                $status = 'Zostałeś pomyślnie zalogowany.';
+                break;
         }
 
         $view = new View(
@@ -69,7 +72,7 @@ class Auth extends FrontController implements Rest {
             case 'login':
                 $this->login($params['post']);
                 $_SESSION["logged"] = $params['post']['nick'];
-                $this->redirect("Main");
+                $this->redirect("Main/new_logged");
                 break;
             case 'register':
                 $this->register($params['post']);
@@ -79,7 +82,6 @@ class Auth extends FrontController implements Rest {
             // TODO tu dac blad [np 404]
         }
         $_SESSION["logged"] = $params['post']['nick'];
-        $this->redirect("Main/new");
     }
     
     public function put(Array $params){
@@ -138,8 +140,7 @@ class Auth extends FrontController implements Rest {
         //zalogowanie id w sesji, przekierowanie na strone glowna
         else{
             log::logging("Auth/ post/ login/ przekierowanie na main\n");
-            $id = $users[0]['_id'];
-            $_SESSION['logged'] = $id;
+            $_SESSION['logged'] = $nick;
             $this->redirect("Main/login");
         }
 

@@ -26,6 +26,7 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function get(Array $params){
+        log::logging('Main/ get/ $params[get]: '.log::varb($params['get']));
         if($params['get']['params'][0] == 'new')
             $status = 'Witamy nowy użytkowniku -- zostałeś zarejestrowany.';
         else
@@ -61,19 +62,17 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function post(Array $params){
+        log::logging("Main/ post/ \$params: ".log::varb($params));
+        $database = new BaseModel('users');
+        $database->update(
+            array('nick'=>$_SESSION['logged']),
+            array('simulation[]'=>$params['ajax']['boards'])
+        );
         print "wywolano post";
     }
 
     public function put(Array $params){
-        //$ajax = file_get_contents('php://input');
-        //odebranie danych ajax
-        log::logging("Main/ put/ \$params: ".log::varb($params));
-        //log::logging("Main/ put/ ajax: ".log::varb($ajax));
-
-        //przetworzenie ajax
-        $ajax = new AJAX_JSON(file_get_contents('php://input'));
-        log::logging("Main/ put/ ajax_decode: ".log::varb($ajax->dict));
-
+        print "wywolano put";
     }
 
     public function delete(Array $params){

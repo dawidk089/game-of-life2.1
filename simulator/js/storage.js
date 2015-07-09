@@ -8,7 +8,7 @@ memento = {
         };
 
         $.ajax( appl_path + "Main/add_simulation", {
-            type: "PUT",
+            type: "POST",
             //data: JSON.stringify(memento.history),
             data: $data_to_send,
             statusCode: {

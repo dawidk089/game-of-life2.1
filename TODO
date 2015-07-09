@@ -1,8 +1,8 @@
 #SuDDEN CHanGE
 >poprawic wyciaganie parametrow (params przeszlo w tablice asocjacyjna)
-    -Auth
-    -Main
-    -BaseModel
+    -[DONE]Auth
+    -[DONE]Main
+    -[DONE]BaseModel
 
 #Rejestracja/Logowanie
 
@@ -22,10 +22,10 @@
 
 #Wysylanie planszy na serwer
 
->podpiecie wysylania post
+>[DONE]podpiecie wysylania post
 >podpiecie funkcji konczacej
->zapis w bazie
-    -metoda put -- dodawanie planszy do bazy
+>[DONE]zapis w bazie
+    -metoda post -- dodawanie planszy do bazy
 
 #strona z rekordami
 
@@ -56,3 +56,8 @@
 
 >strona dokumentacji
 >obkomentowanie kodu
+
+#bledy logistyczne
+
+>przelaczanie w tryb symulacji -- plansze mozna definiowac tylko przed przelaczeniem,
+    bez uruchomienia choc jednego kroku nie widac warunkow poczatkowych
