@@ -13,14 +13,14 @@
     <title><?=$title ?></title>
 
     <?php foreach ($csss as $css): ?>
-        <link href=<?= $css ?> rel="stylesheet" />
+        <link href="<?=appl_path::$appl_path.$css?>" rel="stylesheet" />
     <?php endforeach; ?>
 
 </head>
 
 <body>
 <!-- pasek statusu -->
-<span id="status"><?=$status ?></span>
+<span id="status"><?=$status?></span>
 <!-- HEADER -->
 <header>
     <h1>Gra w życie</h1>

@@ -39,16 +39,16 @@ class Main extends FrontController /*implements Rest*/ {
                 "status"=>"nothing now",//$status,
                 "csss"=>array(
                     "simulator/css/main.css",
-                    //"auth/css/main.css",
+                    //"auth/css/smain.css",
                     ),
                 "jss"=>array(
-                    "jquery_js/jquery.js",
+                    "jquery_js/jquery.js"/*,
                     "simulator/js/cell.js",
                     "simulator/js/period_finder.js",
                     "simulator/js/storage.js",
                     "simulator/js/board.js",
                     "simulator/js/game.js",
-                    "simulator/js/init.js",
+                    "simulator/js/init.js",*/
                 )
             )
         );

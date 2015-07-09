@@ -137,7 +137,7 @@ class Auth extends FrontController implements Rest {
             log::logging("Auth/ post/ login/ przekierowanie na main\n");
             $id = $users[0]['_id'];
             $_SESSION['logged'] = $id;
-            $this->redirect("Main");
+            $this->redirect("Main/login");
         }
 
     }
