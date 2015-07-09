@@ -2,12 +2,12 @@
 
 class Auth extends FrontController implements Rest {
 
-    private $params = null;
+    //private $params = null;
     private $rest_method = null;
 
 
     public function __construct($params){
-        $this->params = explode('/', $_GET['target']);
+        //$this->params = explode('/', $_GET['target']);
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
         switch($this->rest_method){
             case "get":
@@ -17,10 +17,10 @@ class Auth extends FrontController implements Rest {
                 $this->post($params);
                 break;
             case "put":
-                $this->put(array());
+                $this->put($params);
                 break;
             case "delete":
-                $this->delete(array());
+                $this->delete($params);
                 break;
         }
         //echo "koniec konstruktora Auth";
@@ -30,7 +30,7 @@ class Auth extends FrontController implements Rest {
         log::logging("Auth/ get/ \$params: ".log::varb($params));
 
         $status = '';
-        switch($params[0]){
+        switch($params['get']['params'][0]){
             case 'nick_exist':
                 $status = 'Wprowadzony nick już istnieje.';
                 break;
@@ -57,14 +57,14 @@ class Auth extends FrontController implements Rest {
     }
     
     public function post(Array $params){
-        $mode = $params[0];
+        $mode = $params['get']['params'][0];
         log::logging("Auth/ post/ tryb: $mode\n");
         switch($mode){
             case 'login':
-                $this->login($params[1]);
+                $this->login($params['get']['params'][1]);
                 break;
             case 'register':
-                $this->register($params[1]);
+                $this->register($params['get']['params'][1]);
                 break;
             // TODO tu dac blad [np 404]
         }

@@ -1,40 +1,139 @@
-2015-07-09 01:18:12 >NOWE WYWOLANIE INDEX
-2015-07-09 01:18:12 >index, wywoluje FrontController
-2015-07-09 01:18:12 >FrontController/ pobranie rest_method: get 
-2015-07-09 01:18:12 >FrontController/ pobranie danych: array(3) {
+2015-07-09 08:42:10 >
+2015-07-09 08:42:10 >
+2015-07-09 08:42:10 >
+2015-07-09 08:42:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-09 08:42:10 >FrontController/ pobranie rest_method: post 
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(5) "email"
+  [1]=>
+  string(15) "dawidk089@o2.pl"
+}
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(12) "email_repeat"
+  [1]=>
+  string(15) "dwaidk089@o2.pl"
+}
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(4) "nick"
+  [1]=>
+  string(9) "dawidk089"
+}
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(8) "password"
+  [1]=>
+  string(8) "makarena"
+}
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(15) "password_repeat"
+  [1]=>
+  string(8) "makarena"
+}
+2015-07-09 08:42:10 >FrontController/ prepare_params/ $arr_ajax: array(2) {
+  [0]=>
+  string(17) "registration-name"
+  [1]=>
+  string(9) "Rejestruj"
+}
+2015-07-09 08:42:10 >FrontController/ pobrane parametry: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(0) ""
+    string(4) "Auth"
     ["params"]=>
-    array(0) {
+    array(1) {
+      [0]=>
+      string(8) "register"
     }
   }
   ["post"]=>
-  array(0) {
+  array(6) {
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
+    ["email_repeat"]=>
+    string(15) "dwaidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["password_repeat"]=>
+    string(8) "makarena"
+    ["registration-name"]=>
+    string(9) "Rejestruj"
   }
   ["ajax"]=>
-  array(1) {
-    [""]=>
+  array(6) {
+    ["email"]=>
+    NULL
+    ["email_repeat"]=>
+    NULL
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["password_repeat"]=>
+    NULL
+    ["registration-name"]=>
     NULL
   }
 }
-2015-07-09 01:18:12 >koniec wywolania FrontController'a, wywoluje execute FrontController'a
-2015-07-09 01:18:12 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+2015-07-09 08:42:10 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-09 08:42:10 >FrontController/ poprawny kontroler
+2015-07-09 08:42:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(0) ""
+    string(4) "Auth"
     ["params"]=>
-    array(0) {
+    array(1) {
+      [0]=>
+      string(8) "register"
     }
   }
   ["post"]=>
-  array(0) {
+  array(6) {
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
+    ["email_repeat"]=>
+    string(15) "dwaidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["password_repeat"]=>
+    string(8) "makarena"
+    ["registration-name"]=>
+    string(9) "Rejestruj"
   }
   ["ajax"]=>
-  array(1) {
-    [""]=>
+  array(6) {
+    ["email"]=>
+    NULL
+    ["email_repeat"]=>
+    NULL
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["password_repeat"]=>
+    NULL
+    ["registration-name"]=>
     NULL
   }
 }
+2015-07-09 08:42:10 >Auth/ post/ tryb: register
+2015-07-09 08:42:10 >Auth/ post/ register/ $form_param: array(1) {
+  [""]=>
+  NULL
+}
+2015-07-09 08:42:10 >Auth/ post/ register/ post/ nick: 
+2015-07-09 08:42:10 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-09 08:42:10 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-09 08:42:10 >Auth/ post/ register/ searched users: array(0) {
+}
+2015-07-09 08:42:10 >Auth/ post/ register/ nie ma takiego nicku
+2015-07-09 08:42:10 >Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych

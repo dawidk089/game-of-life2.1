@@ -23,10 +23,12 @@ class FrontController
         log::logging("FrontController/ pobranie rest_method: $this->rest_method \n");
 
         $this->params = $this->prepare_params();
+        log::logging("FrontController/ pobrane parametry: ".log::varb($this->params));
 
         // obsluga interpretacja otrzymanych danych -- get, post, ajax
 
-        switch ($controller = $this->valid_controller($this->params['controller'])) {
+        log::logging("FrontController/ pobrany kontroler: ".log::varb($this->params['get']['controller']));
+        switch ($controller = $this->valid_controller($this->params['get']['controller'])) {
             case "not_specified":
             case "not_exist":
                 log::logging("FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <$this->default_controller>\n" );
@@ -34,7 +36,7 @@ class FrontController
                 break;
             default:
                 log::logging("FrontController/ poprawny kontroler\n" );
-                if(!$this->check_log() && $this->params['controller'] !== "Auth") {
+                if(!$this->check_log() && $this->params['get']['controller'] !== "Auth") {
                     log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
                 }
@@ -47,7 +49,7 @@ class FrontController
     }
 
     public final function execute(){
-        log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
+        //log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
         return new $this->name_controller($this->params);
     }
 
@@ -77,26 +79,23 @@ class FrontController
     private function prepare_params(){
 
         $get_dict = [];
-        $post_dict = [];
         $ajax_dict = [];
+
+        $ajax_data = file_get_contents('php://input');
+        $ajax_data = urldecode($ajax_data);
 
         $arr_url = explode('/', $_GET['target']);
         $get_dict['controller'] = $arr_url[0];
         $get_dict['params'] = array_slice($arr_url, 1);
 
-        foreach (explode('&', $_POST) as $val) {
-            $arr_form = explode('=', $val);
-            $post_dict[$arr_form[0]] = $arr_form[1];
-        }
-
-        foreach (explode('&', file_get_contents('php://input')) as $val) {
+        foreach (explode('&', $ajax_data) as $val) {
             $arr_ajax = explode('=', $val);
             $ajax_dict[$arr_ajax[0]] = json_decode($arr_ajax[1]);
         }
 
         $dict = array(
             'get' => $get_dict,
-            'post' => $post_dict,
+            'post' => $_POST,
             'ajax' => $ajax_dict
         );
 

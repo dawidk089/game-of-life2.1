@@ -58,3 +58,6 @@ class BaseModel{
     }
 }
 
+// przykladowy wpis z baz danych
+// { "_id" : ObjectId("55972e8db9d53cf538436f75"), "email" : "dawidk089%40o2", "nick" : "dawidk089", "password" : "makarena", "simulation" : [ ] }
+
