@@ -51,8 +51,7 @@ class Auth extends FrontController implements Rest {
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
                 "status"=>$status,
-                "appl_path"=>appl_path::$appl_path,
-                "csss"=>array(appl_path::$appl_path."auth/css/main.css",),
+                "csss"=>array("auth/css/main.css",),
                 "jss"=>array("auth/js/auth.js"),
             )
         );
@@ -69,9 +68,13 @@ class Auth extends FrontController implements Rest {
         switch($mode){
             case 'login':
                 $this->login($params['post']);
+                $_SESSION["logged"] = $params['post']['nick'];
+                $this->redirect("Main");
                 break;
             case 'register':
                 $this->register($params['post']);
+                $_SESSION["logged"] = $params['post']['nick'];
+                $this->redirect("Main/new");
                 break;
             // TODO tu dac blad [np 404]
         }

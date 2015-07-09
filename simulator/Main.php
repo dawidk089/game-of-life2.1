@@ -26,7 +26,10 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function get(Array $params){
-        //if( )
+        if($params['get']['params'][0] == 'new')
+            $status = 'Witamy nowy użytkowniku -- zostałeś zarejestrowany.';
+        else
+            $status = '';
 
         log::logging("Main/ get/ \$params: ".log::varb($params));
         $view = new View(
@@ -36,19 +39,19 @@ class Main extends FrontController /*implements Rest*/ {
             ),
             array(
                 "title"=>"Game of life -- Symulator automatu komórkowego",
-                "status"=>"nothing now",//$status,
+                "status"=>$status,
                 "csss"=>array(
                     "simulator/css/main.css",
                     //"auth/css/smain.css",
                     ),
                 "jss"=>array(
-                    "jquery_js/jquery.js"/*,
+                    "jquery_js/jquery.js",
                     "simulator/js/cell.js",
                     "simulator/js/period_finder.js",
                     "simulator/js/storage.js",
                     "simulator/js/board.js",
                     "simulator/js/game.js",
-                    "simulator/js/init.js",*/
+                    "simulator/js/init.js",
                 )
             )
         );
