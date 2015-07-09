@@ -63,12 +63,15 @@ class Main extends FrontController /*implements Rest*/ {
 
     public function post(Array $params){
         log::logging("Main/ post/ \$params: ".log::varb($params));
-        $database = new BaseModel('users');
-        $database->update(
-            array('nick'=>$_SESSION['logged']),
-            array('simulation[]'=>$params['ajax']['boards'])
-        );
-        print "wywolano post";
+        echo "tu odpali sie symulator </br>";
+
+
+//        $database = new BaseModel('users');
+//        $database->update(
+//            array('nick'=>$_SESSION['logged']),
+//            array('simulation[]'=>$params['ajax']['boards'])
+//        );
+//        print "wywolano post";
     }
 
     public function put(Array $params){

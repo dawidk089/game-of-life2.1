@@ -45,6 +45,7 @@ game = {
      * wykonanie kroku ewolucji
      */
     next_step_button: function(){
+        board.status = 'run';
         board.init_cells();
         game.next_step_op();
     },
@@ -55,6 +56,7 @@ game = {
      */
     start: function(event){
         if(!game.is_running) {
+            board.status = 'run';
             board.init_cells();
             console.log('start evolutation with: ', game.time_step, 'ms time step');
             game.interval_id = window.setInterval(game.next_step_op, game.time_step);
@@ -136,8 +138,17 @@ game = {
 
         board.c.fillStyle = old_fillstyle;*/
 
-        if(game.mode == 'symulacje')
-            console.error('state game: ', memento.check_end());
+        if(game.mode == 'symulacje'){
+            var game_state = memento.check_end();
+            //uzupelnienie formularzy
+
+
+            if(game_state !== undefined){
+                board.status = 'done';
+                $("aside input[name='start']").click();
+            }
+        }
+
     },
 
     set_time_step: function(){

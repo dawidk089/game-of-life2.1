@@ -15,6 +15,7 @@ board = {
     size_j: 0,
     cells: [],
     canvas_id: undefined,
+    status: 'initiating',
 
     //OBJECT METHODS
 

@@ -7,6 +7,7 @@ class FrontController
         "Main",
         "Auth",
         "BaseModel",
+        "Automaton"
     );
     private $default_controller = "Main";
     private $rest_method = null;
@@ -39,10 +40,12 @@ class FrontController
                 if(!$this->check_log() && $this->params['get']['controller'] !== "Auth") {
                     log::logging("FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>\n" );
                     $this->redirect("Auth");
+                    return;
                 }
                 else if($this->check_log() && $this->params['get']['controller'] === "Auth" && $this->params['get']['params'][0] !== 'logout'){
                     log::logging("FrontController/ zalogowany, przekierowanie na <Main>\n" );
                     $this->redirect("Main");
+                    return;
                 }
                 else {
                     $this->name_controller = $controller;

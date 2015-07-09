@@ -70,18 +70,19 @@ class Auth extends FrontController implements Rest {
         log::logging("Auth/ post/ tryb: $mode\n");
         switch($mode){
             case 'login':
-                $this->login($params['post']);
-                $_SESSION["logged"] = $params['post']['nick'];
-                $this->redirect("Main/new_logged");
+                if($this->login($params['post'])) {
+                    $_SESSION["logged"] = $params['post']['nick'];
+                    $this->redirect("Main/new_logged");
+                }
                 break;
             case 'register':
-                $this->register($params['post']);
-                $_SESSION["logged"] = $params['post']['nick'];
-                $this->redirect("Main/new");
+                if($this->register($params['post'])) {
+                    $_SESSION["logged"] = $params['post']['nick'];
+                    $this->redirect("Main/new");
+                }
                 break;
             // TODO tu dac blad [np 404]
         }
-        $_SESSION["logged"] = $params['post']['nick'];
     }
     
     public function put(Array $params){
@@ -113,11 +114,13 @@ class Auth extends FrontController implements Rest {
                 )
             );
             log::logging("Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych\n");
+            return true;
         }
         //przekierowanie z informacja zwrotna o niepowodzeniu
         else{
             log::logging("Auth/ post/ register/ jest taki nick\n");
             $this->redirect("Auth/nick_exist/");
+            return false;
         }
     }
 
@@ -135,19 +138,23 @@ class Auth extends FrontController implements Rest {
         //przekierowanie z informacja zwrotna o niepowodzeniu
         if(count($users) === 0){
             log::logging("Auth/ post/ login/ nie ma takiego nicku\n");
-            $this->redirect("Auth/nick_nexist/");
+            $this->redirect("Auth/nick_nexist");
+            return false;
+            log::logging("Auth/ login/ wykonuje po przekierowaniu\n");
         }
         //zalogowanie id w sesji, przekierowanie na strone glowna
         else{
             log::logging("Auth/ post/ login/ przekierowanie na main\n");
             $_SESSION['logged'] = $nick;
             $this->redirect("Main/login");
+            return true;
         }
 
     }
 
     private function logout(){
         unset($_SESSION['logged']);
+        log::logging("Auth/ logout/ \$_SESSION['logged']: ".log::varb($_SESSION['logged']));
     }
 
 }
