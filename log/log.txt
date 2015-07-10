@@ -1,23 +1,35 @@
-2015-07-09 23:57:58 >
-2015-07-09 23:57:58 >
-2015-07-09 23:57:58 >
-2015-07-09 23:57:58 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-09 23:57:58 >FrontController/ pobranie rest_method: get 
-2015-07-09 23:57:58 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:15:53 >
+2015-07-10 17:15:53 >
+2015-07-10 17:15:53 >
+2015-07-10 17:15:53 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:15:53 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(3) "new"
+}
+2015-07-10 17:15:53 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:15:53 >FrontController/ poprawny kontroler
+2015-07-10 17:15:53 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-10 17:15:53 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
+2015-07-10 17:15:54 >
+2015-07-10 17:15:54 >
+2015-07-10 17:15:54 >
+2015-07-10 17:15:54 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:15:54 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
   [0]=>
   string(4) "Auth"
-  [1]=>
-  string(6) "logout"
 }
-2015-07-09 23:57:58 >FrontController/ pobrane parametry: array(3) {
+2015-07-10 17:15:54 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-10 17:15:54 >FrontController/ poprawny kontroler
+2015-07-10 17:15:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-10 17:15:54 >Auth/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
     string(4) "Auth"
     ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
+    array(0) {
     }
   }
   ["post"]=>
@@ -29,61 +41,20 @@
     NULL
   }
 }
-2015-07-09 23:57:58 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-09 23:57:58 >FrontController/ poprawny kontroler
-2015-07-09 23:57:58 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-09 23:57:58 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-09 23:57:58 >Auth/ logout/ $_SESSION['logged']: NULL
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-09 23:58:10 >FrontController/ pobranie rest_method: post 
-2015-07-09 23:58:10 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:16:04 >
+2015-07-10 17:16:04 >
+2015-07-10 17:16:04 >
+2015-07-10 17:16:04 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:16:04 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
   string(4) "Auth"
   [1]=>
   string(5) "login"
 }
-2015-07-09 23:58:10 >FrontController/ pobrane parametry: array(3) {
+2015-07-10 17:16:04 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-10 17:16:04 >FrontController/ poprawny kontroler
+2015-07-10 17:16:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-10 17:16:04 >Auth/ post/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -113,131 +84,46 @@
     NULL
   }
 }
-2015-07-09 23:58:10 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-09 23:58:10 >FrontController/ poprawny kontroler
-2015-07-09 23:58:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
+2015-07-10 17:16:04 >Auth/ post/ tryb: login
+2015-07-10 17:16:04 >Auth/ post/ login/ post/ nick: dawidk089
+2015-07-10 17:16:04 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-10 17:16:04 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-10 17:16:04 >Auth/ post/ login/ searched users: array(1) {
+  [0]=>
+  array(5) {
+    ["_id"]=>
+    object(MongoId)#11 (1) {
+      ["$id"]=>
+      string(24) "559f7464b9d53cd440356287"
     }
-  }
-  ["post"]=>
-  array(3) {
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
     ["nick"]=>
     string(9) "dawidk089"
     ["password"]=>
     string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-09 23:58:10 >Auth/ post/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
+    ["simulation"]=>
+    array(0) {
     }
   }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
 }
-2015-07-09 23:58:10 >Auth/ post/ tryb: login
-2015-07-09 23:58:10 >Auth/ post/ login/ post/ nick: dawidk089
-2015-07-09 23:58:10 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-09 23:58:10 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-09 23:58:10 >Auth/ post/ login/ searched users: array(0) {
-}
-2015-07-09 23:58:10 >Auth/ post/ login/ nie ma takiego nicku
-2015-07-09 23:58:10 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth/nick_nexist/
-2015-07-09 23:58:10 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new_logged
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >
-2015-07-09 23:58:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-09 23:58:10 >FrontController/ pobranie rest_method: get 
-2015-07-09 23:58:10 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:16:04 >Auth/ post/ login/ przekierowanie na main
+2015-07-10 17:16:04 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/login
+2015-07-10 17:16:04 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new_logged
+2015-07-10 17:16:06 >
+2015-07-10 17:16:06 >
+2015-07-10 17:16:06 >
+2015-07-10 17:16:06 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:16:06 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
   string(4) "Main"
   [1]=>
   string(10) "new_logged"
 }
-2015-07-09 23:58:10 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-09 23:58:10 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-09 23:58:10 >FrontController/ poprawny kontroler
-2015-07-09 23:58:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-09 23:58:10 >Main/ get/ $params[get]: array(2) {
+2015-07-10 17:16:06 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:16:06 >FrontController/ poprawny kontroler
+2015-07-10 17:16:06 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:16:06 >Main/ get/ $params[get]: array(2) {
   ["controller"]=>
   string(4) "Main"
   ["params"]=>
@@ -246,7 +132,7 @@
     string(10) "new_logged"
   }
 }
-2015-07-09 23:58:10 >Main/ get/ $params: array(3) {
+2015-07-10 17:16:06 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -266,426 +152,21 @@
     NULL
   }
 }
-2015-07-09 23:58:10 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:00:02 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(10) "index.html"
-}
-2015-07-10 00:00:02 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(10) "index.html"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:00:02 >FrontController/ pobrany kontroler: string(10) "index.html"
-2015-07-10 00:00:02 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
-2015-07-10 00:00:02 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:00:02 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Main"
-}
-2015-07-10 00:00:02 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:00:02 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:00:02 >FrontController/ poprawny kontroler
-2015-07-10 00:00:02 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
-2015-07-10 00:00:02 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >
-2015-07-10 00:00:02 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:00:02 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:00:02 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Auth"
-}
-2015-07-10 00:00:02 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:00:02 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:00:02 >FrontController/ poprawny kontroler
-2015-07-10 00:00:02 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:00:02 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:01:38 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:01:38 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(0) ""
-}
-2015-07-10 00:01:38 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(0) ""
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:38 >FrontController/ pobrany kontroler: string(0) ""
-2015-07-10 00:01:38 >FrontController/ valid_controller/ zauwazyl pusty $_GET
-2015-07-10 00:01:38 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
-2015-07-10 00:01:38 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >
-2015-07-10 00:01:38 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:01:38 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:01:38 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Main"
-}
-2015-07-10 00:01:38 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:38 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:01:38 >FrontController/ poprawny kontroler
-2015-07-10 00:01:38 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
-2015-07-10 00:01:38 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth
-2015-07-10 00:01:39 >
-2015-07-10 00:01:39 >
-2015-07-10 00:01:39 >
-2015-07-10 00:01:39 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:01:39 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:01:39 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Auth"
-}
-2015-07-10 00:01:39 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:39 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:01:39 >FrontController/ poprawny kontroler
-2015-07-10 00:01:39 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:39 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:01:54 >FrontController/ pobranie rest_method: post 
-2015-07-10 00:01:54 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(5) "login"
-}
-2015-07-10 00:01:54 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:01:54 >FrontController/ poprawny kontroler
-2015-07-10 00:01:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >Auth/ post/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >Auth/ post/ tryb: login
-2015-07-10 00:01:54 >Auth/ post/ login/ post/ nick: dawidk089
-2015-07-10 00:01:54 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-10 00:01:54 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-10 00:01:54 >Auth/ post/ login/ searched users: array(0) {
-}
-2015-07-10 00:01:54 >Auth/ post/ login/ nie ma takiego nicku
-2015-07-10 00:01:54 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth/nick_nexist/
-2015-07-10 00:01:54 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new_logged
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >
-2015-07-10 00:01:54 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:01:54 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:01:54 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:16:06 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:33:52 >
+2015-07-10 17:33:52 >
+2015-07-10 17:33:52 >
+2015-07-10 17:33:52 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:33:52 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
   string(4) "Main"
   [1]=>
   string(10) "new_logged"
 }
-2015-07-10 00:01:54 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:01:54 >FrontController/ poprawny kontroler
-2015-07-10 00:01:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:01:54 >Main/ get/ $params[get]: array(2) {
+2015-07-10 17:33:52 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:33:52 >FrontController/ poprawny kontroler
+2015-07-10 17:33:52 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:33:52 >Main/ get/ $params[get]: array(2) {
   ["controller"]=>
   string(4) "Main"
   ["params"]=>
@@ -694,7 +175,7 @@
     string(10) "new_logged"
   }
 }
-2015-07-10 00:01:54 >Main/ get/ $params: array(3) {
+2015-07-10 17:33:52 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -714,247 +195,21 @@
     NULL
   }
 }
-2015-07-10 00:01:54 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:05:44 >
-2015-07-10 00:05:44 >
-2015-07-10 00:05:44 >
-2015-07-10 00:05:44 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:05:44 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:05:44 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(6) "logout"
-}
-2015-07-10 00:05:44 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:05:44 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:05:44 >FrontController/ poprawny kontroler
-2015-07-10 00:05:44 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:05:44 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:05:44 >Auth/ logout/ $_SESSION['logged']: NULL
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:05:57 >FrontController/ pobranie rest_method: post 
-2015-07-10 00:05:57 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(5) "login"
-}
-2015-07-10 00:05:57 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:05:57 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:05:57 >FrontController/ poprawny kontroler
-2015-07-10 00:05:57 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:05:57 >Auth/ post/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:05:57 >Auth/ post/ tryb: login
-2015-07-10 00:05:57 >Auth/ post/ login/ post/ nick: dawidk089
-2015-07-10 00:05:57 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-10 00:05:57 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-10 00:05:57 >Auth/ post/ login/ searched users: array(0) {
-}
-2015-07-10 00:05:57 >Auth/ post/ login/ nie ma takiego nicku
-2015-07-10 00:05:57 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth/nick_nexist
-2015-07-10 00:05:57 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new_logged
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >
-2015-07-10 00:05:57 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:05:57 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:05:57 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:33:52 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:34:45 >
+2015-07-10 17:34:45 >
+2015-07-10 17:34:45 >
+2015-07-10 17:34:45 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:34:45 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
   string(4) "Main"
   [1]=>
   string(10) "new_logged"
 }
-2015-07-10 00:05:57 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:05:57 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:05:57 >FrontController/ poprawny kontroler
-2015-07-10 00:05:57 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:05:57 >Main/ get/ $params[get]: array(2) {
+2015-07-10 17:34:45 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:34:45 >FrontController/ poprawny kontroler
+2015-07-10 17:34:45 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:34:45 >Main/ get/ $params[get]: array(2) {
   ["controller"]=>
   string(4) "Main"
   ["params"]=>
@@ -963,7 +218,7 @@
     string(10) "new_logged"
   }
 }
-2015-07-10 00:05:57 >Main/ get/ $params: array(3) {
+2015-07-10 17:34:45 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -983,463 +238,21 @@
     NULL
   }
 }
-2015-07-10 00:05:57 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:08:04 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:08:04 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(11) "nick_nexist"
-}
-2015-07-10 00:08:04 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(11) "nick_nexist"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:04 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:08:04 >FrontController/ poprawny kontroler
-2015-07-10 00:08:04 >FrontController/ zalogowany, przekierowanie na <Main>
-2015-07-10 00:08:04 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >
-2015-07-10 00:08:04 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:08:04 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:08:04 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Main"
-}
-2015-07-10 00:08:04 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:04 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:08:04 >FrontController/ poprawny kontroler
-2015-07-10 00:08:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:04 >Main/ get/ $params[get]: array(2) {
-  ["controller"]=>
-  string(4) "Main"
-  ["params"]=>
-  array(0) {
-  }
-}
-2015-07-10 00:08:04 >Main/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:04 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:08:21 >
-2015-07-10 00:08:21 >
-2015-07-10 00:08:21 >
-2015-07-10 00:08:21 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:08:21 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:08:21 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(11) "nick_nexist"
-}
-2015-07-10 00:08:21 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(11) "nick_nexist"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:21 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:08:21 >FrontController/ poprawny kontroler
-2015-07-10 00:08:21 >FrontController/ zalogowany, przekierowanie na <Main>
-2015-07-10 00:08:21 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main
-2015-07-10 00:08:22 >
-2015-07-10 00:08:22 >
-2015-07-10 00:08:22 >
-2015-07-10 00:08:22 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:08:22 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:08:22 >FrontContorller/ prepare_params/ $arr_urlarray(1) {
-  [0]=>
-  string(4) "Main"
-}
-2015-07-10 00:08:22 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:22 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:08:22 >FrontController/ poprawny kontroler
-2015-07-10 00:08:22 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:22 >Main/ get/ $params[get]: array(2) {
-  ["controller"]=>
-  string(4) "Main"
-  ["params"]=>
-  array(0) {
-  }
-}
-2015-07-10 00:08:22 >Main/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(0) {
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:08:22 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:11:09 >
-2015-07-10 00:11:09 >
-2015-07-10 00:11:09 >
-2015-07-10 00:11:09 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:11:09 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:11:09 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(6) "logout"
-}
-2015-07-10 00:11:09 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:11:09 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:11:09 >FrontController/ poprawny kontroler
-2015-07-10 00:11:09 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:11:09 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:11:09 >Auth/ logout/ $_SESSION['logged']: NULL
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:11:21 >FrontController/ pobranie rest_method: post 
-2015-07-10 00:11:21 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
-  [0]=>
-  string(4) "Auth"
-  [1]=>
-  string(5) "login"
-}
-2015-07-10 00:11:21 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:11:21 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:11:21 >FrontController/ poprawny kontroler
-2015-07-10 00:11:21 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:11:21 >Auth/ post/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:11:21 >Auth/ post/ tryb: login
-2015-07-10 00:11:21 >Auth/ post/ login/ post/ nick: dawidk089
-2015-07-10 00:11:21 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-10 00:11:21 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-10 00:11:21 >Auth/ post/ login/ searched users: array(0) {
-}
-2015-07-10 00:11:21 >Auth/ post/ login/ nie ma takiego nicku
-2015-07-10 00:11:21 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth/nick_nexist
-2015-07-10 00:11:21 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Main/new_logged
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >
-2015-07-10 00:11:21 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:11:21 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:11:21 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:34:45 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:34:51 >
+2015-07-10 17:34:51 >
+2015-07-10 17:34:51 >
+2015-07-10 17:34:51 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:34:51 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
   string(4) "Main"
   [1]=>
   string(10) "new_logged"
 }
-2015-07-10 00:11:21 >FrontController/ pobrane parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:11:21 >FrontController/ pobrany kontroler: string(4) "Main"
-2015-07-10 00:11:21 >FrontController/ poprawny kontroler
-2015-07-10 00:11:21 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Main"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(10) "new_logged"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:11:21 >Main/ get/ $params[get]: array(2) {
+2015-07-10 17:34:51 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:34:51 >FrontController/ poprawny kontroler
+2015-07-10 17:34:51 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:34:51 >Main/ get/ $params[get]: array(2) {
   ["controller"]=>
   string(4) "Main"
   ["params"]=>
@@ -1448,7 +261,7 @@
     string(10) "new_logged"
   }
 }
-2015-07-10 00:11:21 >Main/ get/ $params: array(3) {
+2015-07-10 17:34:51 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
@@ -1468,27 +281,38 @@
     NULL
   }
 }
-2015-07-10 00:11:21 >Main/ get/ przygotowano widok, wywoluje view->show()
-2015-07-10 00:15:26 >
-2015-07-10 00:15:26 >
-2015-07-10 00:15:26 >
-2015-07-10 00:15:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:15:26 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:15:26 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:34:51 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:35:37 >
+2015-07-10 17:35:37 >
+2015-07-10 17:35:37 >
+2015-07-10 17:35:37 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:35:37 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
-  string(4) "Auth"
+  string(4) "Main"
   [1]=>
-  string(6) "logout"
+  string(10) "new_logged"
 }
-2015-07-10 00:15:26 >FrontController/ pobrane parametry: array(3) {
+2015-07-10 17:35:37 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:35:37 >FrontController/ poprawny kontroler
+2015-07-10 17:35:37 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:35:37 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:35:37 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(4) "Auth"
+    string(4) "Main"
     ["params"]=>
     array(1) {
       [0]=>
-      string(6) "logout"
+      string(10) "new_logged"
     }
   }
   ["post"]=>
@@ -1500,180 +324,81 @@
     NULL
   }
 }
-2015-07-10 00:15:26 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:15:26 >FrontController/ poprawny kontroler
-2015-07-10 00:15:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:15:26 >Auth/ get/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(6) "logout"
-    }
-  }
-  ["post"]=>
-  array(0) {
-  }
-  ["ajax"]=>
-  array(1) {
-    [""]=>
-    NULL
-  }
-}
-2015-07-10 00:15:26 >Auth/ logout/ $_SESSION['logged']: NULL
-2015-07-10 00:15:38 >
-2015-07-10 00:15:38 >
-2015-07-10 00:15:38 >
-2015-07-10 00:15:38 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:15:38 >FrontController/ pobranie rest_method: post 
-2015-07-10 00:15:38 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:35:37 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:37:44 >
+2015-07-10 17:37:44 >
+2015-07-10 17:37:44 >
+2015-07-10 17:37:44 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:37:44 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
-  string(4) "Auth"
+  string(4) "Main"
   [1]=>
-  string(5) "login"
+  string(10) "new_logged"
 }
-2015-07-10 00:15:38 >FrontController/ pobrane parametry: array(3) {
+2015-07-10 17:37:44 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:37:44 >FrontController/ poprawny kontroler
+2015-07-10 17:37:44 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:37:44 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:37:44 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(4) "Auth"
+    string(4) "Main"
     ["params"]=>
     array(1) {
       [0]=>
-      string(5) "login"
+      string(10) "new_logged"
     }
   }
   ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
+  array(0) {
   }
   ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
+  array(1) {
+    [""]=>
     NULL
   }
 }
-2015-07-10 00:15:38 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:15:38 >FrontController/ poprawny kontroler
-2015-07-10 00:15:38 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:15:38 >Auth/ post/ $params: array(3) {
-  ["get"]=>
-  array(2) {
-    ["controller"]=>
-    string(4) "Auth"
-    ["params"]=>
-    array(1) {
-      [0]=>
-      string(5) "login"
-    }
-  }
-  ["post"]=>
-  array(3) {
-    ["nick"]=>
-    string(9) "dawidk089"
-    ["password"]=>
-    string(8) "makarena"
-    ["login"]=>
-    string(5) "Loguj"
-  }
-  ["ajax"]=>
-  array(3) {
-    ["nick"]=>
-    NULL
-    ["password"]=>
-    NULL
-    ["login"]=>
-    NULL
-  }
-}
-2015-07-10 00:15:38 >Auth/ post/ tryb: login
-2015-07-10 00:15:38 >Auth/ post/ login/ post/ nick: dawidk089
-2015-07-10 00:15:38 >BaseModel/ __construct/ gettype($data): string(6) "string"
-2015-07-10 00:15:38 >BaseModel/ __construct/ $data: string(5) "users"
-2015-07-10 00:15:38 >Auth/ post/ login/ searched users: array(0) {
-}
-2015-07-10 00:15:38 >Auth/ post/ login/ nie ma takiego nicku
-2015-07-10 00:15:38 >FrontController/ redirect/ przekierowanie na: Location: http://pascal.fis.agh.edu.pl/~3karminski/projekt2/Auth/nick_nexist
-2015-07-10 00:15:39 >
-2015-07-10 00:15:39 >
-2015-07-10 00:15:39 >
-2015-07-10 00:15:39 >NOWE WYWOLANIE INDEX, wywoluje FrontController
-2015-07-10 00:15:39 >FrontController/ pobranie rest_method: get 
-2015-07-10 00:15:39 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+2015-07-10 17:37:44 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:38:51 >
+2015-07-10 17:38:51 >
+2015-07-10 17:38:51 >
+2015-07-10 17:38:51 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:38:51 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
   [0]=>
-  string(4) "Auth"
+  string(4) "Main"
   [1]=>
-  string(11) "nick_nexist"
+  string(10) "new_logged"
 }
-2015-07-10 00:15:39 >FrontController/ pobrane parametry: array(3) {
+2015-07-10 17:38:51 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:38:51 >FrontController/ poprawny kontroler
+2015-07-10 17:38:51 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:38:51 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:38:51 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(4) "Auth"
+    string(4) "Main"
     ["params"]=>
     array(1) {
       [0]=>
-      string(11) "nick_nexist"
+      string(10) "new_logged"
     }
   }
   ["post"]=>
@@ -1685,17 +410,38 @@
     NULL
   }
 }
-2015-07-10 00:15:39 >FrontController/ pobrany kontroler: string(4) "Auth"
-2015-07-10 00:15:39 >FrontController/ poprawny kontroler
-2015-07-10 00:15:39 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>, parametry: array(3) {
+2015-07-10 17:38:51 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:39:37 >
+2015-07-10 17:39:37 >
+2015-07-10 17:39:37 >
+2015-07-10 17:39:37 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:39:37 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:39:37 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:39:37 >FrontController/ poprawny kontroler
+2015-07-10 17:39:37 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:39:37 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:39:37 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(4) "Auth"
+    string(4) "Main"
     ["params"]=>
     array(1) {
       [0]=>
-      string(11) "nick_nexist"
+      string(10) "new_logged"
     }
   }
   ["post"]=>
@@ -1707,15 +453,38 @@
     NULL
   }
 }
-2015-07-10 00:15:39 >Auth/ get/ $params: array(3) {
+2015-07-10 17:39:37 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:40:51 >
+2015-07-10 17:40:51 >
+2015-07-10 17:40:51 >
+2015-07-10 17:40:51 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:40:51 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:40:51 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:40:51 >FrontController/ poprawny kontroler
+2015-07-10 17:40:51 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:40:51 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:40:51 >Main/ get/ $params: array(3) {
   ["get"]=>
   array(2) {
     ["controller"]=>
-    string(4) "Auth"
+    string(4) "Main"
     ["params"]=>
     array(1) {
       [0]=>
-      string(11) "nick_nexist"
+      string(10) "new_logged"
     }
   }
   ["post"]=>
@@ -1727,3 +496,305 @@
     NULL
   }
 }
+2015-07-10 17:40:51 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:41:25 >
+2015-07-10 17:41:25 >
+2015-07-10 17:41:25 >
+2015-07-10 17:41:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:41:25 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:41:25 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:41:25 >FrontController/ poprawny kontroler
+2015-07-10 17:41:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:41:25 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:41:25 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:41:25 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:42:09 >
+2015-07-10 17:42:09 >
+2015-07-10 17:42:09 >
+2015-07-10 17:42:09 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:42:09 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:42:09 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:42:09 >FrontController/ poprawny kontroler
+2015-07-10 17:42:09 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:42:09 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:42:09 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:42:09 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:44:21 >
+2015-07-10 17:44:21 >
+2015-07-10 17:44:21 >
+2015-07-10 17:44:21 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:44:21 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:44:21 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:44:21 >FrontController/ poprawny kontroler
+2015-07-10 17:44:21 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:44:21 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:44:21 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:44:21 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:45:55 >
+2015-07-10 17:45:55 >
+2015-07-10 17:45:55 >
+2015-07-10 17:45:55 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:45:55 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:45:55 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:45:55 >FrontController/ poprawny kontroler
+2015-07-10 17:45:55 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:45:55 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:45:55 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:45:55 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:46:41 >
+2015-07-10 17:46:41 >
+2015-07-10 17:46:41 >
+2015-07-10 17:46:41 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:46:41 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:46:41 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:46:41 >FrontController/ poprawny kontroler
+2015-07-10 17:46:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:46:41 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:46:41 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:46:41 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:50:42 >
+2015-07-10 17:50:42 >
+2015-07-10 17:50:42 >
+2015-07-10 17:50:42 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:50:42 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:50:42 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:50:42 >FrontController/ poprawny kontroler
+2015-07-10 17:50:42 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:50:42 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:50:42 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:50:42 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-10 17:50:58 >
+2015-07-10 17:50:58 >
+2015-07-10 17:50:58 >
+2015-07-10 17:50:58 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-10 17:50:58 >FrontContorller/ prepare_params/ $arr_urlarray(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-10 17:50:58 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-10 17:50:58 >FrontController/ poprawny kontroler
+2015-07-10 17:50:58 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-10 17:50:58 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-10 17:50:58 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-10 17:50:58 >Main/ get/ przygotowano widok, wywoluje view->show()

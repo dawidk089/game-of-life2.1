@@ -62,9 +62,8 @@ class Main extends FrontController /*implements Rest*/ {
     }
 
     public function post(Array $params){
-        log::logging("Main/ post/ \$params: ".log::varb($params));
-        echo "tu odpali sie symulator </br>";
-
+        log::logging("Main/ post/ boards: ".log::varb(count($params['ajax']['boards'])));
+        new Automaton($params['ajax']['boards']);
 
 //        $database = new BaseModel('users');
 //        $database->update(

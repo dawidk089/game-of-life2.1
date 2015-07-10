@@ -97,8 +97,7 @@ game = {
         // kopiowanie
         var cell_copy = [];
         var cell_memento = [];
-        //console.log('board.cells: ', board.cells);
-        //console.log('in next step i, j', board.size_i, board.size_j);
+
         for (var i = 0; i < board.size_i; i++) {
             var row = [];
             var memento_row = [];
@@ -121,6 +120,12 @@ game = {
 
         board.set_cells();
 
+        //inkrementacja licznika krokow
+        //$('.game_age').html(parseInt($('.game_age').html(), 10)+1);
+        var counter = parseInt($("#game_age").text());
+        $("#game_age").text(counter+1);
+        //console.log("get age: ", x);
+
         //TODO set count neighbours on cells
        /*
         board.c.font = "15px Arial";
@@ -142,7 +147,7 @@ game = {
             var game_state = memento.check_end();
             //uzupelnienie formularzy
 
-
+            console.error("game_state: ", game_state);
             if(game_state !== undefined){
                 board.status = 'done';
                 $("aside input[name='start']").click();

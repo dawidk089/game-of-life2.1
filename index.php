@@ -12,6 +12,7 @@ new PrepareClass(array(
     "testy/",
     "simulator/",
     "model/",
+    "automaton/"
 ));
 
 

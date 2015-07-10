@@ -21,10 +21,10 @@ class FrontController
 
         // pobranie metody
         $this->rest_method = strtolower($_SERVER['REQUEST_METHOD']);
-        log::logging("FrontController/ pobranie rest_method: $this->rest_method \n");
+        //log::logging("FrontController/ pobranie rest_method: $this->rest_method \n");
 
         $this->params = $this->prepare_params();
-        log::logging("FrontController/ pobrane parametry: ".log::varb($this->params));
+        //log::logging("FrontController/ pobrane parametry: ".log::varb($this->params));
 
         // obsluga interpretacja otrzymanych danych -- get, post, ajax
 
@@ -49,7 +49,7 @@ class FrontController
                 }
                 else {
                     $this->name_controller = $controller;
-                    log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>, parametry: ".log::varb($this->params));
+                    log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>\n"/*, parametry: ".log::varb($this->params)*/);
                 }
         }
 
