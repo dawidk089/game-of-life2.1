@@ -121,7 +121,6 @@ game = {
         board.set_cells();
 
         //inkrementacja licznika krokow
-        //$('.game_age').html(parseInt($('.game_age').html(), 10)+1);
         var counter = parseInt($("#game_age").text());
         $("#game_age").text(counter+1);
         //console.log("get age: ", x);
@@ -145,7 +144,12 @@ game = {
 
         if(game.mode == 'symulacje'){
             var game_state = memento.check_end();
+
             //uzupelnienie formularzy
+            if(game_state !== undefined)
+                $("#game_state").text(game_state);
+            else
+                $("#game_state").text('evoluating...');
 
             console.error("game_state: ", game_state);
             if(game_state !== undefined){

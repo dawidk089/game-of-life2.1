@@ -52,11 +52,14 @@ class BaseModel{
         $this->collection->insert($data);
     }
 
-    public function update(Array $where, Array $what){
-        $this->collection->update(
-            $where,
-            $what
-        );
+    public function update($mode, Array $where, Array $what){
+        if($mode === 'add') {
+            $this->collection->update(
+                $where,
+                array('$addToSet' => $what)
+            );
+        }
+        log::logging("BaseModel/ update/ zakonczono dodawanie\n");
     }
 }
 

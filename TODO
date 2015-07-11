@@ -23,7 +23,7 @@
 #Wysylanie planszy na serwer
 
 >[DONE]podpiecie wysylania post
->podpiecie funkcji konczacej
+>[DONE]podpiecie funkcji konczacej
 >[DONE]zapis w bazie
     -metoda post -- dodawanie planszy do bazy
 
