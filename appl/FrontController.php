@@ -91,8 +91,18 @@ class FrontController
         $ajax_data = file_get_contents('php://input');
         $ajax_data = urldecode($ajax_data);
 
+        log::logging("FrontController/ prepare_param/ \$_GET: ".log::varb($_GET));
+
+        if(!isset($_GET['target'])){
+            log::logging("FrontController/ prepare_param/ w url'u nie ma target'a\n");
+            //http_response_code(404);
+            $this->redirect("Auth");
+            die();
+        }
+
+        log::logging("FrontController/ prepare_param/ w url'u jest target\n");
         $arr_url = explode('/', $_GET['target']);
-        log::logging("FrontContorller/ prepare_params/ \$arr_url".log::varb($arr_url));
+        log::logging("FrontContorller/ prepare_params/ \$arr_url: ".log::varb($arr_url));
         $get_dict['controller'] = $arr_url[0];
         $get_dict['params'] = array_slice($arr_url, 1);
 

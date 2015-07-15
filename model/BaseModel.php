@@ -3,7 +3,8 @@
 class BaseModel{
     private $user = "3karminski" ;
     private $pass = "pass" ;
-    private $host = "pascal.fis.agh.edu.pl" ;
+    private $host = "localhost" ;
+    //private $host = "pascal.fis.agh.edu.pl" ;
     private $base = "3karminski" ;
     private $coll;// = "users";
     private $conn ;
