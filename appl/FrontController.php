@@ -7,7 +7,8 @@ class FrontController
         "Main",
         "Auth",
         "BaseModel",
-        "Automaton"
+        "Automaton",
+        "SimList"
     );
     private $default_controller = "Main";
     private $rest_method = null;
@@ -52,11 +53,11 @@ class FrontController
                     log::logging("FrontController/ zalogowany lub autoryzuje, kontroler: <$this->name_controller>\n"/*, parametry: ".log::varb($this->params)*/);
                 }
         }
-
+        log::logging("FrontController/ __construct/ koniec\n");
     }
 
     public final function execute(){
-        //log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
+        log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
         return new $this->name_controller($this->params);
     }
 

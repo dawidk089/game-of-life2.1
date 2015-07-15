@@ -9,6 +9,7 @@ class View{
         $this->templates = $template_paths;
         $this->data = $data;
         //log::logging("View/ pobrane parametry: ".log::varb($this->data));
+        log::logging("View/ __construct\n");
     }
 
     private $path = array(
