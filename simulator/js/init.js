@@ -1,4 +1,4 @@
-var appl_path = "http://pascal.fis.agh.edu.pl/~3karminski/projekt2/";
+var appl_path = "/";
 
 window.onload = function () {
 
@@ -12,7 +12,7 @@ window.onload = function () {
     console.log("set cell_radius: ", board.cell_radius);
     console.log("set time_step: ", game.time_step);
 
-    board.drawing();
+    board.drawing('scaling_area', 'game_canvas');
     board.init_draw_cells();
     game.switch_control_panel(null, 'init');
     $("aside input[name='horizontal_amount'], aside input[name='vertical_amount']").on('change', board.init_draw_cells);

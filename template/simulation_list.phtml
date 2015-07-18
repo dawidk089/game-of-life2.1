@@ -1,4 +1,7 @@
 <section>
+    <?php foreach ($jss as $js): ?>
+        <script src="<?=appl_path::$appl_path.$js?>"></script>
+    <?php endforeach; ?>
     <h3>Lista rekordów</h3>
     <div id="scrolling_area">
         <div class="row">
@@ -7,5 +10,28 @@
             <div class="item">Efekt końcowe</div>
             <div class="item"></div>
         </div>
+        <?php $i=1; foreach ($simulations as $simulation): ?>
+            <?php
+                $horizontal = count($simulation[0]);
+                $vertical = count($simulation[0][0]);
+            ?>
+            <div class="item counter"><?=$i."."?></div>
+            <div id="beginning<?=$i?>">
+                <script>
+                        var board = new Board(<?=$horizontal?>, <?=$vertical?>, 2, 50);
+                        board.init_canvas("canvas<?=$i?>", "beginning<?=$i?>");
+                        <?php for($j=0; $j<$horizontal; ++$j): ?>
+                            <?php for($k=0; $k<$vertical; ++$k): ?>
+                                //console.log("test:",board.cell_radius+board.cell_padding);
+                                board.draw_cell(
+                                    (<?=$j?>*2+1)*(board.cell_radius+board.cell_padding),
+                                    (<?=$k?>*2+1)*(board.cell_radius+board.cell_padding),
+                                    <?=($simulation[0][$j][$k]?1:0)?>
+                                );
+                            <?php endfor; ?>
+                        <?php endfor; ?>
+                </script>
+            </div>
+        <?php ++$i; endforeach; ?>
     </div>
 </section>

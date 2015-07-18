@@ -1,30 +1,3 @@
-/*TODO zmiejszyc szerokosc input number horizontal_amount i  vertical_amount*/
-/*TODO mozliwie ustawic pomarancozwy kolor paska dla range i napisu dla listy rozwijanej*/
-/*TODO ustawic inny styl dla zablokowanych elementow*/
-
-/*globalne*/
-* {
-    box-sizing: border-box;
-}
-
-/*ogolne*/
-body{
-    color: #c8c8c8;
-    background: black;
-    min-width: 600px;
-    font-family: sans-serif;
-    margin: 0;
-}
-
-body > header {
-    background: linear-gradient(to right, #222, #630);
-    overflow: hidden;
-}
-
-header{
-    text-align: center;
-}
-
 main{
     display: table;
     position: relative;
@@ -52,18 +25,6 @@ aside fieldset {
 
 #game_canvas {
     max-width: 100%;
-}
-
-footer{
-    border-top: gray 1px solid;
-}
-
-p,
-h1,
-h2,
-h3,
-h4 {
-    margin: 15px;
 }
 
 .input_wrapping {

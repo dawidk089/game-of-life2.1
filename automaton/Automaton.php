@@ -112,7 +112,7 @@ class Automaton{
                 case 'live':
                     break;
             }
-            if(count($this->boards) > 40) {
+            if(count($this->boards) > 10000) {
                 exit;
             }
 

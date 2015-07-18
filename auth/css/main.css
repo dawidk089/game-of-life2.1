@@ -29,10 +29,6 @@ main > *{
     width: 50%;
 }
 
-footer p{
-    margin: 0;
-}
-
 footer{
     border-top: gray 1px solid;
 }

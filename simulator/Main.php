@@ -45,8 +45,8 @@ class Main extends FrontController implements Rest
                 "title" => "Game of life -- Symulator automatu komórkowego",
                 "status" => $status,
                 "csss" => array(
-                    "simulator/css/main.css",
-                    //"auth/css/smain.css",
+                    "appl/css/main.css",
+                    "simulator/css/main.css"
                 ),
                 "jss" => array(
                     "jquery_js/jquery.js",

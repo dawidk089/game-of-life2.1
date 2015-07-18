@@ -54,7 +54,10 @@ class Auth extends FrontController implements Rest {
             array(
                 "title"=>"Game of life -- Autoryzacja dostępu",
                 "status"=>$status,
-                "csss"=>array("auth/css/main.css",),
+                "csss"=>array(
+                    "appl/css/main.css",
+                    "auth/css/main.css"
+                    ),
                 "jss"=>array("auth/js/auth.js"),
             )
         );

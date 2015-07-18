@@ -30,17 +30,32 @@ class SimList extends FrontController implements Rest{
     public function get(Array $params)
     {
         log::logging("SimList/ get\n");
+        $list = null;
+        if($params['get']['params'][0] === 'simulations'){
+            log::logging("SimList/ get/ simulations\n");
+            $list = $this->own_simlist();
+        }
+        elseif($params['get']['params'][0] === 'records'){
+            log::logging("SimList/ get/ records\n");
+        }
+
         $view = new View(
             array(
-
+                "template/simulation_list.phtml"
             ),
             array(
                 "title" => "Game of life -- Symulator automatu komórkowego",
                 "status" => '',
+                "simulations" => $list,
+                "amount" => count($list),
                 "csss" => array(
-
+                    "appl/css/main.css",
+                    "list/css/SimList.css"
                 ),
                 "jss" => array(
+                    "jquery_js/jquery.js",
+                    "list/js/draw.js"//,
+                    //"list/js/init.js"
                 )
 
             )
@@ -61,5 +76,15 @@ class SimList extends FrontController implements Rest{
     public function delete(Array $params)
     {
         log::logging("List/ delete\n");
+    }
+
+    private function own_simlist(){
+        $db = new BaseModel('users');
+        $user = $db->read(array('nick'=>$_SESSION['logged']))[0];
+        return $user['simulation'];
+    }
+
+    private function users_simlist(){
+
     }
 }
