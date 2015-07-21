@@ -54,8 +54,8 @@ class SimList extends FrontController implements Rest{
                 ),
                 "jss" => array(
                     "jquery_js/jquery.js",
-                    "list/js/draw.js"//,
-                    //"list/js/init.js"
+                    "list/js/draw.js",
+                    "list/js/form.js"
                 )
 
             )
@@ -66,6 +66,8 @@ class SimList extends FrontController implements Rest{
     public function post(Array $params)
     {
         log::logging("List/ post\n");
+        //log::logging("List/ post/ \$_SERVER: ".log::varb($_SERVER));
+        log::logging("List/ post/ ajax: ".log::varb($params));
     }
 
     public function put(Array $params)
@@ -85,6 +87,10 @@ class SimList extends FrontController implements Rest{
     }
 
     private function users_simlist(){
+
+    }
+
+    private function delete_simulation(){
 
     }
 }
