@@ -1,50 +1,43 @@
-#SuDDEN CHanGE
->poprawic wyciaganie parametrow (params przeszlo w tablice asocjacyjna)
-    -[DONE]Auth
-    -[DONE]Main
-    -[DONE]BaseModel
-
 #Rejestracja/Logowanie
 
->metody dostepowe do baz danych
-    -[DONE]metoda read, sprawdzanie czy login istnieje w bazie
-    -[DONE]metoda create, dodawania rejestrowanych uzytkownikow do bazy
 >walidowanie formularza po stronie js
-    -na email
-    -na haslo
-    -na powtorzenie hasla i emial'a
+    -na email w obu
+    -na haslo (min 8 liter, [duze, male litery, znaki, liczby] )
+    -na powtorzenie hasla i email'a w rejestracji
 >walidowanie formularza po stronie php
     -czy nick istnieje <logowanie>
     -czy nick nie istnieje <rejestracja>
     -na email <rejestracja>
-    -na haslo <rejestracja>
+    -na haslo <rejestracja> (jak wyzej)
     -zgodnosc hasla <logowanie>
 
-#Wysylanie planszy na serwer
-
->[DONE]podpiecie wysylania post
->[DONE]podpiecie funkcji konczacej
->[DONE]zapis w bazie
-    -metoda post -- dodawanie planszy do bazy
 
 #strona z rekordami
 
->adaptacja szablonow uzupelnianych z php <lista>
->csss
->usuwanie z bazy
+>adaptacja szablonow uzupelnianych z php <lista>[DONE]
+>csss[DONE]
+>usuwanie z bazy (problem z przekazaniem id symualcji do usuniecia)
 >podpiecie przycisku test
+>pobranie i wyswietlenie listy symualcji[DONE]
+>pobranie i wyswietlenie listy rekordow[DONE]
+>dodanie typu konca[DONE]
+>sortowanie
+
 
 #funkcjonalnosc testowania gotowych plansz
 
->modyfikacja szblonow
->zmiany reguly wyswietlania
+>modyfikacja szablonow -- zuniwersonalizowanie
+>zmiany reguly wyswietlania -- dodanie/ukrycie przyciskow
+
 
 #podpiecie wykresow
 
+>klikanie na element listy
 >rozkminka framework'a do wykresow
 >rysowanie wykresow
 >rysowanie histogramu
 >rysowanie dynamicznego histogramu
+
 
 #local storage
 

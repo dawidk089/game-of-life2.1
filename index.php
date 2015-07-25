@@ -26,8 +26,5 @@ echo "To nie jest jeszcze wersja skończona.";
 
 
 $front_controller = new FrontController();
-log::logging("index.php/ przed execute\n");
 $front_controller->execute();
-log::logging("index.php/ po execute\n");
-//$front_controller->execute();
 

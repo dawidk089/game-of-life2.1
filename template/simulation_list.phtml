@@ -10,10 +10,11 @@
             <div class="item">Efekt końcowe</div>
             <div class="item">Szczegóły</div>
         </div>
+        <script>console.log(<?php count($simulations)?>)</script>
         <?php $i=1; foreach ($simulations as $simulation): ?>
             <?php
-                $horizontal = count($simulation[0]);
-                $vertical = count($simulation[0][0]);
+                $horizontal = count($simulation['data'][0]);
+                $vertical = count($simulation['data'][0][0]);
             ?>
             <div class="row">
                 <div class="item counter"><?=$i."."?></div>
@@ -26,7 +27,7 @@
                                 board.draw_cell(
                                     (<?=$j?>*2+1)*(board.cell_radius+board.cell_padding),
                                     (<?=$k?>*2+1)*(board.cell_radius+board.cell_padding),
-                                    <?=($simulation[0][$j][$k]?1:0)?>
+                                    <?=($simulation['data'][0][$j][$k]?1:0)?>
                                 );
                             <?php endfor; ?>
                         <?php endfor; ?>
@@ -36,27 +37,30 @@
                     <script>
                         var board = new Board(<?=$horizontal?>, <?=$vertical?>, 10, 100);
                         board.init_canvas("canvas<?=$i?>end", "end<?=$i?>");
-                        <?php $last = count($simulation)-1; ?>
+                        <?php $last = count($simulation['data'])-1; ?>
                         <?php for($j=0; $j<$horizontal; ++$j): ?>
                             <?php for($k=0; $k<$vertical; ++$k): ?>
                                 board.draw_cell(
                                     (<?=$j?>*2+1)*(board.cell_radius+board.cell_padding),
                                     (<?=$k?>*2+1)*(board.cell_radius+board.cell_padding),
-                                    <?=($simulation[$last][$j][$k]?1:0)?>
+                                    <?=($simulation['data'][$last][$j][$k]?1:0)?>
                                 );
                             <?php endfor; ?>
                         <?php endfor; ?>
                     </script>
                 </div>
                 <div class="item">
-                    <p>Czas życia: <span><?=count($simulation)?></span></p>
+                    <p>Czas życia: <span><?=count($simulation['data'])?></span></p>
                     <p>Wymiary:
                         <ul>
                             <li>poziomo: <span><?=$horizontal?></span></li>
                             <li>pionowo: <span><?=$vertical?></span></li>
                         </ul>
                     </p>
+                    <p>Status: <span><?=$simulation['status']?></span></p>
+                    <p>Nick: <span><?=$simulation['user']?></span></p>
                         <input type="button" value="Usuń" name="delete">
+                    <!--TODO jak pobrac dane z pola hidden-->
                         <input type="hidden" name="id" value="<?=$i?>">
                 </div>
             </div>

@@ -1,25 +1,18 @@
 var appl_path = "/";
 
 window.onload = function(){
-    var fun = function(){
-        var id = $(this).data("id");
-        console.log("clicked at delete nr "+id);
-    };
-    $("input[name='delete']").data('id', $("input[name='id']").value).on('click', delete_simulation).on('click', fun);
-    //$("aside input[name='delete']").on('click', fun);
-    //var cl = $("input[name='delete']");
-    //console.log("jquery: ", cl);
-    console.log('test: ' + $(this.parent).value);
+
+    $("input[name='delete']").data('id', $("input[name='id']").value).on('click', delete_simulation);
 };
 
 var delete_simulation = function() {
     console.log("ajax_path:", appl_path + "SimList/delete_simulation");
-    console.log('id: ', $(this.parent).value);
+    //console.log('id: ', $(this).siblings("input[type='hidden']").attr('value'));
 
     $.ajax( appl_path + "SimList/delete_simulation", {
         type: "POST",
         data: {
-            id: 'id1'
+            id: $(this).siblings("input[type='hidden']").attr('value')
         },
         statusCode: {
             404: function() {

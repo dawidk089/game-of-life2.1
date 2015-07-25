@@ -30,7 +30,6 @@ board = {
         for (var i = 0; i < board.size_i; i++) {
             var row = [];
             for (var j = 0; j < board.size_j; j++)
-
                 if(board.pos_tab[i][j]['state'] == 'live')
                     row.push(new Cell(true, i, j));
                 else if(this.pos_tab[i][j]['state'] == 'dead')

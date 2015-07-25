@@ -169,10 +169,6 @@ game = {
         console.log("set time_step: ", game.time_step);
     },
 
-    //TODO sprawdzic poprawnosc zmiany stanu elementow
-    //TODO poprawic mode by sprawdzanie warunkow byla tylko w trybie symulacji
-    //TODO ukryc stan uklad w trybie zabawy
-    //TODO zablokowac zmiane planszy w trybie symulacje
     switch_control_panel: function(event, mode_param){
         var mode = mode_param;
         if( mode == undefined )
@@ -237,6 +233,16 @@ game = {
         if($(this).find("option:selected").text() == 'symulacje') {
             game.switch_control_panel(null, 'stopped/simulation');
             game.mode = 'symulacje';
+            console.log("boards to get first: ", board.cells.length);
+            /*for (var i = 0; i < board.size_i; i++) {
+                var row = [];
+                var memento_row = [];
+                for (var j = 0; j < board.size_j; j++) {
+                    row.push(new Cell(board.cells[i][j].is_alive, i, j));
+                    memento_row.push(board.cells[i][j].is_alive);
+                }
+                cell_copy.push(row);
+                cell_memento.push(memento_row);*/
         }
         else{
             game.mode = 'zabawa';

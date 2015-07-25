@@ -84,7 +84,7 @@ class FrontController
             return $controller;
     }
 
-    private function prepare_params(){
+    protected function prepare_params(){
 
         $get_dict = [];
         $ajax_dict = [];

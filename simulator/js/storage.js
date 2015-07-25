@@ -1,10 +1,6 @@
 memento = {
     history: [],
 
-    cons: function(){
-        console.log("click at save");
-    },
-
     send_to_server: function() {
         console.log("call a send_to_server");
         $data_to_send = {

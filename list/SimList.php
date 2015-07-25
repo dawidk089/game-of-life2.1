@@ -31,12 +31,14 @@ class SimList extends FrontController implements Rest{
     {
         log::logging("SimList/ get\n");
         $list = null;
+        $simulations = null;
         if($params['get']['params'][0] === 'simulations'){
             log::logging("SimList/ get/ simulations\n");
             $list = $this->own_simlist();
         }
         elseif($params['get']['params'][0] === 'records'){
             log::logging("SimList/ get/ records\n");
+            $list = $this->users_simlist();
         }
 
         $view = new View(
@@ -45,9 +47,7 @@ class SimList extends FrontController implements Rest{
             ),
             array(
                 "title" => "Game of life -- Symulator automatu komórkowego",
-                "status" => '',
                 "simulations" => $list,
-                "amount" => count($list),
                 "csss" => array(
                     "appl/css/main.css",
                     "list/css/SimList.css"
@@ -57,7 +57,6 @@ class SimList extends FrontController implements Rest{
                     "list/js/draw.js",
                     "list/js/form.js"
                 )
-
             )
         );
         $view->show();
@@ -66,8 +65,9 @@ class SimList extends FrontController implements Rest{
     public function post(Array $params)
     {
         log::logging("List/ post\n");
-        //log::logging("List/ post/ \$_SERVER: ".log::varb($_SERVER));
         log::logging("List/ post/ ajax: ".log::varb($params));
+        if($this->prepare_params()['get']['params'][0]==='delete_simulation')
+            $this->delete_simulation();
     }
 
     public function put(Array $params)
@@ -87,10 +87,29 @@ class SimList extends FrontController implements Rest{
     }
 
     private function users_simlist(){
+        //zalezy czy w bazie danych wpisy sa sortowane
 
+        log::logging("SimList/ users_simlist/\n");
+        $db = new BaseModel('users');
+        $users = $db->read(array());
+        log::logging("SimList/ users_simlist/ users_count: ".count($users)."\n");
+        $simulations = array();
+        foreach($users as $user){
+            foreach($user['simulation'] as $simulation){
+                log::logging("SimList/ users_simlist/ simulation ".log::varb($simulation));
+                $users_simulation = $simulation;
+                $users_simulation['user'] = $user['nick'];
+                $simulations[] = $users_simulation;
+            }
+            //simulations[] = $user['simulation'];
+        }
+        return $simulations;
     }
 
     private function delete_simulation(){
-
+        $id = $this->prepare_params()['ajax']['id'];
+        log::logging("SimList/ delete_simulation/ id: ".log::varb($id));
+        $db = new BaseModel('users');
+        $db->delete();
     }
 }

@@ -62,6 +62,11 @@ class BaseModel{
         }
         log::logging("BaseModel/ update/ zakonczono dodawanie\n");
     }
+
+    public function delete(){
+        $this->collection->update(array('nick'=>$_SESSION['logged']),array('$unset'=>array('simulation'=>1)));
+        //$this->collection->update(array('nick'=>$_SESSION['logged']),array('$pull'=>array('simulation'=>1)));
+    }
 }
 
 // przykladowy wpis z baz danych
