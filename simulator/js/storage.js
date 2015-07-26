@@ -2,6 +2,19 @@ memento = {
     history: [],
 
     send_to_server: function() {
+        if(memento.history.length === 0){
+            board.init_cells();
+            var cell_memento = [];
+            for (var i = 0; i < board.size_i; i++) {
+                var memento_row = [];
+                for (var j = 0; j < board.size_j; j++) {
+                    memento_row.push(board.cells[i][j].is_alive);
+                }
+                cell_memento.push(memento_row);
+            }
+            memento.history.push(cell_memento);
+        }
+
         console.log("call a send_to_server");
         $data_to_send = {
             'boards': JSON.stringify(memento.history),

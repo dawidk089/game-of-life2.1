@@ -12075,3 +12075,710 @@
 }
 2015-07-25 18:45:50 >View/ __construct
 2015-07-25 18:45:50 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:51:48 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:51:48 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 18:51:48 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:51:48 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 18:51:48 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:51:48 >FrontController/ poprawny kontroler
+2015-07-25 18:51:48 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:51:48 >FrontController/ __construct/ koniec
+2015-07-25 18:51:48 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 18:51:48 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 18:51:48 >View/ __construct
+2015-07-25 18:51:48 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:53:57 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:53:57 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 18:53:57 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:53:57 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 18:53:57 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:53:57 >FrontController/ poprawny kontroler
+2015-07-25 18:53:57 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:53:57 >FrontController/ __construct/ koniec
+2015-07-25 18:53:57 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 18:53:57 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 18:53:57 >View/ __construct
+2015-07-25 18:53:57 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:56:44 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:56:44 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 18:56:44 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:56:44 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 18:56:44 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:56:44 >FrontController/ poprawny kontroler
+2015-07-25 18:56:44 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:56:44 >FrontController/ __construct/ koniec
+2015-07-25 18:56:44 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 18:56:44 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 18:56:44 >View/ __construct
+2015-07-25 18:56:44 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:57:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:57:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 18:57:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:57:26 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 18:57:26 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:57:26 >FrontController/ poprawny kontroler
+2015-07-25 18:57:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:57:26 >FrontController/ __construct/ koniec
+2015-07-25 18:57:26 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 18:57:26 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 18:57:26 >View/ __construct
+2015-07-25 18:57:26 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:59:19 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:59:19 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "SimList/simulations"
+}
+2015-07-25 18:59:19 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:59:19 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(7) "SimList"
+  [1]=>
+  string(11) "simulations"
+}
+2015-07-25 18:59:19 >FrontController/ pobrany kontroler: string(7) "SimList"
+2015-07-25 18:59:19 >FrontController/ poprawny kontroler
+2015-07-25 18:59:19 >FrontController/ zalogowany lub autoryzuje, kontroler: <SimList>
+2015-07-25 18:59:19 >FrontController/ __construct/ koniec
+2015-07-25 18:59:19 >SimList/ __construct
+2015-07-25 18:59:19 >SimList/ get
+2015-07-25 18:59:19 >SimList/ get/ simulations
+2015-07-25 18:59:19 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 18:59:19 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 18:59:19 >View/ __construct
+2015-07-25 18:59:30 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:59:30 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 18:59:30 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:59:30 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 18:59:30 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:59:30 >FrontController/ poprawny kontroler
+2015-07-25 18:59:30 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:59:30 >FrontController/ __construct/ koniec
+2015-07-25 18:59:30 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 18:59:30 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 18:59:30 >View/ __construct
+2015-07-25 18:59:30 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 18:59:52 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 18:59:52 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-25 18:59:52 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 18:59:52 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(14) "add_simulation"
+}
+2015-07-25 18:59:52 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 18:59:52 >FrontController/ poprawny kontroler
+2015-07-25 18:59:52 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 18:59:52 >FrontController/ __construct/ koniec
+2015-07-25 18:59:52 >Main/ post/ boards: int(0)
+2015-07-25 18:59:52 >Automaton/ __construct/ wejscie do konstruktora
+2015-07-25 18:59:52 >Automaton/ __construct/ zainincjowanie zmiennych
+2015-07-25 18:59:52 >Automaton/ __construct/ do/ liczba plansz: 0
+2015-07-25 18:59:52 >Automaton/ __construct/ do/ liczba plansz: 1
+2015-07-25 18:59:52 >Automaton/ send/ ukonczono symulacje ze statusem <const> z liczba serii: 2
+2015-07-25 18:59:52 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 18:59:52 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 18:59:52 >BaseModel/ update/ zakonczono dodawanie
+2015-07-25 19:04:27 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 19:04:27 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 19:04:27 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 19:04:27 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 19:04:27 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 19:04:27 >FrontController/ poprawny kontroler
+2015-07-25 19:04:27 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 19:04:27 >FrontController/ __construct/ koniec
+2015-07-25 19:04:27 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 19:04:27 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 19:04:27 >View/ __construct
+2015-07-25 19:04:41 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 19:04:41 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(13) "Auth/register"
+}
+2015-07-25 19:04:41 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 19:04:41 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(8) "register"
+}
+2015-07-25 19:04:41 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 19:04:41 >FrontController/ poprawny kontroler
+2015-07-25 19:04:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 19:04:41 >FrontController/ __construct/ koniec
+2015-07-25 19:04:41 >Auth/ post/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(8) "register"
+    }
+  }
+  ["post"]=>
+  array(6) {
+    ["email"]=>
+    string(18) "dawka089@gmail.com"
+    ["email_repeat"]=>
+    string(15) "dawidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["password_repeat"]=>
+    string(8) "makarena"
+    ["registration-name"]=>
+    string(9) "Rejestruj"
+  }
+  ["ajax"]=>
+  array(6) {
+    ["email"]=>
+    NULL
+    ["email_repeat"]=>
+    NULL
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["password_repeat"]=>
+    NULL
+    ["registration-name"]=>
+    NULL
+  }
+}
+2015-07-25 19:04:41 >Auth/ post/ tryb: register
+2015-07-25 19:04:41 >Auth/ post/ register/ post/ nick: dawidk089
+2015-07-25 19:04:41 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 19:04:41 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 19:04:41 >Auth/ post/ register/ searched users: array(0) {
+}
+2015-07-25 19:04:41 >Auth/ post/ register/ nie ma takiego nicku
+2015-07-25 19:04:41 >Auth/ post/ register/ dodano nowego uzytkowanika do bazy danych
+2015-07-25 19:04:41 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/new
+2015-07-25 19:04:41 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 19:04:41 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(8) "Main/new"
+}
+2015-07-25 19:04:41 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 19:04:41 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(3) "new"
+}
+2015-07-25 19:04:41 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 19:04:41 >FrontController/ poprawny kontroler
+2015-07-25 19:04:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 19:04:41 >FrontController/ __construct/ koniec
+2015-07-25 19:04:41 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(3) "new"
+  }
+}
+2015-07-25 19:04:41 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(3) "new"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 19:04:41 >View/ __construct
+2015-07-25 19:04:41 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 22:13:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:13:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(8) "Main/new"
+}
+2015-07-25 22:13:47 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:13:47 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(3) "new"
+}
+2015-07-25 22:13:47 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:13:47 >FrontController/ poprawny kontroler
+2015-07-25 22:13:47 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-07-25 22:13:47 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-07-25 22:13:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:13:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 22:13:47 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:13:47 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 22:13:47 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:13:47 >FrontController/ poprawny kontroler
+2015-07-25 22:13:47 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 22:13:47 >FrontController/ __construct/ koniec
+2015-07-25 22:13:47 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:13:47 >View/ __construct
+2015-07-25 22:14:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:14:01 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(10) "Auth/login"
+}
+2015-07-25 22:14:01 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:14:01 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(5) "login"
+}
+2015-07-25 22:14:01 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:14:01 >FrontController/ poprawny kontroler
+2015-07-25 22:14:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 22:14:01 >FrontController/ __construct/ koniec
+2015-07-25 22:14:01 >Auth/ post/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(5) "login"
+    }
+  }
+  ["post"]=>
+  array(3) {
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["login"]=>
+    string(5) "Loguj"
+  }
+  ["ajax"]=>
+  array(3) {
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["login"]=>
+    NULL
+  }
+}
+2015-07-25 22:14:01 >Auth/ post/ tryb: login
+2015-07-25 22:14:01 >Auth/ post/ login/ post/ nick: dawidk089
+2015-07-25 22:14:01 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 22:14:01 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 22:14:01 >Auth/ post/ login/ searched users: array(1) {
+  [0]=>
+  array(5) {
+    ["_id"]=>
+    object(MongoId)#11 (1) {
+      ["$id"]=>
+      string(24) "55b42419f8f8880e0d8b4567"
+    }
+    ["email"]=>
+    string(18) "dawka089@gmail.com"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["simulation"]=>
+    array(0) {
+    }
+  }
+}
+2015-07-25 22:14:01 >Auth/ post/ login/ przekierowanie na main
+2015-07-25 22:14:01 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/login
+2015-07-25 22:14:01 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/new_logged
+2015-07-25 22:14:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:14:01 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(15) "Main/new_logged"
+}
+2015-07-25 22:14:01 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:14:01 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-07-25 22:14:01 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:14:01 >FrontController/ poprawny kontroler
+2015-07-25 22:14:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 22:14:01 >FrontController/ __construct/ koniec
+2015-07-25 22:14:01 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-07-25 22:14:01 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:14:01 >View/ __construct
+2015-07-25 22:14:01 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 22:15:15 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:15:15 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-25 22:15:15 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:15:15 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(14) "add_simulation"
+}
+2015-07-25 22:15:15 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:15:15 >FrontController/ poprawny kontroler
+2015-07-25 22:15:15 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 22:15:15 >FrontController/ __construct/ koniec
+2015-07-25 22:15:15 >Main/ post/ boards: int(1)
+2015-07-25 22:15:15 >Automaton/ __construct/ wejscie do konstruktora
+2015-07-25 22:15:15 >Automaton/ __construct/ zainincjowanie zmiennych
+2015-07-25 22:15:15 >Automaton/ __construct/ do/ liczba plansz: 1
+2015-07-25 22:15:15 >Automaton/ __construct/ do/ liczba plansz: 2
+2015-07-25 22:15:15 >Automaton/ send/ ukonczono symulacje ze statusem <died> z liczba serii: 3
+2015-07-25 22:15:15 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 22:15:15 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 22:15:15 >BaseModel/ update/ zakonczono dodawanie
+2015-07-25 22:15:27 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:15:27 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "SimList/simulations"
+}
+2015-07-25 22:15:27 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:15:27 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(7) "SimList"
+  [1]=>
+  string(11) "simulations"
+}
+2015-07-25 22:15:27 >FrontController/ pobrany kontroler: string(7) "SimList"
+2015-07-25 22:15:27 >FrontController/ poprawny kontroler
+2015-07-25 22:15:27 >FrontController/ zalogowany lub autoryzuje, kontroler: <SimList>
+2015-07-25 22:15:27 >FrontController/ __construct/ koniec
+2015-07-25 22:15:27 >SimList/ __construct
+2015-07-25 22:15:27 >SimList/ get
+2015-07-25 22:15:27 >SimList/ get/ simulations
+2015-07-25 22:15:27 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 22:15:27 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 22:15:27 >View/ __construct
+2015-07-25 22:16:03 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:16:03 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 22:16:03 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:16:03 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 22:16:03 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:16:03 >FrontController/ poprawny kontroler
+2015-07-25 22:16:03 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 22:16:03 >FrontController/ __construct/ koniec
+2015-07-25 22:16:03 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 22:16:03 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:16:03 >View/ __construct
+2015-07-25 22:16:03 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 22:16:22 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:16:22 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "Main/add_simulation"
+}
+2015-07-25 22:16:22 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:16:22 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(14) "add_simulation"
+}
+2015-07-25 22:16:22 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:16:22 >FrontController/ poprawny kontroler
+2015-07-25 22:16:22 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 22:16:22 >FrontController/ __construct/ koniec
+2015-07-25 22:16:22 >Main/ post/ boards: int(1)
+2015-07-25 22:16:22 >Automaton/ __construct/ wejscie do konstruktora
+2015-07-25 22:16:22 >Automaton/ __construct/ zainincjowanie zmiennych
+2015-07-25 22:16:22 >Automaton/ __construct/ do/ liczba plansz: 1
+2015-07-25 22:16:22 >Automaton/ __construct/ do/ liczba plansz: 2
+2015-07-25 22:16:22 >Automaton/ send/ ukonczono symulacje ze statusem <died> z liczba serii: 3
+2015-07-25 22:16:22 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 22:16:22 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 22:16:22 >BaseModel/ update/ zakonczono dodawanie
+2015-07-25 22:16:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:16:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "SimList/simulations"
+}
+2015-07-25 22:16:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:16:25 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(7) "SimList"
+  [1]=>
+  string(11) "simulations"
+}
+2015-07-25 22:16:25 >FrontController/ pobrany kontroler: string(7) "SimList"
+2015-07-25 22:16:25 >FrontController/ poprawny kontroler
+2015-07-25 22:16:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <SimList>
+2015-07-25 22:16:25 >FrontController/ __construct/ koniec
+2015-07-25 22:16:25 >SimList/ __construct
+2015-07-25 22:16:25 >SimList/ get
+2015-07-25 22:16:25 >SimList/ get/ simulations
+2015-07-25 22:16:25 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-07-25 22:16:25 >BaseModel/ __construct/ $data: string(5) "users"
+2015-07-25 22:16:25 >View/ __construct
