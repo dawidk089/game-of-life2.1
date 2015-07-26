@@ -44,6 +44,9 @@ class Auth extends FrontController implements Rest {
             case 'new_logged':
                 $status = 'Zostałeś pomyślnie zalogowany.';
                 break;
+            case 'password_wrong':
+                $status = "Hasło jest nieprawidłowe.";
+                break;
         }
 
         $view = new View(
@@ -139,16 +142,22 @@ class Auth extends FrontController implements Rest {
         $database = new BaseModel('users');
         $users = $database->read(array('nick'=>$nick));
         log::logging("Auth/ post/ login/ searched users: ".log::varb($users));
-
+        log::logging("Auth/ post/ login/ \$data: ".log::varb($data));
         //sprawdzenie czy uzytkownik istnieje
         //przekierowanie z informacja zwrotna o niepowodzeniu
         if(count($users) === 0){
             log::logging("Auth/ post/ login/ nie ma takiego nicku\n");
             $this->redirect("Auth/nick_nexist");
             return false;
-            log::logging("Auth/ login/ wykonuje po przekierowaniu\n");
         }
         //zalogowanie id w sesji, przekierowanie na strone glowna
+        elseif(count($users) !== 1){
+            log::logging("[!]Auth/ login/ multiuser nick name: $nick\n");
+        }
+        elseif($users[0]['password'] !== $data['password']){
+            log::logging("Auth/ login/ niepoprawne haslo\n");
+            $this->redirect("Auth/password_wrong");
+        }
         else{
             log::logging("Auth/ post/ login/ przekierowanie na main\n");
             $_SESSION['logged'] = $nick;
