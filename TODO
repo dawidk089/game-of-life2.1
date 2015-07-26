@@ -52,5 +52,5 @@
 
 #bledy logistyczne
 
->przelaczanie w tryb symulacji -- plansze mozna definiowac tylko przed przelaczeniem,
-    bez uruchomienia choc jednego kroku nie widac warunkow poczatkowych
+>przelaczanie w tryb symulacji -- plansze mozna definiowac tylko przed przelaczeniem[NOT YET],
+    bez uruchomienia choc jednego kroku nie widac warunkow poczatkowych[DONE]

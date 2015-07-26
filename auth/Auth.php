@@ -58,7 +58,10 @@ class Auth extends FrontController implements Rest {
                     "appl/css/main.css",
                     "auth/css/main.css"
                     ),
-                "jss"=>array("auth/js/auth.js"),
+                "jss"=>array(
+                    "auth/js/init.js",
+                    "jquery_js/jquery.js",
+                ),
             )
         );
 

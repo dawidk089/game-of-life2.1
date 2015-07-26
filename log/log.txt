@@ -12782,3 +12782,2316 @@
 2015-07-25 22:16:25 >BaseModel/ __construct/ gettype($data): string(6) "string"
 2015-07-25 22:16:25 >BaseModel/ __construct/ $data: string(5) "users"
 2015-07-25 22:16:25 >View/ __construct
+2015-07-25 22:57:05 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:57:05 >FrontController/ prepare_param/ $_GET: array(0) {
+}
+2015-07-25 22:57:05 >FrontController/ prepare_param/ w url'u nie ma target'a
+2015-07-25 22:57:05 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-07-25 22:57:05 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:57:05 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 22:57:05 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:57:05 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 22:57:05 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:57:05 >FrontController/ poprawny kontroler
+2015-07-25 22:57:05 >FrontController/ zalogowany, przekierowanie na <Main>
+2015-07-25 22:57:05 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-07-25 22:57:05 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:57:05 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-07-25 22:57:05 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:57:05 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-07-25 22:57:05 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-07-25 22:57:05 >FrontController/ poprawny kontroler
+2015-07-25 22:57:05 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-07-25 22:57:05 >FrontController/ __construct/ koniec
+2015-07-25 22:57:05 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-07-25 22:57:05 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:57:05 >View/ __construct
+2015-07-25 22:57:05 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-07-25 22:57:09 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:57:09 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 22:57:09 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:57:09 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 22:57:09 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:57:09 >FrontController/ poprawny kontroler
+2015-07-25 22:57:09 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 22:57:09 >FrontController/ __construct/ koniec
+2015-07-25 22:57:09 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:57:09 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 22:57:09 >View/ __construct
+2015-07-25 22:58:36 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:58:36 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 22:58:36 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:58:36 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 22:58:36 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:58:36 >FrontController/ poprawny kontroler
+2015-07-25 22:58:36 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 22:58:36 >FrontController/ __construct/ koniec
+2015-07-25 22:58:36 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:58:36 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 22:58:36 >View/ __construct
+2015-07-25 22:59:51 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 22:59:51 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 22:59:51 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 22:59:51 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 22:59:51 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 22:59:51 >FrontController/ poprawny kontroler
+2015-07-25 22:59:51 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 22:59:51 >FrontController/ __construct/ koniec
+2015-07-25 22:59:51 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 22:59:51 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 22:59:51 >View/ __construct
+2015-07-25 23:02:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:02:10 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:02:10 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:02:10 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:02:10 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:02:10 >FrontController/ poprawny kontroler
+2015-07-25 23:02:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:02:10 >FrontController/ __construct/ koniec
+2015-07-25 23:02:10 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:02:10 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:02:10 >View/ __construct
+2015-07-25 23:03:46 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:03:46 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:03:46 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:03:46 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:03:46 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:03:46 >FrontController/ poprawny kontroler
+2015-07-25 23:03:46 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:03:46 >FrontController/ __construct/ koniec
+2015-07-25 23:03:46 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:03:46 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:03:46 >View/ __construct
+2015-07-25 23:04:23 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:23 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:23 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:23 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:23 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:23 >FrontController/ poprawny kontroler
+2015-07-25 23:04:23 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:23 >FrontController/ __construct/ koniec
+2015-07-25 23:04:23 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:23 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:23 >View/ __construct
+2015-07-25 23:04:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:25 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:25 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:25 >FrontController/ poprawny kontroler
+2015-07-25 23:04:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:25 >FrontController/ __construct/ koniec
+2015-07-25 23:04:25 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:25 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:25 >View/ __construct
+2015-07-25 23:04:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:25 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:25 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:25 >FrontController/ poprawny kontroler
+2015-07-25 23:04:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:25 >FrontController/ __construct/ koniec
+2015-07-25 23:04:25 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:25 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:25 >View/ __construct
+2015-07-25 23:04:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:25 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:25 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:25 >FrontController/ poprawny kontroler
+2015-07-25 23:04:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:25 >FrontController/ __construct/ koniec
+2015-07-25 23:04:25 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:25 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:25 >View/ __construct
+2015-07-25 23:04:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:25 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:25 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:25 >FrontController/ poprawny kontroler
+2015-07-25 23:04:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:25 >FrontController/ __construct/ koniec
+2015-07-25 23:04:25 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:25 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:25 >View/ __construct
+2015-07-25 23:04:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:26 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:26 >FrontController/ poprawny kontroler
+2015-07-25 23:04:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:26 >FrontController/ __construct/ koniec
+2015-07-25 23:04:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:26 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:26 >View/ __construct
+2015-07-25 23:04:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:26 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:26 >FrontController/ poprawny kontroler
+2015-07-25 23:04:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:26 >FrontController/ __construct/ koniec
+2015-07-25 23:04:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:26 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:26 >View/ __construct
+2015-07-25 23:04:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:26 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:26 >FrontController/ poprawny kontroler
+2015-07-25 23:04:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:26 >FrontController/ __construct/ koniec
+2015-07-25 23:04:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:26 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:26 >View/ __construct
+2015-07-25 23:04:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-07-25 23:04:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:26 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-07-25 23:04:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:26 >FrontController/ poprawny kontroler
+2015-07-25 23:04:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:26 >FrontController/ __construct/ koniec
+2015-07-25 23:04:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:26 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-07-25 23:04:26 >View/ __construct
+2015-07-25 23:04:36 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:04:36 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:04:36 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:04:36 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:04:36 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:04:36 >FrontController/ poprawny kontroler
+2015-07-25 23:04:36 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:04:36 >FrontController/ __construct/ koniec
+2015-07-25 23:04:36 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:04:36 >View/ __construct
+2015-07-25 23:05:20 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:05:20 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:05:20 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:05:20 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:05:20 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:05:20 >FrontController/ poprawny kontroler
+2015-07-25 23:05:20 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:05:20 >FrontController/ __construct/ koniec
+2015-07-25 23:05:20 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:05:20 >View/ __construct
+2015-07-25 23:05:21 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:05:21 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:05:21 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:05:21 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:05:21 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:05:21 >FrontController/ poprawny kontroler
+2015-07-25 23:05:21 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:05:21 >FrontController/ __construct/ koniec
+2015-07-25 23:05:21 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:05:21 >View/ __construct
+2015-07-25 23:07:08 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:07:08 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:07:08 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:07:08 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:07:08 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:07:08 >FrontController/ poprawny kontroler
+2015-07-25 23:07:08 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:07:08 >FrontController/ __construct/ koniec
+2015-07-25 23:07:08 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:07:08 >View/ __construct
+2015-07-25 23:07:35 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:07:35 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:07:35 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:07:35 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:07:35 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:07:35 >FrontController/ poprawny kontroler
+2015-07-25 23:07:35 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:07:35 >FrontController/ __construct/ koniec
+2015-07-25 23:07:35 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:07:35 >View/ __construct
+2015-07-25 23:08:18 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:08:18 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:08:18 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:08:18 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:08:18 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:08:18 >FrontController/ poprawny kontroler
+2015-07-25 23:08:18 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:08:18 >FrontController/ __construct/ koniec
+2015-07-25 23:08:18 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:08:18 >View/ __construct
+2015-07-25 23:08:58 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:08:58 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:08:58 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:08:58 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:08:58 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:08:58 >FrontController/ poprawny kontroler
+2015-07-25 23:08:58 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:08:58 >FrontController/ __construct/ koniec
+2015-07-25 23:08:58 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:08:58 >View/ __construct
+2015-07-25 23:10:57 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:10:57 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:10:57 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:10:57 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:10:57 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:10:57 >FrontController/ poprawny kontroler
+2015-07-25 23:10:57 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:10:57 >FrontController/ __construct/ koniec
+2015-07-25 23:10:57 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:10:57 >View/ __construct
+2015-07-25 23:11:32 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:11:32 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:11:32 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:11:32 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:11:32 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:11:32 >FrontController/ poprawny kontroler
+2015-07-25 23:11:32 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:11:32 >FrontController/ __construct/ koniec
+2015-07-25 23:11:32 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:11:32 >View/ __construct
+2015-07-25 23:11:35 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:11:35 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:11:35 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:11:35 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:11:35 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:11:35 >FrontController/ poprawny kontroler
+2015-07-25 23:11:35 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:11:35 >FrontController/ __construct/ koniec
+2015-07-25 23:11:35 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:11:35 >View/ __construct
+2015-07-25 23:12:51 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:12:51 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:12:51 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:12:51 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:12:51 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:12:51 >FrontController/ poprawny kontroler
+2015-07-25 23:12:51 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:12:51 >FrontController/ __construct/ koniec
+2015-07-25 23:12:51 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:12:51 >View/ __construct
+2015-07-25 23:13:53 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:13:53 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:13:53 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:13:53 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:13:53 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:13:53 >FrontController/ poprawny kontroler
+2015-07-25 23:13:53 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:13:53 >FrontController/ __construct/ koniec
+2015-07-25 23:13:53 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:13:53 >View/ __construct
+2015-07-25 23:16:19 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:16:19 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:16:19 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:16:19 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:16:19 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:16:19 >FrontController/ poprawny kontroler
+2015-07-25 23:16:19 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:16:19 >FrontController/ __construct/ koniec
+2015-07-25 23:16:19 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:16:19 >View/ __construct
+2015-07-25 23:17:29 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:17:29 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:17:29 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:17:29 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:17:29 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:17:29 >FrontController/ poprawny kontroler
+2015-07-25 23:17:29 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:17:29 >FrontController/ __construct/ koniec
+2015-07-25 23:17:29 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:17:29 >View/ __construct
+2015-07-25 23:18:37 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:18:37 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:18:37 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:18:37 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:18:37 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:18:37 >FrontController/ poprawny kontroler
+2015-07-25 23:18:37 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:18:37 >FrontController/ __construct/ koniec
+2015-07-25 23:18:37 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:18:37 >View/ __construct
+2015-07-25 23:19:29 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:19:29 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:19:29 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:19:29 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:19:29 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:19:29 >FrontController/ poprawny kontroler
+2015-07-25 23:19:29 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:19:29 >FrontController/ __construct/ koniec
+2015-07-25 23:19:29 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:19:29 >View/ __construct
+2015-07-25 23:20:13 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:20:13 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:20:13 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:20:13 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:20:13 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:20:13 >FrontController/ poprawny kontroler
+2015-07-25 23:20:13 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:20:13 >FrontController/ __construct/ koniec
+2015-07-25 23:20:13 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:20:13 >View/ __construct
+2015-07-25 23:20:29 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:20:29 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:20:29 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:20:29 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:20:29 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:20:29 >FrontController/ poprawny kontroler
+2015-07-25 23:20:29 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:20:29 >FrontController/ __construct/ koniec
+2015-07-25 23:20:29 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:20:29 >View/ __construct
+2015-07-25 23:21:04 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:21:04 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:21:04 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:21:04 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:21:04 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:21:04 >FrontController/ poprawny kontroler
+2015-07-25 23:21:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:21:04 >FrontController/ __construct/ koniec
+2015-07-25 23:21:04 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:21:04 >View/ __construct
+2015-07-25 23:22:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:22:01 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:22:01 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:22:01 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:22:01 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:22:01 >FrontController/ poprawny kontroler
+2015-07-25 23:22:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:22:01 >FrontController/ __construct/ koniec
+2015-07-25 23:22:01 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:22:01 >View/ __construct
+2015-07-25 23:22:22 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:22:22 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:22:22 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:22:22 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:22:22 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:22:22 >FrontController/ poprawny kontroler
+2015-07-25 23:22:22 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:22:22 >FrontController/ __construct/ koniec
+2015-07-25 23:22:22 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:22:22 >View/ __construct
+2015-07-25 23:23:16 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:23:16 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:23:16 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:23:16 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:23:16 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:23:16 >FrontController/ poprawny kontroler
+2015-07-25 23:23:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:23:16 >FrontController/ __construct/ koniec
+2015-07-25 23:23:16 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:23:16 >View/ __construct
+2015-07-25 23:24:06 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:24:06 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:24:06 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:24:06 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:24:06 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:24:06 >FrontController/ poprawny kontroler
+2015-07-25 23:24:06 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:24:06 >FrontController/ __construct/ koniec
+2015-07-25 23:24:06 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:24:06 >View/ __construct
+2015-07-25 23:24:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:24:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:24:47 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:24:47 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:24:47 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:24:47 >FrontController/ poprawny kontroler
+2015-07-25 23:24:47 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:24:47 >FrontController/ __construct/ koniec
+2015-07-25 23:24:47 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:24:47 >View/ __construct
+2015-07-25 23:25:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:25:10 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:25:10 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:25:10 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:25:10 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:25:10 >FrontController/ poprawny kontroler
+2015-07-25 23:25:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:25:10 >FrontController/ __construct/ koniec
+2015-07-25 23:25:10 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:25:10 >View/ __construct
+2015-07-25 23:26:22 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:26:22 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:26:22 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:26:22 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:26:22 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:26:22 >FrontController/ poprawny kontroler
+2015-07-25 23:26:22 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:26:22 >FrontController/ __construct/ koniec
+2015-07-25 23:26:22 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:26:22 >View/ __construct
+2015-07-25 23:31:43 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:31:43 >FrontController/ prepare_param/ $_GET: array(0) {
+}
+2015-07-25 23:31:43 >FrontController/ prepare_param/ w url'u nie ma target'a
+2015-07-25 23:31:43 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-07-25 23:31:43 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-25 23:31:43 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-25 23:31:43 >FrontController/ prepare_param/ w url'u jest target
+2015-07-25 23:31:43 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-25 23:31:43 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-25 23:31:43 >FrontController/ poprawny kontroler
+2015-07-25 23:31:43 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-25 23:31:43 >FrontController/ __construct/ koniec
+2015-07-25 23:31:43 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-25 23:31:43 >View/ __construct
+2015-07-26 00:48:54 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:48:54 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:48:54 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:48:54 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:48:54 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:48:54 >FrontController/ poprawny kontroler
+2015-07-26 00:48:54 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:48:54 >FrontController/ __construct/ koniec
+2015-07-26 00:48:54 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:48:54 >View/ __construct
+2015-07-26 00:50:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:50:10 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:50:10 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:50:10 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:50:10 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:50:10 >FrontController/ poprawny kontroler
+2015-07-26 00:50:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:50:10 >FrontController/ __construct/ koniec
+2015-07-26 00:50:10 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:50:10 >View/ __construct
+2015-07-26 00:52:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:52:01 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:52:01 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:52:01 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:52:01 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:52:01 >FrontController/ poprawny kontroler
+2015-07-26 00:52:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:52:01 >FrontController/ __construct/ koniec
+2015-07-26 00:52:01 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:52:01 >View/ __construct
+2015-07-26 00:52:53 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:52:53 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:52:53 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:52:53 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:52:53 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:52:53 >FrontController/ poprawny kontroler
+2015-07-26 00:52:53 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:52:53 >FrontController/ __construct/ koniec
+2015-07-26 00:52:53 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:52:53 >View/ __construct
+2015-07-26 00:53:19 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:53:19 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:53:19 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:53:19 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:53:19 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:53:19 >FrontController/ poprawny kontroler
+2015-07-26 00:53:19 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:53:19 >FrontController/ __construct/ koniec
+2015-07-26 00:53:19 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:53:19 >View/ __construct
+2015-07-26 00:54:37 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:54:37 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:54:37 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:54:37 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:54:37 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:54:37 >FrontController/ poprawny kontroler
+2015-07-26 00:54:37 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:54:37 >FrontController/ __construct/ koniec
+2015-07-26 00:54:37 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:54:37 >View/ __construct
+2015-07-26 00:56:28 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:56:28 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:56:28 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:56:28 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:56:28 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:56:28 >FrontController/ poprawny kontroler
+2015-07-26 00:56:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:56:28 >FrontController/ __construct/ koniec
+2015-07-26 00:56:28 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:56:28 >View/ __construct
+2015-07-26 00:57:50 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:57:50 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:57:50 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:57:50 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:57:50 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:57:50 >FrontController/ poprawny kontroler
+2015-07-26 00:57:50 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:57:50 >FrontController/ __construct/ koniec
+2015-07-26 00:57:50 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:57:50 >View/ __construct
+2015-07-26 00:58:20 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:58:20 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:58:20 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:58:20 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:58:20 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:58:20 >FrontController/ poprawny kontroler
+2015-07-26 00:58:20 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:58:20 >FrontController/ __construct/ koniec
+2015-07-26 00:58:20 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:58:20 >View/ __construct
+2015-07-26 00:59:11 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 00:59:11 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 00:59:11 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 00:59:11 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 00:59:11 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 00:59:11 >FrontController/ poprawny kontroler
+2015-07-26 00:59:11 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 00:59:11 >FrontController/ __construct/ koniec
+2015-07-26 00:59:11 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 00:59:11 >View/ __construct
+2015-07-26 01:02:10 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:02:10 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:02:10 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:02:10 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:02:10 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:02:10 >FrontController/ poprawny kontroler
+2015-07-26 01:02:10 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:02:10 >FrontController/ __construct/ koniec
+2015-07-26 01:02:10 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:02:10 >View/ __construct
+2015-07-26 01:05:56 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:05:56 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:05:56 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:05:56 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:05:56 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:05:56 >FrontController/ poprawny kontroler
+2015-07-26 01:05:56 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:05:56 >FrontController/ __construct/ koniec
+2015-07-26 01:05:56 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:05:56 >View/ __construct
+2015-07-26 01:06:52 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:06:52 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:06:52 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:06:52 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:06:52 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:06:52 >FrontController/ poprawny kontroler
+2015-07-26 01:06:52 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:06:52 >FrontController/ __construct/ koniec
+2015-07-26 01:06:52 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:06:52 >View/ __construct
+2015-07-26 01:07:28 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:07:28 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:07:28 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:07:28 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:07:28 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:07:28 >FrontController/ poprawny kontroler
+2015-07-26 01:07:28 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:07:28 >FrontController/ __construct/ koniec
+2015-07-26 01:07:28 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:07:28 >View/ __construct
+2015-07-26 01:15:27 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:15:27 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:15:27 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:15:27 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:15:27 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:15:27 >FrontController/ poprawny kontroler
+2015-07-26 01:15:27 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:15:27 >FrontController/ __construct/ koniec
+2015-07-26 01:15:27 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:15:27 >View/ __construct
+2015-07-26 01:17:25 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:17:25 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:17:25 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:17:25 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:17:25 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:17:25 >FrontController/ poprawny kontroler
+2015-07-26 01:17:25 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:17:25 >FrontController/ __construct/ koniec
+2015-07-26 01:17:25 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:17:25 >View/ __construct
+2015-07-26 01:40:43 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:40:43 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:40:43 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:40:43 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:40:43 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:40:43 >FrontController/ poprawny kontroler
+2015-07-26 01:40:43 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:40:43 >FrontController/ __construct/ koniec
+2015-07-26 01:40:43 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:40:43 >View/ __construct
+2015-07-26 01:42:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:42:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:42:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:42:26 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:42:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:42:26 >FrontController/ poprawny kontroler
+2015-07-26 01:42:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:42:26 >FrontController/ __construct/ koniec
+2015-07-26 01:42:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:42:26 >View/ __construct
+2015-07-26 01:55:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:55:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:55:26 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:55:26 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:55:26 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:55:26 >FrontController/ poprawny kontroler
+2015-07-26 01:55:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:55:26 >FrontController/ __construct/ koniec
+2015-07-26 01:55:26 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:55:26 >View/ __construct
+2015-07-26 01:56:30 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:56:30 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:56:30 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:56:30 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:56:30 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:56:30 >FrontController/ poprawny kontroler
+2015-07-26 01:56:30 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:56:30 >FrontController/ __construct/ koniec
+2015-07-26 01:56:30 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:56:30 >View/ __construct
+2015-07-26 01:57:48 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:57:48 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:57:48 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:57:48 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:57:48 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:57:48 >FrontController/ poprawny kontroler
+2015-07-26 01:57:48 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:57:48 >FrontController/ __construct/ koniec
+2015-07-26 01:57:48 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:57:48 >View/ __construct
+2015-07-26 01:58:16 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:58:16 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:58:16 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:58:16 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:58:16 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:58:16 >FrontController/ poprawny kontroler
+2015-07-26 01:58:16 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:58:16 >FrontController/ __construct/ koniec
+2015-07-26 01:58:16 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:58:16 >View/ __construct
+2015-07-26 01:59:24 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 01:59:24 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 01:59:24 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 01:59:24 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 01:59:24 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 01:59:24 >FrontController/ poprawny kontroler
+2015-07-26 01:59:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 01:59:24 >FrontController/ __construct/ koniec
+2015-07-26 01:59:24 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 01:59:24 >View/ __construct
+2015-07-26 02:06:02 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 02:06:02 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 02:06:02 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 02:06:02 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 02:06:02 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 02:06:02 >FrontController/ poprawny kontroler
+2015-07-26 02:06:02 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 02:06:02 >FrontController/ __construct/ koniec
+2015-07-26 02:06:02 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 02:06:02 >View/ __construct
+2015-07-26 02:07:43 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-07-26 02:07:43 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-07-26 02:07:43 >FrontController/ prepare_param/ w url'u jest target
+2015-07-26 02:07:43 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-07-26 02:07:43 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-07-26 02:07:43 >FrontController/ poprawny kontroler
+2015-07-26 02:07:43 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-07-26 02:07:43 >FrontController/ __construct/ koniec
+2015-07-26 02:07:43 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-07-26 02:07:43 >View/ __construct

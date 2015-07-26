@@ -1,4 +1,7 @@
-<section>
+<section id="registration">
+    <?php foreach ($jss as $js): ?>
+        <script src="<?=appl_path::$appl_path.$js?>" ></script>
+    <?php endforeach; ?>
     <h3>Rejestracja</h3>
     <form action="<?=appl_path::$appl_path?>Auth/register" method="post">
         <div class="input_wrapping">
