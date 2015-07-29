@@ -1,3 +1,11 @@
+/**
+ * obiekt prototypowany -- pojedyncza plansza gry w zycie
+ * @param horizontal -- ilosc komorek poziomo
+ * @param vertical -- ilosc komorek w pionie
+ * @param padding -- dodawana wartosc do promienia komorki wplywajaca na odleglosc miedzy nimi
+ * @param radius -- promien komorki
+ * @constructor
+ */
 function Board(horizontal, vertical, padding, radius){
     this.horizontal = horizontal;
     this.vertical = vertical;
@@ -10,24 +18,32 @@ function Board(horizontal, vertical, padding, radius){
     this.canvas_id = null;
 }
 
+/**
+ * metoda inicjalizujaca plansze;
+ * wstawia tag canvas do html, pobiera kontekst canvas, czysci plachte
+ * @param canvas_id -- nazwa id po ktorym mozna sie odwolac do canvas tego obiektu
+ * @param scaling_id -- nazwa id po ktorym mozna sie odwolac do div'a w ktorym znajduje sie canvas tego obiektu;
+ *                      div sluzy do dynamicznego skalowania plachty
+ */
 Board.prototype.init_canvas = function(canvas_id, scaling_id) {
-   //var canvas_init_text = '\
-   //     <canvas id="' + canvas_id + '" width="' + this.width + '" height="' + this.height + '"><p>Twoja przeglądarka nie obsługuje canvas.</p></canvas>';
+
     var canvas_init_text = '<canvas id="' + canvas_id + '" width="' + this.width + '" height="' + this.height +'" class="game_canvas"><p>Twoja przeglądarka nie obsługuje canvas.</p></canvas>';
 
-    //console.log("scaling_id:", scaling_id);
     document.getElementById(scaling_id).innerHTML = canvas_init_text;
-    //console.log("innerHTML:", canvas_init_text);
-    //console.log("canvas_id name:", canvas_id);
-    //console.log("scaling_di name:", scaling_id);
     this.canvas_id = document.getElementById(canvas_id);
     this.context = this.canvas_id.getContext('2d');
 
     this.context.clearRect(0, 0, this.width, this.height);
 };
 
+/**
+ * metoda wspomagajaca narysowanie komorki --  uzywana jest bezposrednio w szablonach phtml wspolpracujac
+    ze wstawkami php
+ * @param x -- wps. x plachty
+ * @param y -- wps. y plachty
+ * @param live -- stan komorki
+ */
 Board.prototype.draw_cell = function(x,y, live){
-    //console.log("x,y,live:",x,y,live);
     this.context.strokeStyle = 'black';
 
     if(!live)
@@ -41,6 +57,11 @@ Board.prototype.draw_cell = function(x,y, live){
     this.context.fill();
 };
 
+
+/**
+ * metoda umozliwia narysowanie planszy
+ *//*
+
 Board.prototype.draw = function(){
     for(var i=0; i<this.horizontal;++i)
         for(var j=0; j<this.vertical;++j) {
@@ -49,4 +70,4 @@ Board.prototype.draw = function(){
                 (j*2+1)*(this.cell_radius+this.cell_padding)
             );
         }
-};
+};*/

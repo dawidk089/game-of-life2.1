@@ -1,48 +1,52 @@
-Wskazowki uruchomienia:
-opcja 1:
->projekt jest umieszczony na serwerze pascal i z serwera taurus (zalecane ze wzgledu na szybkosc serwera) mozna sie do niego dostac poprzez adres przegladarki:
-	http://pascal.fis.agh.edu.pl/~3karminski/projekt2/
+Krotki zarys:
 
-opcja 2:
->poprzez zmiane adresu w polu $appl_path klasy znajdujacej sie w pliku appl/appl_path.php mozna uruchomic projekt przez wlasny serwer lokalny
->nalezy wtedy dolaczyc plik .htaccess z zawartoscia:
+Aplikacja skałada się z trzech podstron:
 
-//---------------------------------------
-RewriteEngine On
+-autryzacji (auth):
+	*mozna sie zalogowac/zarejestrowac, dostep do aplikacji jest natychmiatowy
+	*za pomoca js sprawdzane sa formularze na identycznosc hasla i email'a podczas rejestracji;
+		za pomoca jquery ustawiany jest odpowiedni status znajdujacy sie nad stopka strony
 
-RewriteBase /~3karminski/projekt2
+-strony glownej (simulator):
+	*tu znajduje sie plansza z gra oraz panel kontrolny
+	*do dyspozycji sa dwa tryby gry {'zabawa', 'symulacje'}
+	*w trybie symulacje wlaczone sa dodatkowe opcje sprawdzania konca ewolucji ukladu i wysylania symulacji na serwer
+	+najperw nalezy ustawic wymiary planszy i wcisnac przycisk ustaw, wtedy mozna ustawic stan komorek na planszy poprzez klikniecie w nie,
+	+dostepne sa przyciski start ktory wlacza interwal ewolucji oraz nastepny krok ktory wykonuje jeden cykl ewolucji
+	+mozliwa jest tez zmiana czasu intrwalu ewolucji (takze podczas dzialania ewolucji)
+	+suwak i nastepny krok sa wylaczone w trybie symulacje
+	*za pomoca jquery aktualizowane sa wartosci w panelu kontrolnym
+	
+-strona listy symulacji (list_simulator):
+	*tutaj znajduje sie lista zapisanych symulacji wraz z kilkoma wlasciwosciami
 
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^.*$ - [NC,L]
+Aplikacja bazuje na konwencji restfulowej (na tyle ile sie to udalo) i w dazy do modelu mvc (na ile to bylo mozliwe).
+Strona zbudowana jest w oparciu o szablony phtml uzupelniane wstawkami php. Wykorzystywana jest baza mongodb.
 
-RewriteRule ^(.*)$ index.php?target=$1 [QSA,NC,L]
-//---------------------------------------
-	oraz zmienic sciezke RewriteBase
+------------------------------------
+interesujace pliki js znajduja sie w:
+------------------------------------
+
+auth/js/init.js
+
+simulator/js/board.js
+simulator/js/cell.js
+simulator/js/game.js
+simulator/js/init.js
+simulator/js/period_finder.js
+simulator/js/storage.js
 
 
-Zalozenia projektowe:
->strona autoryzacji
->strona glowna z plansza i panelem kontrolnym
-	-w panelu ustawia sie ilosc komorek w poziomie i pionie
-	-poprzez klikniecie przycisku ustaw mozna uruchomic automat (start/stop, nastepny krok), zmienic jego predkosc
-	-gdy gra jest zatrzymana mozna zmienic tryb gry na symulacje i uruchomic je, ewentualnie zapisac plansze na serwer
-	-w panelu widac takze aktualny stan ukladu
->po stronie serwera wyslana plansza zostaje dokonczona i zapisana w bazie danych
->strona z lista rekordow zycia uklady (wykres ilosci komorek i histogramy wiekow komorek)
->strona z zapisanymi symulacjami, mozliwosc przywrocenia zapisanej symulacji (wykres ilosci komorek i histogramy wiekow komorek)
+list/js/draw.js
+list/js/form.js
+list/js/graph.js
+list/js/init.js
+list/js/draw.js
 
-javascript:
->obiekt game -- obsluguje operacje przeprowadzane w grze
->obiekt board -- wspiera obsluge i ustawianie planszy
->obiekt prototypowany cell -- przechowuje wlasciwosci komorek (stan, wiek, pozycje)
->obiekt prototypowany periodfinder -- wspiera znajdywanie okresowosci w historii plansz gry
->init -- przygotowuje gre przy pierwszym uzyciu (tzn po zaladowaniu strony), podpina odpowiednie funkcje pod zdarzenia w html'u
+Wiecej informacji w komentarzach kodu.
+	
 
-repozytorium:
 
-https://github.com/dawidk089/game-of-life2.1.git
 
 
 

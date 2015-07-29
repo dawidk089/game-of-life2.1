@@ -1,3 +1,6 @@
+/**
+ * obiekt wspierajacy rysowanie wykresu (nie dziala)
+ */
 grapher = {
     x_amount: undefined,
     y_amount: undefined,

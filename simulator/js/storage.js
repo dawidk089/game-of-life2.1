@@ -1,6 +1,14 @@
+/**
+ * obiekt wspierajacy archiwizowanie przeprowdzonej symulacji
+ * przechowuje minimum informacji by szybko odtworzyc symulacje lub utowrzyc statystyke
+ */
 memento = {
-    history: [],
+    history: [], //tablica plansz ze zmienna typu boolean odpowiadajaca stanwoy komorki (true-zywa, false-martwa)
 
+    /**
+     * metoda wysylajaca zarchiwizowana symualcje na serwer
+     * gdy plansza nie jest zainicjowana (bez pierwszego uruchomienia) -- inicjuje ja
+     */
     send_to_server: function() {
         if(memento.history.length === 0){
             board.init_cells();
@@ -40,7 +48,11 @@ memento = {
             }
         });
     },
-    
+
+    /**
+     * metoda wspierajaca sprawdzanie zakonczenia procesu rozwoju ukladu
+     * okresla czy uklad wymarl, nie zmienia sie, lub jst okresowy
+     */
     check_end: function () {
     // TODO id ostatniego elementu do zmiany na parametr
     var last_id = memento.history.length-1;

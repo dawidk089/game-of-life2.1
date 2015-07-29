@@ -1,5 +1,8 @@
 var appl_path = "/";
 
+/**
+ * inicjalizacja uchwytow na zmiany w formularzu
+ */
 window.onload = function () {
 
     board.cell_padding = 2;

@@ -1,27 +1,27 @@
 /**
- * Created by mcmushroom on 14.06.15.
+ * obiekt odpowiedzialny za plansze z gra w zycie
  */
 board = {
 
     //OBJECT FIELDS
-    c: undefined,
-    pos_tab: null,
-    cell_radius: null,
+    c: undefined, //context canvas
+    pos_tab: null, //tablica pozycji komorek na plachcie canvas
+    cell_radius: null, //promien komorki
     canvas_h: undefined,
-    canvas_w: undefined,
-    prescaler: undefined,
-    cell_padding: null,
+    canvas_w: undefined, //wymiary canvas (bez skalowania)
+    prescaler: undefined, //dzielnik; skalowanie canvas do div'a;
+    //wymagany przy rozpoznaniu pozycji wskaznika na komorce
+    cell_padding: null, //odsuniecie od innyc komorek
     size_i: 0,
-    size_j: 0,
-    cells: [],
+    size_j: 0, //ilosc komorek poziomo/pionowo
+    cells: [], //komorki -- obiekty
     canvas_id: undefined,
-    status: 'initiating',
+    //status: 'initiating',
 
     //OBJECT METHODS
 
     /**
-     * z ustawien poczatkowych planszy inicjuje zbior komorek...
-     * ...i nadaje im wlasnosci poczatkowe
+     * motada ktora z ustawien poczatkowych planszy inicjuje zbior obkiektow komorek
      */
     init_cells: function () {
 
@@ -39,7 +39,7 @@ board = {
     },
 
     /**
-     * przenosi wlasnosci zbioru komorek na plansze
+     * przenosi wlasnosci zbioru obiektow komorek na plansze
      */
     set_cells: function(){
         for (var i = 0; i < this.size_i; i++)
@@ -79,20 +79,15 @@ board = {
         return alive;
     },
     /**
-     * wspiera rysowanie komorek
+     * wspiera rysowanie komorek na canvasie
      * @param i
-     * @param j -- pozycja na planszy canvas
+     * @param j -- pozycja porzadkowa na planszy canvas
      * @param state -- stan komorki: zywa/martwa
      */
     set_field: function(i, j, state){
 
-        //console.error('set_field: ', this.pos_tab);
-        //console.warn('size (first row) of pos_tab: ', pos_tab.length, pos_tab[0].length);
-        //console.warn('i: ', i, 'j: ', j);
-        //console.log('row of pos_tab: ', this.pos_tab[i]);
         var x = this.pos_tab[i][j]['x'];
         var y = this.pos_tab[i][j]['y'];
-        //console.warn('xy: ', x, y);
 
         this.c.strokeStyle = 'black';
 
@@ -110,8 +105,10 @@ board = {
     },
 
     /**
-     * definicja funkcja, która ma wprowadzić zmiany po kliknięciu na komórke w planszy
-     * @param event
+     * definicja funkcji, która ma wprowadzić zmiany po kliknięciu na komórke w planszy;
+     * zmienia komorke w stan przeciwny (zywa->martwa, martwa->zywa)
+     * wykorzystuje wykrywanie pozycji wskaznika wzgledem planszy canvas
+     * sprawdza czy i na ktorej komorce znajduje sie wskaznik w trakcie klikniecia
      */
     set_cell_event: function(event) {
 
@@ -143,7 +140,8 @@ board = {
     },
 
     /**
-     * wstawianie canvas o proporcjonalnych wymiarach
+     * metoda wstawiajaca canvas o proporcjonalnych wymiarach;
+     * wylicza wymiary canvas, wstawia tag canvas w html, pobiera context;
      */
     drawing: function() {
 
@@ -170,12 +168,13 @@ board = {
     },
 
     /**
-     * rysowanie martwych komórek -- zapełnianie planszy
+     * meotoda rysuje martwe komórki -- zapełnianie planszy podczas inicjalizacji lub resetu;
+     * pobiera aktualne wymiary planszy i przelicza preskaler do skalowania;
+     * generuje tablice pozycji komorek na planszy
      */
     init_draw_cells: function(){
 
         board.set_canvas_dimension();
-        //console.warn("canvas_dimension changed: ", board.prescaler);
 
         board.clear();
 
@@ -194,7 +193,6 @@ board = {
         var min_pos_y = board.cell_padding + board.cell_radius;
         var max_pos_y = board.canvas_h - (board.cell_padding + board.cell_radius);
         var distance = (board.cell_radius+board.cell_padding)*2;
-
 
         board.pos_tab = [];
 
@@ -222,10 +220,16 @@ board = {
 
     },
 
+    /**
+     * metoda czysci plansze
+     */
     clear: function(){
         board.c.clearRect(0,0,board.canvas_w, board.canvas_h);
     },
 
+    /**
+     * metoda oblicza preskaler
+     */
     set_canvas_dimension: function(){
         board.prescaler = board.canvas_w/$("canvas").width();
     }

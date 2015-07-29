@@ -1,7 +1,13 @@
 var appl_path = "/";
 
+/**
+ * inicjacja zdarzen:
+ *  usuniecia planszy na przycisk usun
+ *  rysowania planszy na klikniecie w wiersz z symulacja
+ */
 window.onload = function(){
 
+    $("input[name='delete']").prop('disabled', true);
     $("input[name='delete']").data('id', $("input[name='id']").value).on('click', delete_simulation);
     $(".row").on('click', function(){
         console.log('row id (init): ', $(this).find("input[type='hidden']").attr('value'));

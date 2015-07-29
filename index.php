@@ -16,13 +16,7 @@ new PrepareClass(array(
     "list/"
 ));
 
-
-//log::logging("\n");
-//log::logging("\n");
-//log::logging("\n");
 log::logging("NOWE WYWOLANIE INDEX, wywoluje FrontController\n");
-
-
 
 $front_controller = new FrontController();
 $front_controller->execute();

@@ -1,4 +1,8 @@
 window.onload = function () {
+    /**
+     * po zaladowaniu strony inicjowane sa uchwyty na zdarzenia sprawdzania identycznosci pol (valid_identical);
+     * sa wywolywane kazdorazowo po wpisaniu litery
+     */
     register.valid_identical('#registration', 'email', 'email_repeat', 'Podane adresy email nie są identyczne.');
     register.valid_identical('#registration', 'password', 'password_repeat', 'Podane hasła nie są identyczne.');
 };
@@ -8,7 +12,14 @@ window.onload = function () {
 register = {
     valid_state: false,
 
-
+    /**
+     * uniwersalna funkcja do porownywania pol pod wzgledem identycznosci;
+     * wyswietla status, gdy pola nie sa identyczne
+     * @param scope -- otoczenie; id w html
+     * @param original -- pierwsze pole
+     * @param compared -- drugie pole
+     * @param message -- tekst w pasku statusu
+     */
     valid_identical: function(scope, original, compared, message){
 
         var fun = function(){

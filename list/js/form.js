@@ -1,6 +1,8 @@
+/**
+ * funkcja wysylajaca do serwera polecenie usuniecia symulacji z baz danych (nie dziala narazie)
+ */
 var delete_simulation = function() {
     console.log("ajax_path:", appl_path + "SimList/delete_simulation");
-    //console.log('id: ', $(this).siblings("input[type='hidden']").attr('value'));
 
     $.ajax( appl_path + "SimList/delete_simulation", {
         type: "POST",

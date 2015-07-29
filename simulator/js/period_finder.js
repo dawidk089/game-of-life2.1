@@ -1,17 +1,22 @@
+/**
+ * obiekt poszukajacy okresowosci ukladu
+ * @param beginning_id -- plansza od ktorej zaczynaja sie poszukiwania
+ * @param ending_id -- -- plansza od ktorej koncza sie poszukiwania
+ * @constructor
+ */
 function PeriodFinder(beginning_id, ending_id) {
     this.first = beginning_id;
     this.last = ending_id;
 }
 
+/**
+ * metoda sprawdzajaca okresowosc lub jej brak
+ * zwraca odpowiedni status
+ * @param current_id -- biezaca plansza (jej numer)
+ */
 PeriodFinder.prototype.condition = function(current_id) {
-    //console.warn('first: ', this.first);
-    //console.warn('last: ', this.last);
-    //console.warn('current_id: ', current_id);
-
     var bottom_pointer = (current_id - this.last) + this.first;
     var is_identical = true;
-
-    //console.warn('bottom pointer: ', bottom_pointer);
 
     for (var i = 0; i < board.size_i; i++) {
         for (var j = 0; j < board.size_j; j++) {

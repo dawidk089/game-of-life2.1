@@ -1,48 +1,51 @@
+/**
+ * obiekt odpowiedzialny za logike gry w zycie
+ */
 game = {
 
     //OBJECT FIELDS
     interval_id: undefined,
     time_step: null,
     is_running: false,
-    mode: null,
-    periods_finders: [],
+    mode: null, //tryb/status gry
+    periods_finders: [], //'poszukiwacze okresow' -- zapetlenia ewolucji; okresowosci ukladu
 
     //OBJECT METHODS
     /**
-     *pobranie danych z formularza i zaktualizowanie planszy
+     *metoda pobierajaca dane z formularza i aktualizujaca plansze
      */
-    side_size_set: function(){
+    /*side_size_set: function(){
         var side_size = Number(document.forms[0].side_size.value);
         if( side_size ){
             board.canvas_h = side_size;
             board.canvas_w = side_size;
         }
-    },
+    },*/
 
     /**
      *pobranie danych z formularza i zaktualizowanie planszy
      */
-    cell_radius_set: function(){
+    /*cell_radius_set: function(){
         var cell_radius = Number(document.forms[0].cell_radius.value);
         if( cell_radius ){
             board.cell_radius = cell_radius;
         }
-    },
+    },*/
 
     /**
      *pobranie danych z formularza
      */
-    time_step_set: function(){
+    /*time_step_set: function(){
         var time_step = Number(document.forms[0].time_step.value);
         if( time_step ){
             this.time_step = time_step;
         }
         console.warn('change time step to: ', this.time_step);
-    },
+    },*/
 
     /**
-     * wywolanie inicjalizacji planszy pod ewolucje
-     * wykonanie kroku ewolucji
+     * wywolanie inicjalizacji planszy w tryb ewolucji (pobiera pozycje komorek z planszy)
+     * wykonanie jendego kroku ewolucji
      */
     next_step_button: function(){
         board.status = 'run';
@@ -51,14 +54,14 @@ game = {
     },
 
     /**
-     * inicjuje start trybu freeruning ewolucji ukladu
-     * @param event
+     * inicjuje start trybu freeruning ewolucji ukladu -- automatycznej ewolucji
+     * inicjuje gre w tryb ewolucji
+     * wywoluje w interwale nstepne kroki ewolucji
      */
     start: function(event){
         if(!game.is_running) {
             board.status = 'run';
             board.init_cells();
-            console.log('start evolutation with: ', game.time_step, 'ms time step');
             game.interval_id = window.setInterval(game.next_step_op, game.time_step);
             if(game.mode == 'zabawa')
                 game.switch_control_panel(null, 'started/fun');
@@ -80,7 +83,7 @@ game = {
     },
 
     /**
-     * funkcja zatrzymujaca interwal
+     * funkcja zatrzymujaca interwal -- ewolucje
      */
     stop: function (event) {
         window.clearInterval(game.interval_id);
@@ -88,10 +91,10 @@ game = {
     },
 
     /**
-     * wykonanie nastepnego kroku ewolucji, tzn...
-     * ...zbadanie sasiadow wszystkich komorek opoerujac na...
-     * ...kopii tablicy komorek i ustawianie stanu komorki na...
-     * ...tablicy orginalnej
+     * wykonanie nastepnego kroku ewolucji, tzn.:
+     *  zbadanie sasiadow wszystkich komorek operujac na kopii tablicy komorek;
+     *  ustawianie stanu komorki na tablicy orginalnej;
+     *  zapisanie planszy do historii;
      */
     next_step_op: function () {
         // kopiowanie
@@ -123,7 +126,23 @@ game = {
         //inkrementacja licznika krokow
         var counter = parseInt($("#game_age").text());
         $("#game_age").text(counter+1);
-        //console.log("get age: ", x);
+
+
+        //uzupelnienie formularzy i sprawdzenie konca rozwoju ukladu
+        if(game.mode == 'symulacje'){
+            var game_state = memento.check_end();
+
+            //uzupelnienie formularzy
+            if(game_state !== undefined)
+                $("#game_state").text(game_state);
+            else
+                $("#game_state").text('evoluating...');
+
+            if(game_state !== undefined){
+                board.status = 'done';
+                $("aside input[name='start']").click();
+            }
+        }
 
         //TODO set count neighbours on cells
        /*
@@ -141,34 +160,24 @@ game = {
         }
 
         board.c.fillStyle = old_fillstyle;*/
-
-        if(game.mode == 'symulacje'){
-            var game_state = memento.check_end();
-
-            //uzupelnienie formularzy
-            if(game_state !== undefined)
-                $("#game_state").text(game_state);
-            else
-                $("#game_state").text('evoluating...');
-
-            console.error("game_state: ", game_state);
-            if(game_state !== undefined){
-                board.status = 'done';
-                $("aside input[name='start']").click();
-            }
-        }
-
     },
 
+    /**
+     * metoda wspierojaca zmiane interwalu poprzez formularz;
+     * gdy interwal jest wlaczony -- wylacza go i wlacza nowy z innym czasem
+     */
     set_time_step: function(){
         game.time_step = 1000.0/document.forms[0].frequency.value;
         if(game.interval_id != undefined){
             window.clearInterval(game.interval_id);
             game.interval_id = window.setInterval(game.next_step_op, game.time_step);
         }
-        console.log("set time_step: ", game.time_step);
     },
 
+    /**
+     * metoda odpowiedzialna za zmiane dostepnosci formularza wg trybu w ktorym znajduje sie gra
+     * @param mode_param -- tryb gry
+     */
     switch_control_panel: function(event, mode_param){
         var mode = mode_param;
         if( mode == undefined )
@@ -216,19 +225,12 @@ game = {
                 break;
             default:
                 throw Error("Źle wybrany stan gry.");
-
-                //board.canvas_id.addEventListener('click', board.set_cell_event);
-                //$("aside input[name='start']").on('click', game.start);
-                //$("aside input[name='stop']").on('click', game.stop);
-                //$("aside input[name='next']").on('click', game.next_step_button);
-                //$("aside input[name='start']").show();
-                //$("aside input[name='stop']").hide();
-                //$("aside input[name='frequency']").on('change', game.set_time_step);
-                //$("aside input[name='reset']").on('change', board.drawing).on('change', board.init_draw_cells);
         }
     },
 
-
+    /**
+     * metoda wspierajace zmiane trybu gry na zmiany zachodzace w formularzu
+     */
     change_mode: function(){
         if($(this).find("option:selected").text() == 'symulacje') {
             game.switch_control_panel(null, 'stopped/simulation');
@@ -241,6 +243,9 @@ game = {
 
     },
 
+    /**
+     * metoda obslugujaca przycisk reset gry -- nie dziala w pelni
+     */
     reset: function(){
         $("#game_age").text('0');
     }
