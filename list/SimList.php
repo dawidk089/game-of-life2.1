@@ -54,8 +54,11 @@ class SimList extends FrontController implements Rest{
                 ),
                 "jss" => array(
                     "jquery_js/jquery.js",
+
                     "list/js/draw.js",
-                    "list/js/form.js"
+                    "list/js/graph.js",
+                    "list/js/form.js",
+                    "list/js/init.js",
                 )
             )
         );
@@ -66,8 +69,14 @@ class SimList extends FrontController implements Rest{
     {
         log::logging("List/ post\n");
         log::logging("List/ post/ ajax: ".log::varb($params));
-        if($this->prepare_params()['get']['params'][0]==='delete_simulation')
-            $this->delete_simulation();
+        switch($this->prepare_params()['get']['params'][0]){
+            case 'delete_simulation':
+                $this->delete_simulation();
+                break;
+            case 'draw_graph':
+                $this->amount_history($this->prepare_params()['post']['id']);
+                break;
+        };
     }
 
     public function put(Array $params)
@@ -111,5 +120,21 @@ class SimList extends FrontController implements Rest{
         log::logging("SimList/ delete_simulation/ id: ".log::varb($id));
         $db = new BaseModel('users');
         $db->delete();
+    }
+
+    private function amount_history($id){
+        $db = new BaseModel('users');
+        $user = $db->read(array('nick'=>$_SESSION['logged']))[0];
+        $simulation = $user['simulation'][$id-1]['data'];
+        $y = array();
+
+        for($k=0; $k<count($simulation); ++$k) {
+            $y[$k] = 0;
+            for ($i = 0; $i < count($simulation[0]); ++$i)
+                for ($j = 0; $j < count($simulation[0][0]); ++$j)
+                    if($simulation[$k][$i][$j])
+                        ++$y[$k];
+        }
+        echo json_encode($y);
     }
 }

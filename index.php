@@ -22,7 +22,6 @@ new PrepareClass(array(
 //log::logging("\n");
 log::logging("NOWE WYWOLANIE INDEX, wywoluje FrontController\n");
 
-echo "To nie jest jeszcze wersja skończona.";
 
 
 $front_controller = new FrontController();

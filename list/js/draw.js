@@ -7,8 +7,6 @@ function Board(horizontal, vertical, padding, radius){
     this.height = 2*(this.cell_radius+this.cell_padding)*this.vertical;
     this.context = null;
 
-
-
     this.canvas_id = null;
 }
 
