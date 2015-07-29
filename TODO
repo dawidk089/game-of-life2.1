@@ -1,9 +1,8 @@
 #Rejestracja/Logowanie
 
 >walidowanie formularza po stronie js
-    -na email w obu
+    -na email w obu (problem kropki w mailu)
     -na haslo (min 8 liter, [duze, male litery, znaki, liczby] )
-    -na powtorzenie hasla i email'a w rejestracji
 >walidowanie formularza po stronie php
     -czy nick istnieje <logowanie>
     -czy nick nie istnieje <rejestracja>
@@ -14,13 +13,8 @@
 
 #strona z rekordami
 
->adaptacja szablonow uzupelnianych z php <lista>[DONE]
->csss[DONE]
 >usuwanie z bazy (problem z przekazaniem id symualcji do usuniecia)
 >podpiecie przycisku test
->pobranie i wyswietlenie listy symualcji[DONE]
->pobranie i wyswietlenie listy rekordow[DONE]
->dodanie typu konca[DONE]
 >sortowanie
 
 
@@ -45,12 +39,19 @@
     o pracy offline
 >przesyl danych po uzyskaniu polaczenia - zmiana przycisku, mryganie
 
+
 #docs
 
 >strona dokumentacji
 >obkomentowanie kodu
 
+
 #bledy logistyczne
 
->przelaczanie w tryb symulacji -- plansze mozna definiowac tylko przed przelaczeniem[NOT YET],
-    bez uruchomienia choc jednego kroku nie widac warunkow poczatkowych[DONE]
+>przelaczanie w tryb symulacji -- plansze mozna definiowac tylko przed przelaczeniem[NOT YET]
+>dodanie wszedzie statusu
+
+#style
+>pasek statusu
+>pasek nawigacji
+>przezroczysty i wysuwany panel kotrolny[NOT YET]

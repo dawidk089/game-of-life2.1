@@ -36,6 +36,7 @@ class View{
     }
 
     private function set_footer(){
+        extract($this->data);
         include_once $this->path['footer'];
     }
 }

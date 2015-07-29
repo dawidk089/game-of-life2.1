@@ -239,5 +239,9 @@ game = {
         }
 
 
+    },
+
+    reset: function(){
+        $("#game_age").text('0');
     }
 };

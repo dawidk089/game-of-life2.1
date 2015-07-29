@@ -21,7 +21,7 @@ window.onload = function () {
     $("aside select[name='mode']").data('game_state', document.forms[0].mode.value).on('change', game.state).on('change', game.change_mode);
     $("aside input[name='start']").on('click', game.start);
     $("aside input[name='next']").on('click', game.next_step_button);
-    $("aside input[name='reset']").on('click', board.init_draw_cells).data('mode', 'init').on('click', game.switch_control_panel);
+    $("aside input[name='reset']").on('click', board.init_draw_cells).data('mode', 'init').on('click', game.switch_control_panel).on('click', game.reset);
     $("aside input[name='save']").on('click', memento.send_to_server);
 
     $(window).resize( board.set_canvas_dimension).resize();
