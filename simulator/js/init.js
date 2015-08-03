@@ -26,6 +26,9 @@ window.onload = function () {
     $("aside input[name='next']").on('click', game.next_step_button);
     $("aside input[name='reset']").on('click', board.init_draw_cells).data('mode', 'init').on('click', game.switch_control_panel).on('click', game.reset);
     $("aside input[name='save']").on('click', memento.send_to_server);
+    $("#lived_amount, #game_state").text('n/a');
+
+
 
     $(window).resize( board.set_canvas_dimension).resize();
 

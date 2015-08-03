@@ -60,15 +60,14 @@ class BaseModel{
                 array('$addToSet' => $what)
             );
         }
-        log::logging("BaseModel/ update/ zakonczono dodawanie\n");
     }
 
-    public function delete(){
-        $this->collection->update(array('nick'=>$_SESSION['logged']),array('$unset'=>array('simulation'=>1)));
-        //$this->collection->update(array('nick'=>$_SESSION['logged']),array('$pull'=>array('simulation'=>1)));
+    public function delete($no){
+        $this->collection->update(
+            array('nick'=>$_SESSION['logged']),
+            array('$unset'=>array('simulation.'.$no=>1)));
+        $this->collection->update(
+            array('nick'=>$_SESSION['logged']),
+            array('$pull'=>array('simulation'=>null)));
     }
 }
-
-// przykladowy wpis z baz danych
-// { "_id" : ObjectId("55972e8db9d53cf538436f75"), "email" : "dawidk089%40o2", "nick" : "dawidk089", "password" : "makarena", "simulation" : [ ] }
-

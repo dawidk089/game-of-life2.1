@@ -183,33 +183,14 @@ class Automaton{
     {
         log::logging("Automaton/ send/ ukonczono symulacje ze statusem <$this->status> z liczba serii: " . count($this->boards) . "\n");
         $db = new BaseModel('users');
+
         $db->update(
             'add',
             array('nick' => $_SESSION['logged']),
-            array('simulation' => array('data' => $this->boards, 'status' => $this->status)));
-
-        /*//TODO delete $db in Automaton/ send/
-        $db = new BaseModel('records');
-
-        //najpierw po czasie potem po powierzchni
-        $records = $db->read(array());
-        log::logging("Automton/ send/ \$records: ".log::varb($records));
-        $area = $this->x_size*$this->copy_board;
-        $life_time = count($this->boards);
-
-        //TODO wstawianie dokumentu miedzy konkretne dokumenty w mongodb
-        foreach($records as $record){
-            if($record->life_time>$life_time){
-                $find_record = array(
-                    'nick'=>$_SESSION['logged'],
-                    'life_time'=>$life_time,
-                    'id'=>...
-
-                )
-            }
-        }*/
-
-
+            array('simulation' => array(
+                'status' => $this->status,
+                'data' => $this->boards
+            )));
     }
 
     private function change_cell($neighbours_amount, &$cell){

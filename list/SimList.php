@@ -56,9 +56,9 @@ class SimList extends FrontController implements Rest{
                     "jquery_js/jquery.js",
 
                     "list/js/draw.js",
-                    "list/js/graph.js",
+                    //"list/js/graph.js",
                     "list/js/form.js",
-                    "list/js/init.js",
+                    "list/js/init.js"
                 )
             )
         );
@@ -119,7 +119,7 @@ class SimList extends FrontController implements Rest{
         $id = $this->prepare_params()['ajax']['id'];
         log::logging("SimList/ delete_simulation/ id: ".log::varb($id));
         $db = new BaseModel('users');
-        $db->delete();
+        $db->delete($id-1);
     }
 
     private function amount_history($id){

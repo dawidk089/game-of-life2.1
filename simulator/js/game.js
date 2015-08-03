@@ -235,6 +235,7 @@ game = {
         if($(this).find("option:selected").text() == 'symulacje') {
             game.switch_control_panel(null, 'stopped/simulation');
             game.mode = 'symulacje';
+
         }
         else{
             game.mode = 'zabawa';
