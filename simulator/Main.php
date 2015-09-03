@@ -67,7 +67,7 @@ class Main extends FrontController implements Rest
     public function post(Array $params)
     {
         log::logging("Main/ post/ boards: " . log::varb(count($params['ajax']['boards'])));
-        new Automaton($params['ajax']['boards']);
+        new Automaton($params['ajax']['simulation'], $params['ajax']['id']);
     }
 
     public function put(Array $params)

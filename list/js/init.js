@@ -1,3 +1,4 @@
+//var appl_path = "http://wu.tbajorek.pl/gameoflife/";
 var appl_path = "/";
 
 /**

@@ -20,7 +20,8 @@ PeriodFinder.prototype.condition = function(current_id) {
 
     for (var i = 0; i < board.size_i; i++) {
         for (var j = 0; j < board.size_j; j++) {
-            if (memento.history[current_id][i][j] != memento.history[bottom_pointer][i][j]) {
+            //if (memento.history[current_id][i][j] != memento.history[bottom_pointer][i][j]) {
+            if (sim_storage.current_simulation.boards[current_id][i][j] != sim_storage.current_simulation.boards[current_id][i][j]) {
                 is_identical = false;
                 break;
             }

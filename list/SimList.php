@@ -32,11 +32,12 @@ class SimList extends FrontController implements Rest{
         log::logging("SimList/ get\n");
         $list = null;
         $simulations = null;
-        if($params['get']['params'][0] === 'simulations'){
+        $type = $params['get']['params'][0];
+        if($type === 'simulations'){
             log::logging("SimList/ get/ simulations\n");
             $list = $this->own_simlist();
         }
-        elseif($params['get']['params'][0] === 'records'){
+        elseif($type === 'records'){
             log::logging("SimList/ get/ records\n");
             $list = $this->users_simlist();
         }
@@ -50,7 +51,8 @@ class SimList extends FrontController implements Rest{
                 "simulations" => $list,
                 "csss" => array(
                     "appl/css/main.css",
-                    "list/css/SimList.css"
+                    "list/css/SimList.css",
+                "type" => $type
                 ),
                 "jss" => array(
                     "jquery_js/jquery.js",

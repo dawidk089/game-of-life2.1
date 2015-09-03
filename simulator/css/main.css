@@ -23,6 +23,23 @@ aside fieldset {
     border: dashed 1px #f90;
 }
 
+/**/
+
+#size *{
+    width: 100px;
+}
+
+/***** TUTAJ ZMIENIŁEM *******/
+
+#size .box{
+    display: inline-block;
+    /*margin-bottom: 0;*/
+}
+
+/******* KONIEC ZMIAN *********/
+
+/**/
+
 #game_canvas {
     max-width: 100%;
 }
@@ -34,6 +51,8 @@ aside fieldset {
 .input_wrapping:last-of-type {
     border-bottom: none;
 }
+
+/**/
 
 h1 {
     color: #f90;
@@ -77,9 +96,48 @@ input[type=submit]:hover {
     background: #222;
 }
 
+/**/
 input[type=range] {
-    border: none;
+    /*border: none;*/
+    margin: 5px auto 5px auto;
+    width: 100%;
 }
+
+#min_range{
+    float:left;
+}
+
+#max_range{
+    float:right;
+}
+
+#scale{
+    margin-bottom: 30px;
+}
+
+/**/
+
+#storage > *{
+    /*display: inline;*/
+    display: block;
+    /*position: relative;*/
+}
+
+#diode_canvas{
+    /*float: right;*/
+    /*margin: 5px auto auto 5px ;*/
+    max-width: 100%;
+}
+
+input[name=save]{
+    float: left;
+}
+
+.buttons_row *{
+    display: inline;
+}
+
+/**/
 
 label {
     display: block;
@@ -111,3 +169,4 @@ legend {
     border-color: #333;
     color: #666;
 }
+

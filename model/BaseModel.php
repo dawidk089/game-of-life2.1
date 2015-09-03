@@ -3,7 +3,8 @@
 class BaseModel{
     private $user = "3karminski" ;
     private $pass = "pass" ;
-    private $host = "localhost" ;
+    private $host = "localhost" ; //lenovo
+    //private $host = "http://wu.tbajorek.pl/gameoflife/" ;
     //private $host = "pascal.fis.agh.edu.pl" ;
     private $base = "3karminski" ;
     private $coll;// = "users";

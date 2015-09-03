@@ -85,39 +85,62 @@ class Automaton{
     private $status = 'wait';
     private $is_identical = null;
 
-    public function __construct($boards){
-        log::logging("Automaton/ __construct/ wejscie do konstruktora\n");
-        $this->is_identical = PeriodFinder::$period_finders;
-        $this->boards = $boards;
-        $this->x_size = count($this->last())-1;
-        $this->y_size = count($this->last()[0])-1;
+    public function __construct($simulation, $id){
+        if(!is_numeric($id))
+            exit();
 
-        log::logging("Automaton/ __construct/ zainincjowanie zmiennych\n");
-        do{
-            log::logging("Automaton/ __construct/ do/ liczba plansz: ".count($this->boards)."\n");
-            $this->orginal_board = $this->last();
-            $this->copy_board = $this->last();
+        log::logging("Automation/ __construct/ \$simulation id: ".log::varb($id));
+        log::logging("Automation/ __construct/ \$simulation: ".log::varb($simulation));
+        log::logging("Automation/ __construct/ \$simulation.state: ".log::varb($simulation->state));
+
+            $this->boards = $simulation->boards;
+            $this->x_size = count($this->last()) - 1;
+            $this->y_size = count($this->last()[0]) - 1;
+
+        if($simulation->state === 'evoluating...'){
+            $this->is_identical = PeriodFinder::$period_finders;
+
+            //log::logging("Automation/ __construct/ after bo\n");
+
+            log::logging("Automaton/ __construct/ zainincjowanie zmiennych\n");
+            do {
+                log::logging("Automaton/ __construct/ do/ liczba plansz: " . count($this->boards) . "\n");
+                $this->orginal_board = $this->last();
+                $this->copy_board = $this->last();
 
 
-            $this->step();
-            switch($this->status){
-                case 'period':
-                    break;
-                case 'const':
-                    break;
-                case 'died':
-                    break;
-                case 'wait':
-                    break;
-                case 'live':
-                    break;
-            }
-            if(count($this->boards) > 10000) {
-                exit;
-            }
+                $this->step();
+                switch ($this->status) {
+                    case 'period':
+                        break;
+                    case 'const':
+                        break;
+                    case 'died':
+                        break;
+                    case 'wait':
+                        break;
+                    case 'live':
+                        break;
+                }
+                if (count($this->boards) > 10000) {
+                    exit;
+                }
 
-        }while($this->status === 'live');
+            } while ($this->status === 'live');
+        }
+        else
+            $this->status = $simulation->state;
+
+        log::logging("Automation/ __construct/ zakonczyl prace\n");
+
         $this->send();
+
+        echo json_encode(array(
+            'save_status'=>'saved',
+            'id'=>$id,
+            'boards'=>$this->boards,
+            'simulation_status'=>$this->status
+        ));
     }
 
     private function step(){

@@ -16,7 +16,9 @@ board = {
     size_j: 0, //ilosc komorek poziomo/pionowo
     cells: [], //komorki -- obiekty
     canvas_id: undefined,
-    //status: 'initiating',
+    //current_step: undefined,//#
+    //alives_count: undefined,//#
+    is_clear: true,
 
     //OBJECT METHODS
 
@@ -24,18 +26,23 @@ board = {
      * motada ktora z ustawien poczatkowych planszy inicjuje zbior obkiektow komorek
      */
     init_cells: function () {
-
+        var is_clear = true;
         board.cells = [];
-
+        if(info.current_step === undefined)
+            info.current_step = 0;
         for (var i = 0; i < board.size_i; i++) {
             var row = [];
             for (var j = 0; j < board.size_j; j++)
-                if(board.pos_tab[i][j]['state'] == 'live')
+                if(board.pos_tab[i][j]['state'] == 'live') {
                     row.push(new Cell(true, i, j));
+                    is_clear = false;
+                }
                 else if(this.pos_tab[i][j]['state'] == 'dead')
                     row.push(new Cell(false, i, j));
             board.cells.push(row);
         }
+
+        return !is_clear;
     },
 
     /**
@@ -128,7 +135,6 @@ board = {
                 var state_c = board.pos_tab[i][j]['state'];
 
                 if (Math.abs(x - x_c) < +board.cell_padding+r_c && Math.abs(y - y_c) < board.cell_padding+r_c) {
-                    //console.log('board.c: ' + i + ' ' + j);
                     if(state_c=='dead')
                         board.set_field(i, j, 'live');
                     else if(state_c=='live')
@@ -145,8 +151,8 @@ board = {
      */
     drawing: function() {
 
-        board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;
-        board.canvas_h = 2*(board.cell_radius+board.cell_padding)*document.forms[0].vertical_amount.value;
+        board.canvas_w = 2*(board.cell_radius+board.cell_padding)*parseInt($("#horizontal_amount").val());
+        board.canvas_h = 2*(board.cell_radius+board.cell_padding)*parseInt($("#vertical_amount").val());
 
         console.log(board.canvas_w);
 
@@ -160,11 +166,8 @@ board = {
         document.getElementById('scaling_area').innerHTML = canvas_init_text;
         board.canvas_id = document.getElementById('game_canvas');
 
-        console.log("set a box handle: ", board.canvas_id);
-
         board.c = board.canvas_id.getContext('2d');
 
-        console.log('set a canvas: ', board.c);
     },
 
     /**
@@ -174,48 +177,84 @@ board = {
      */
     init_draw_cells: function(){
 
-        board.set_canvas_dimension();
+        var horizontal = $("#horizontal_amount").val();
+        var vertical = $("#vertical_amount").val();
 
-        board.clear();
+        var hmax = parseInt($("#horizontal_amount").prop('max'));
+        var hmin = parseInt($("#horizontal_amount").prop('min'));
+        var vmax = parseInt($("#vertical_amount").prop('max'));
+        var vmin = parseInt($("#vertical_amount").prop('min'));
 
-        board.canvas_w = 2*(board.cell_radius+board.cell_padding)*document.forms[0].horizontal_amount.value;
-        board.canvas_h = 2*(board.cell_radius+board.cell_padding)*document.forms[0].vertical_amount.value;
-
-        var ref = $("#game_canvas")[0];
-        ref.width = board.canvas_w;
-        ref.height = board.canvas_h;
-
-        console.log("set canvas_w: ", board.canvas_w);
-        console.log("set canvas_h: ", board.canvas_h);
-
-        var min_pos_x = board.cell_padding + board.cell_radius;
-        var max_pos_x = board.canvas_w - (board.cell_padding + board.cell_radius);
-        var min_pos_y = board.cell_padding + board.cell_radius;
-        var max_pos_y = board.canvas_h - (board.cell_padding + board.cell_radius);
-        var distance = (board.cell_radius+board.cell_padding)*2;
-
-        board.pos_tab = [];
-
-        for (var x = min_pos_x; x <= max_pos_x; x += distance) {
-            var pos_row = [];
-            for (var y = min_pos_y; y <= max_pos_y; y += distance) {
-                pos_row.push({'x': x, 'y': y, 'state': 'dead'});
-            }
-
-            board.pos_tab.push(pos_row);
+        if(horizontal.match(/^[0-9]+$/) === null){
+            game.status_bar('red', 'Wprowadzona wartość ilości komórek (poziomo) nie jest liczba.');
+            game.button_unable('set', false);
+            return;
         }
-        board.size_i = board.pos_tab.length;
-        board.size_j = board.pos_tab[0].length;
+        else if(vertical.match(/^[0-9]+$/) === null){
+            game.status_bar('red', 'Wprowadzona wartość ilości komórek (pionowo) nie jest liczba.');
+            game.button_unable('set', false);
+            return;
+        }
 
+        horizontal = parseInt(horizontal);
+        vertical = parseInt(vertical);
 
-        for (var i = 0; i < board.pos_tab.length; i++)
-            for (var j = 0; j < board.pos_tab[i].length; j++) {
+        if(horizontal > hmax || horizontal < hmin){
+            game.status_bar('red', 'Wymiar poziomy planszy jest spoza dozwolonego zakresu ('+hmin+', '+hmax+').');
+            $("#horizontal_amount").val(hmin).change();
+            return;
+        }
+        else if(vertical > vmax || vertical < vmin){
+            game.status_bar('red', 'Wymiar pionowy planszy jest spoza dozwolonego zakresu ('+vmin+', '+vmax+').');
+            $("#vertical_amount").val(vmin).change();
+            return;
+        }
 
-                var x = board.pos_tab[i][j].x;
-                var y = board.pos_tab[i][j].y;
-                var state = board.pos_tab[i][j]['state'];
-                board.set_field(i, j, state);
+            game.button_unable('set', true);
+
+            board.canvas_w = 2 * (board.cell_radius + board.cell_padding) * horizontal;
+            board.canvas_h = 2 * (board.cell_radius + board.cell_padding) * vertical;
+
+            this.is_clear = true;
+            board.set_canvas_dimension();
+
+            board.clear();
+
+            var ref = $("#game_canvas")[0];
+            ref.width = board.canvas_w;
+            ref.height = board.canvas_h;
+
+            console.log("set canvas_w: ", board.canvas_w);
+            console.log("set canvas_h: ", board.canvas_h);
+
+            var min_pos_x = board.cell_padding + board.cell_radius;
+            var max_pos_x = board.canvas_w - (board.cell_padding + board.cell_radius);
+            var min_pos_y = board.cell_padding + board.cell_radius;
+            var max_pos_y = board.canvas_h - (board.cell_padding + board.cell_radius);
+            var distance = (board.cell_radius + board.cell_padding) * 2;
+
+            board.pos_tab = [];
+
+            for (var x = min_pos_x; x <= max_pos_x; x += distance) {
+                var pos_row = [];
+                for (var y = min_pos_y; y <= max_pos_y; y += distance) {
+                    pos_row.push({'x': x, 'y': y, 'state': 'dead'});
+                }
+
+                board.pos_tab.push(pos_row);
             }
+            board.size_i = board.pos_tab.length;
+            board.size_j = board.pos_tab[0].length;
+
+
+            for (var i = 0; i < board.pos_tab.length; i++)
+                for (var j = 0; j < board.pos_tab[i].length; j++) {
+
+                    var x = board.pos_tab[i][j].x;
+                    var y = board.pos_tab[i][j].y;
+                    var state = board.pos_tab[i][j]['state'];
+                    board.set_field(i, j, state);
+                }
 
 
     },
@@ -232,7 +271,87 @@ board = {
      */
     set_canvas_dimension: function(){
         board.prescaler = board.canvas_w/$("canvas").width();
-    }
+    },
 
+    prev_board: function(){
+        console.log('board.prev_board', info.current_step-1);
+        this.set_generated(info.current_step-1);
+    },
+
+    next_board: function(){
+        this.set_generated(info.current_step+1);
+    },
+
+    set_generated: function(no){
+        console.log('set_generated of no: ', no, '/', fun_storage.history.length-1);
+        board.cells = [];
+        info.current_step = no;
+        for (var i = 0; i < board.size_i; i++) {
+            var row = [];
+            for (var j = 0; j < board.size_j; j++)
+                if(fun_storage.history[no][i][j] === true) {
+                    row.push(new Cell(true, i, j));
+                    this.set_field(i, j, 'live');
+                }
+                else if(fun_storage.history[no][i][j] === false) {
+                    row.push(new Cell(false, i, j));
+                    this.set_field(i, j, 'dead');
+                }
+            board.cells.push(row);
+        }
+        $("#game_age").text(no);
+    },
+
+    get_board: function(){
+        var cell_memento = [];
+        for (var i = 0; i < board.size_i; i++) {
+            var memento_row = [];
+            for (var j = 0; j < board.size_j; j++) {
+                memento_row.push(board.cells[i][j].is_alive);
+            }
+            cell_memento.push(memento_row);
+        }
+        return cell_memento;
+    },
+
+    set_board: function(board_to_set){
+        board.cells = [];
+        for (var i = 0; i < board.size_i; i++) {
+            var row = [];
+            for (var j = 0; j < board.size_j; j++)
+                if(board_to_set[i][j] === true) {
+                    row.push(new Cell(true, i, j));
+                    this.set_field(i, j, 'live');
+                }
+                else if(board_to_set[i][j] === false) {
+                    row.push(new Cell(false, i, j));
+                    this.set_field(i, j, 'dead');
+                }
+            board.cells.push(row);
+        }
+        $("#game_age").text('0');
+    },
+
+    count_alives: function(board){
+        var lived_amount = 0;
+        for (var i = 0; i < board.length; i++) {
+            for (var j = 0; j < board[i].length; j++) {
+                if(board[i][j])
+                    lived_amount++;
+            }
+        }
+        info.alives_amount = lived_amount;
+    },
+
+    get_alives_amount: function(board){
+        var lived_amount = 0;
+        for (var i = 0; i < board.length; i++) {
+            for (var j = 0; j < board[i].length; j++) {
+                if(board[i][j])
+                    lived_amount++;
+            }
+        }
+        return lived_amount;
+    }
 };
 

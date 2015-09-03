@@ -20,7 +20,7 @@
                 <div class="item counter"><?=$i."."?></div>
                 <div id="beginning<?=$i?>" class="game_canvas item">
                     <script>
-                        var board = new Board(<?=$horizontal?>, <?=$vertical?>, 10, 100);
+                        var board = new Board(<?=$horizontal?>, <?=$vertical?>, 1, 10);
                         board.init_canvas("canvas<?=$i?>beg", "beginning<?=$i?>");
                         <?php for($j=0; $j<$horizontal; ++$j): ?>
                             <?php for($k=0; $k<$vertical; ++$k): ?>
@@ -35,7 +35,7 @@
                 </div>
                 <div id="end<?=$i?>" class="game_canvas item">
                     <script>
-                        var board = new Board(<?=$horizontal?>, <?=$vertical?>, 10, 100);
+                        var board = new Board(<?=$horizontal?>, <?=$vertical?>, 1, 10);
                         board.init_canvas("canvas<?=$i?>end", "end<?=$i?>");
                         <?php $last = count($simulation['data'])-1; ?>
                         <?php for($j=0; $j<$horizontal; ++$j): ?>
@@ -58,7 +58,9 @@
                         </ul>
                     </p>
                     <p>Status: <span><?=$simulation['status']?></span></p>
-                    <p>Nick: <span><?=$simulation['user']?></span></p>
+                    <?php if($type === 'record'):?>
+                        <p>Nick: <span><?=$simulation['user']?></span></p>
+                    <?php endif ?>
                         <input type="button" value="Usuń" name="delete">
                     <!--TODO jak pobrac dane z pola hidden-->
                         <input type="hidden" name="id" value="<?=$i?>">

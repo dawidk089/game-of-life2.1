@@ -23,6 +23,7 @@ header{
 
 footer{
     border-top: gray 1px solid;
+    margin-bottom: 25px;
 }
 
 p,
@@ -35,7 +36,11 @@ h4 {
 
 /*pasek statusu*/
 #status{
+    position: fixed;
+    bottom: 0;
+    left: 0;
     color: red;
+    background: rgba(36,36,36,1);
 }
 
 /*pasek nawigacji*/
