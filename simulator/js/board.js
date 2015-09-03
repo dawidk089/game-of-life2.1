@@ -122,7 +122,7 @@ board = {
         var x = (event.layerX - board.canvas_id.offsetLeft)*board.prescaler, // - elemLeft,
             y = (event.layerY - board.canvas_id.offsetTop)*board.prescaler; // - elemTop;
 
-        console.log('clicked coordination: ['+x + '; ' + y + ']');
+        //console.log('clicked coordination: ['+x + '; ' + y + ']');
 
         for (var i=0; i<board.pos_tab.length; i++) {
             for (var j = 0; j < board.pos_tab[i].length; j++) {
@@ -154,7 +154,7 @@ board = {
         board.canvas_w = 2*(board.cell_radius+board.cell_padding)*parseInt($("#horizontal_amount").val());
         board.canvas_h = 2*(board.cell_radius+board.cell_padding)*parseInt($("#vertical_amount").val());
 
-        console.log(board.canvas_w);
+        //console.log(board.canvas_w);
 
         var canvas_init_text = '\
         <canvas id="game_canvas"  \
@@ -224,8 +224,8 @@ board = {
             ref.width = board.canvas_w;
             ref.height = board.canvas_h;
 
-            console.log("set canvas_w: ", board.canvas_w);
-            console.log("set canvas_h: ", board.canvas_h);
+            //console.log("set canvas_w: ", board.canvas_w);
+            //console.log("set canvas_h: ", board.canvas_h);
 
             var min_pos_x = board.cell_padding + board.cell_radius;
             var max_pos_x = board.canvas_w - (board.cell_padding + board.cell_radius);
@@ -315,6 +315,8 @@ board = {
     },
 
     set_board: function(board_to_set){
+        if(!board_to_set) return false;
+
         board.cells = [];
         for (var i = 0; i < board.size_i; i++) {
             var row = [];
@@ -330,6 +332,7 @@ board = {
             board.cells.push(row);
         }
         $("#game_age").text('0');
+        return true;
     },
 
     count_alives: function(board){

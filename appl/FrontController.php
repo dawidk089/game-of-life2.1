@@ -8,7 +8,8 @@ class FrontController
         "Auth",
         "BaseModel",
         "Automaton",
-        "SimList"
+        "SimList",
+        "About"
     );
     private $default_controller = "Main";
     private $rest_method = null;
@@ -57,7 +58,7 @@ class FrontController
     }
 
     public final function execute(){
-        //log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
+        log::logging("FrontController/ execute/ wywolywanie konstruktora klasy $this->name_controller, z parametrami: ".log::varb($this->params));
         return new $this->name_controller($this->params);
     }
 

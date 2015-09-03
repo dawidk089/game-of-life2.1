@@ -85,7 +85,7 @@ sim_storage = {
         var is_sended = false;
 
         for(i=0; i<sim_storage.simulations.length; ++i) {
-            console.log('checing simulation: ', i);
+            //console.log('checing simulation: ', i);
             var simulation = sim_storage.simulations[i];
             if (simulation.save_status === 'waiting' || simulation.save_status === 'error') {
 
@@ -158,7 +158,8 @@ sim_storage = {
                                     ]);
                             if(is_current) {
                                 info.get_from_storage();
-                                board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]);
+                                if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]))
+                                    throw Error('niepowodzenie ustawienia planszy');
                                 info.set_game();
                                 game.switch_control_panel(null, "done/simulation");
                             }
@@ -179,12 +180,12 @@ sim_storage = {
                     sim_storage.update_localStorage();
                 });
             }
-            else
-                console.log("simulation not waiting", i);
+            //else
+                //console.log("simulation not waiting", i);
         }
 
         if(!is_sended) {
-            console.log('all simulation which waited is saved');
+            //console.log('all simulation which waited is saved');
             window.clearInterval(sim_storage.id_send_interval);
             sim_storage.id_send_interval = undefined;
         }
@@ -357,13 +358,17 @@ function Simulation(){
     unsaved
     error
      */
+    this.periods_finders = undefined;
 }
 
 Simulation.prototype.add_board = function(board) {
-    if(this.boards === undefined)
+    if(this.boards === undefined) {
         this.boards = [];
+        info.current_step = 0;
+    }
     this.boards.push(board);
     info.board_state.storage = true;
+    //++info.current_step;
     this.check_end();
 };
 
@@ -373,6 +378,9 @@ Simulation.prototype.check_end = function () {
         return;
     else
         info.board_state.check = true;
+    //<debug>
+    console.log('sprawdzenie stanu planszy');
+    //</debug>
 
     var last_id = this.boards.length-1;
 
@@ -443,7 +451,11 @@ Simulation.prototype.set_state = function(){
     this.last_board_state.create = info.board_state.create;
     this.last_board_state.storage = info.board_state.storage;
     this.last_board_state.check = info.board_state.check;
+
+    this.periods_finders = game.periods_finders;
 };
+
+//helping function to debugging
 
 var log = function(){
     console.log('info::\n');
@@ -482,5 +494,15 @@ var log = function(){
     console.log('info', localStorage['info']);
     console.log('is_restore', localStorage['is_restore']);
     console.log('period_finders', localStorage['period_finders']);
+};
+
+var is_boards_identical = function(first_board, second_board){
+
+    for (var i = 0; i < first_board.length; i++)
+        for (var j = 0; j < first_board[0].length; j++)
+            if(first_board[i][j] != second_board[i][j])
+                return false;
+
+    return true;
 };
 

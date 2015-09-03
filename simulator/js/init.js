@@ -1,5 +1,6 @@
 //var appl_path = "http://wu.tbajorek.pl/gameoflife/";
 var appl_path = "/";
+var checkpoint = 0;
 
 /**
  * inicjalizacja uchwytow na zmiany w formularzu
@@ -15,9 +16,9 @@ window.onload = function () {
     game.set_time_step();
     game.mode = 'zabawa';
 
-    console.log("set cell_padding: ", board.cell_padding);
-    console.log("set cell_radius: ", board.cell_radius);
-    console.log("set time_step: ", game.time_step);
+    //console.log("set cell_padding: ", board.cell_padding);
+    //console.log("set cell_radius: ", board.cell_radius);
+    //console.log("set time_step: ", game.time_step);
 
     board.drawing('scaling_area', 'game_canvas');
     board.init_draw_cells();

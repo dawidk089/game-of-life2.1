@@ -43,70 +43,88 @@ game = {
 
     //wykonanie kroku ewolucji
     next_step_op: function() {
-        console.log('ilosc plansz: ', sim_storage.current_simulation.boards.length);
-        console.log('step '+ info.current_step +': wejscie do funkcji\n', info.board_state);
+        //<debug>
+        if(sim_storage.current_simulation && sim_storage.current_simulation.boards.length == 1)
+            console.log('stan pierwszej planszy po wejsciu w |next_step_op|: '+JSON.stringify(info.board_state));
+        //</debug>
+
 
         if(board.cells === undefined)
-            throw "boards.cells doesnt exist";
-
-        // kopiowanie
-        var cell_copy = [];
-        var cell_memento = [];
-
-        for (var i = 0; i < board.size_i; i++) {
-            var row = [];
-            var memento_row = [];
-            for (var j = 0; j < board.size_j; j++) {
-                row.push(new Cell(board.cells[i][j].is_alive, i, j));
-                memento_row.push(board.cells[i][j].is_alive);
-            }
-            cell_copy.push(row);
-            cell_memento.push(memento_row);
+            throw Error("boards.cells doesnt exist -> you should init them!");
+        else if( info.board_state.create && info.board_state.storage && info.board_state.check) {
+            ++info.current_step;
+            info.board_state.create = false;
+            info.board_state.storage = false;
+            info.board_state.check = false;
+            //<debug>
+            console.log('resetowanie stanu planszy, zwiekszenie iteratora');
+            //</debug>
         }
 
-        console.log('step '+ info.current_step +': wykonano kopie\n', info.board_state);
+        if(!info.board_state.create || game.mode == 'zabawa') {
+            // kopiowanie
+            var cell_copy = [];
 
-        /*//dodawanie do storage
-        if(!info.board_state.storage) {
-            if (game.mode == 'symulacje')
-                //+spr warunku koncowego
-                sim_storage.current_simulation.add_board(cell_memento);
-            else if (game.mode == 'zabawa')
-                fun_storage.history.push(cell_memento);
-            info.current_step+=1;
-            info.board_state.storage = true;
-        }
-
-        console.log('step '+ info.current_step +': dodano do storage\n', info.board_state);
-         */
-        //przeliczanie na kopii
-        for (var i = 0; i < board.size_i; i++)
-            for (var j = 0; j < board.size_j; j++) {
-                cell_copy[i][j].is_alive = board.cells[i][j].condition();
+            for (var i = 0; i < board.size_i; i++) {
+                var row = [];
+                for (var j = 0; j < board.size_j; j++) {
+                    row.push(new Cell(board.cells[i][j].is_alive, i, j));
+                }
+                cell_copy.push(row);
             }
-        console.log('step '+ info.current_step +': przeliczono kopie\n', info.board_state);
 
-        //przenoszenie nowo wygenerowanej planszy
-        board.cells = cell_copy;
-        info.board_state.create = true;
-        info.board_state.check = false;
-        info.board_state.storage = false;
+            /*//dodawanie do storage
+             if(!info.board_state.storage) {
+             if (game.mode == 'symulacje')
+             //+spr warunku koncowego
+             sim_storage.current_simulation.add_board(cell_memento);
+             else if (game.mode == 'zabawa')
+             fun_storage.history.push(cell_memento);
+             info.current_step+=1;
+             info.board_state.storage = true;
+             }
 
-        board.set_cells();
-        console.log('step '+ info.current_step +': przeniesienie kopii na orginal\n', info.board_state);
+             console.log('step '+ info.current_step +': dodano do storage\n', info.board_state);
+             */
+            //przeliczanie na kopii
+            for (var i = 0; i < board.size_i; i++)
+                for (var j = 0; j < board.size_j; j++) {
+                    cell_copy[i][j].is_alive = board.cells[i][j].condition();
+                }
+
+            //przenoszenie nowo wygenerowanej planszy
+            board.cells = cell_copy;
+            info.board_state.create = true;
+            board.set_cells();
+            //<debug>
+            console.log('utworzenie nowej planszy');
+            //</debug>
+        }
 
         //dodawanie do storage
-        if(!info.board_state.storage) {
-            if (game.mode == 'symulacje')
-            //+spr warunku koncowego
-                sim_storage.current_simulation.add_board(cell_memento);
-            else if (game.mode == 'zabawa')
-                fun_storage.history.push(cell_memento);
-            info.current_step+=1;
-            info.board_state.storage = true;
-        }
-        console.log('step '+ info.current_step +': dodano do storage\n', info.board_state);
+        if (!info.board_state.storage || game.mode == 'zabawa') {
+            // kopiowanie
+            var new_board = [];
+            for (var i = 0; i < board.size_i; i++) {
+                var new_board_row = [];
+                for (var j = 0; j < board.size_j; j++)
+                    new_board_row.push(board.cells[i][j].is_alive);
+                new_board.push(new_board_row);
+            }
 
+            if (game.mode == 'symulacje') {
+                //+spr warunku koncowego
+                sim_storage.current_simulation.add_board(new_board);
+                //<debug>
+                console.log('dodanie planszy do storage');
+                //</debug>
+            }
+            else if (game.mode == 'zabawa') {
+                fun_storage.history.push(new_board);
+                ++info.current_step;
+                info.board_state.storage = true;
+            }
+        }
 
         //reakcja na stan symulacji
         if(game.mode == 'symulacje'){
@@ -119,8 +137,6 @@ game = {
                 info.simulation_state = 'evoluating...';
         }
         info.set_game();
-
-        console.log('step '+ info.current_step +': ustawienie stanu gry\n', info.board_state);
     },
 
     /*init_first_board: function(){
@@ -145,7 +161,7 @@ game = {
      */
     set_time_step: function(){
         game.time_step = 1000.0/parseFloat($("aside input[name='frequency']").val());
-        console.log('change frequency to: ', game.time_step);
+        //console.log('change frequency to: ', game.time_step);
         if(game.interval_id != undefined){
             window.clearInterval(game.interval_id);
             game.interval_id = window.setInterval(game.next_step_op, game.time_step);
@@ -180,7 +196,7 @@ game = {
 
         //info.control_panel_state = mode;
 
-        console.log("mode: ", mode);
+        //console.log("mode: ", mode);
 
         /*var set_disable = function(h_w, set_dim, range, start, next, save, mode, set_cells, reset){
             $("aside input[name='horizontal_amount']").prop('disabled', h_w);
@@ -291,7 +307,7 @@ game = {
             case "init/simulation":
                 $('#state').hide();
                 game.cell_unable();
-                info.set_simulation();//?
+                //info.set_simulation();//?
                 $("aside input[name='frequency']").hide();
 
                 $("#simulation_control input, #sim_save_state").hide();
@@ -338,7 +354,7 @@ game = {
             fun.reset();
             if(game.is_restore) {
                 info.restore();
-                console.log('info after restore: '+JSON.stringify(info));
+                //console.log('info after restore: '+JSON.stringify(info));
                 //info.get_from_storage();
                 info.set_game();
                 info.set_simulation();
@@ -347,13 +363,14 @@ game = {
                     game.switch_control_panel(null, 'done/simulation');
                 else
                     game.switch_control_panel(null, "stopped/simulation");
-                console.log('change mode set test:: \n', 'simulation: ', sim_storage.current_simulation, '\ninfo: ', info);
-                board.set_board(sim_storage.current_simulation.boards[info.current_step-1]);
+                //console.log('change mode set test:: \n', 'simulation: ', sim_storage.current_simulation, '\ninfo: ', info);
+                if(!board.set_board(sim_storage.current_simulation.boards[info.current_step-1]))
+                    throw Error('niepowodzenie ustawienia planszy');
             }
 
         }
         else if(mode_game == 'zabawa'){
-            console.log("game.change_mode case 'zabawa'");
+            //console.log("game.change_mode case 'zabawa'");
             game.mode = 'zabawa';
             $('.input_wrapping').hide();
             $('.input_wrapping').eq(1).show();
@@ -378,7 +395,8 @@ game = {
     },
 
     init_from_storage: function(){
-        board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount - 1]);
+        if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount - 1]))
+            throw Error('niepowodzenie ustawienia planszy');
         info.set_game();
     },
 
@@ -506,7 +524,8 @@ sim = {
         }
         else{
             sim_storage.switch_sim();
-            board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]);
+            if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]))
+                throw Error('niepowodzenie ustawienia planszy');
             //#
         }
         info.set_simulation();
@@ -514,12 +533,20 @@ sim = {
        },
 
     restore: function(){
+        console.log('checkpoint ', ++checkpoint);
         game.periods_finders = [];
-        board.set_board(sim_storage.current_simulation.boards[0]);
+        console.log('checkpoint ', ++checkpoint);
+        if(!board.set_board(sim_storage.current_simulation.boards[0]))
+            throw Error('niepowodzenie ustawienia planszy');
+        console.log('checkpoint ', ++checkpoint);
         sim_storage.del();
+        console.log('checkpoint ', ++checkpoint);
         game.switch_control_panel(null, "init/simulation");
+        console.log('checkpoint ', ++checkpoint);
         info.reset_game();
+        console.log('checkpoint ', ++checkpoint);
         info.clear();
+        console.log('checkpoint ', ++checkpoint);
     },
 
     new_sim: function(){
@@ -552,7 +579,11 @@ sim = {
             //console.log('prev_sim: ', JSON.stringify(info));
             sim_storage.current_simulation.set_state();
             sim_storage.switch_sim('prev');
-            board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]);
+            //<debug>
+            console.log('current simulation: ', sim_storage.current_simulation);
+            //</debug>
+            if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]))
+                throw Error('niepowodzenie ustawienia planszy');
             game.init_from_storage();
             info.set_simulation();
         }
@@ -569,7 +600,8 @@ sim = {
             //console.log('next_sim: ', JSON.stringify(info));
             sim_storage.current_simulation.set_state();
             sim_storage.switch_sim('next');
-            board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]);
+            if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]))
+                throw Error('niepowodzenie ustawienia planszy');
             game.init_from_storage();
             info.set_simulation();
         }
@@ -586,7 +618,8 @@ sim = {
     cancel: function(){
         //przywroc ostatnia plansze
         sim_storage.switch_sim('last');
-        board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]);
+        if(!board.set_board(sim_storage.current_simulation.boards[sim_storage.current_simulation.step_amount-1]))
+            throw Error('niepowodzenie ustawienia planszy');
         game.init_from_storage();
         info.set_simulation();
     },
@@ -624,6 +657,8 @@ info = {
         this.board_state.check = sim_storage.current_simulation.last_board_state.check;
         this.board_state.create = sim_storage.current_simulation.last_board_state.create;
         this.board_state.storage = sim_storage.current_simulation.last_board_state.storage;
+
+        game.periods_finders = sim_storage.current_simulation.periods_finders;
     },
 
     set_simulation: function(){

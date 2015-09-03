@@ -1,0 +1,6391 @@
+2015-09-03 14:21:15 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:21:15 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:21:15 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:21:15 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:21:15 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:21:15 >FrontController/ poprawny kontroler
+2015-09-03 14:21:15 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:21:15 >FrontController/ __construct/ koniec
+2015-09-03 14:21:15 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:21:15 >View/ __construct
+2015-09-03 14:21:17 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:21:17 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:21:17 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:21:17 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:21:17 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:21:17 >FrontController/ poprawny kontroler
+2015-09-03 14:21:17 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:21:17 >FrontController/ __construct/ koniec
+2015-09-03 14:21:17 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:21:17 >View/ __construct
+2015-09-03 14:26:29 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:26:29 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:26:29 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:26:29 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:26:29 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:26:29 >FrontController/ poprawny kontroler
+2015-09-03 14:26:29 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:26:29 >FrontController/ __construct/ koniec
+2015-09-03 14:26:29 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:26:29 >View/ __construct
+2015-09-03 14:26:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:26:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:26:47 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:26:47 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:26:47 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:26:47 >FrontController/ poprawny kontroler
+2015-09-03 14:26:47 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:26:47 >FrontController/ __construct/ koniec
+2015-09-03 14:26:47 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:26:47 >View/ __construct
+2015-09-03 14:27:07 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:27:07 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:27:07 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:27:07 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:27:07 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:27:07 >FrontController/ poprawny kontroler
+2015-09-03 14:27:07 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:27:07 >FrontController/ __construct/ koniec
+2015-09-03 14:27:07 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:27:07 >View/ __construct
+2015-09-03 14:32:41 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:32:41 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 14:32:41 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:32:41 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 14:32:41 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 14:32:41 >FrontController/ poprawny kontroler
+2015-09-03 14:32:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 14:32:41 >FrontController/ __construct/ koniec
+2015-09-03 14:32:41 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:32:41 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-09-03 14:32:41 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:32:41 >View/ __construct
+2015-09-03 14:32:41 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 14:36:17 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:36:17 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:36:17 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:36:17 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:36:17 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:36:17 >FrontController/ poprawny kontroler
+2015-09-03 14:36:17 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:36:17 >FrontController/ __construct/ koniec
+2015-09-03 14:36:17 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:36:17 >View/ __construct
+2015-09-03 14:36:19 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:36:19 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:36:19 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:36:19 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:36:19 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:36:19 >FrontController/ poprawny kontroler
+2015-09-03 14:36:19 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:36:19 >FrontController/ __construct/ koniec
+2015-09-03 14:36:19 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:36:19 >View/ __construct
+2015-09-03 14:36:36 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:36:36 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:36:36 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:36:36 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:36:36 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:36:36 >FrontController/ poprawny kontroler
+2015-09-03 14:36:36 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:36:36 >FrontController/ __construct/ koniec
+2015-09-03 14:36:36 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:36:36 >View/ __construct
+2015-09-03 14:37:46 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:37:46 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:37:46 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:37:46 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:37:46 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:37:46 >FrontController/ poprawny kontroler
+2015-09-03 14:37:46 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:37:46 >FrontController/ __construct/ koniec
+2015-09-03 14:37:46 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:37:46 >View/ __construct
+2015-09-03 14:38:24 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:38:24 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 14:38:24 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:38:24 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 14:38:24 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 14:38:24 >FrontController/ poprawny kontroler
+2015-09-03 14:38:24 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 14:38:24 >FrontController/ __construct/ koniec
+2015-09-03 14:38:24 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:38:24 >View/ __construct
+2015-09-03 14:39:23 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 14:39:23 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 14:39:23 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 14:39:23 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 14:39:23 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 14:39:23 >FrontController/ poprawny kontroler
+2015-09-03 14:39:23 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 14:39:23 >FrontController/ __construct/ koniec
+2015-09-03 14:39:23 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:39:23 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-09-03 14:39:23 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 14:39:23 >View/ __construct
+2015-09-03 14:39:23 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 15:30:58 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:30:58 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:30:58 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:30:58 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:30:58 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:30:58 >FrontController/ poprawny kontroler
+2015-09-03 15:30:58 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-09-03 15:30:58 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-09-03 15:30:58 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:30:58 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:30:58 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-09-03 15:30:58 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:30:58 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-09-03 15:30:58 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:30:58 >FrontController/ poprawny kontroler
+2015-09-03 15:30:58 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:30:58 >FrontController/ __construct/ koniec
+2015-09-03 15:30:58 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:30:58 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:30:58 >View/ __construct
+2015-09-03 15:31:00 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:31:00 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(10) "Auth/login"
+}
+2015-09-03 15:31:00 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:31:00 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(5) "login"
+}
+2015-09-03 15:31:00 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:31:00 >FrontController/ poprawny kontroler
+2015-09-03 15:31:00 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:31:00 >FrontController/ __construct/ koniec
+2015-09-03 15:31:00 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(5) "login"
+    }
+  }
+  ["post"]=>
+  array(3) {
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["login"]=>
+    string(5) "Loguj"
+  }
+  ["ajax"]=>
+  array(3) {
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["login"]=>
+    NULL
+  }
+}
+2015-09-03 15:31:00 >Auth/ post/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(5) "login"
+    }
+  }
+  ["post"]=>
+  array(3) {
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["login"]=>
+    string(5) "Loguj"
+  }
+  ["ajax"]=>
+  array(3) {
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["login"]=>
+    NULL
+  }
+}
+2015-09-03 15:31:00 >Auth/ post/ tryb: login
+2015-09-03 15:31:00 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-09-03 15:31:00 >BaseModel/ __construct/ $data: string(5) "users"
+2015-09-03 15:31:00 >Auth/ post/ login/ searched users: array(1) {
+  [0]=>
+  array(5) {
+    ["_id"]=>
+    object(MongoId)#11 (1) {
+      ["$id"]=>
+      string(24) "55be6b40f8f888cd0b8b4567"
+    }
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["simulation"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["status"]=>
+        string(4) "died"
+        ["data"]=>
+        array(5) {
+          [0]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [1]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [2]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [3]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [4]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+        }
+      }
+    }
+  }
+}
+2015-09-03 15:31:00 >Auth/ post/ login/ przekierowanie na main
+2015-09-03 15:31:00 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/login
+2015-09-03 15:31:00 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/new_logged
+2015-09-03 15:31:00 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:31:00 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(15) "Main/new_logged"
+}
+2015-09-03 15:31:00 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:31:00 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-09-03 15:31:00 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:31:00 >FrontController/ poprawny kontroler
+2015-09-03 15:31:00 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 15:31:00 >FrontController/ __construct/ koniec
+2015-09-03 15:31:00 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:31:00 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-09-03 15:31:00 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:31:00 >View/ __construct
+2015-09-03 15:31:00 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 15:31:02 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:31:02 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:31:02 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:31:02 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:31:02 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:31:02 >FrontController/ poprawny kontroler
+2015-09-03 15:31:02 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 15:31:02 >FrontController/ __construct/ koniec
+2015-09-03 15:31:02 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:31:02 >View/ __construct
+2015-09-03 15:31:04 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:31:04 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:31:04 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:31:04 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:31:04 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:31:04 >FrontController/ poprawny kontroler
+2015-09-03 15:31:04 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 15:31:04 >FrontController/ __construct/ koniec
+2015-09-03 15:31:04 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:31:04 >View/ __construct
+2015-09-03 15:39:01 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:01 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 15:39:01 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:01 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 15:39:01 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:39:01 >FrontController/ poprawny kontroler
+2015-09-03 15:39:01 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 15:39:01 >FrontController/ __construct/ koniec
+2015-09-03 15:39:01 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:01 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-09-03 15:39:01 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:01 >View/ __construct
+2015-09-03 15:39:01 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 15:39:07 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:07 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "SimList/simulations"
+}
+2015-09-03 15:39:07 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:07 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(7) "SimList"
+  [1]=>
+  string(11) "simulations"
+}
+2015-09-03 15:39:07 >FrontController/ pobrany kontroler: string(7) "SimList"
+2015-09-03 15:39:07 >FrontController/ poprawny kontroler
+2015-09-03 15:39:07 >FrontController/ zalogowany lub autoryzuje, kontroler: <SimList>
+2015-09-03 15:39:07 >FrontController/ __construct/ koniec
+2015-09-03 15:39:07 >FrontController/ execute/ wywolywanie konstruktora klasy SimList, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(7) "SimList"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(11) "simulations"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:07 >SimList/ __construct
+2015-09-03 15:39:07 >SimList/ get
+2015-09-03 15:39:07 >SimList/ get/ simulations
+2015-09-03 15:39:07 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-09-03 15:39:07 >BaseModel/ __construct/ $data: string(5) "users"
+2015-09-03 15:39:07 >View/ __construct
+2015-09-03 15:39:07 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:07 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "simulations"
+}
+2015-09-03 15:39:07 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:07 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(11) "simulations"
+}
+2015-09-03 15:39:07 >FrontController/ pobrany kontroler: string(11) "simulations"
+2015-09-03 15:39:07 >FrontController/ nie podany lub nie istniejacy kontroler, przekierowanie na: <Main>
+2015-09-03 15:39:07 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main
+2015-09-03 15:39:07 >FrontController/ __construct/ koniec
+2015-09-03 15:39:07 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(11) "simulations"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:07 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:07 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 15:39:07 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:07 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 15:39:07 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:39:07 >FrontController/ poprawny kontroler
+2015-09-03 15:39:07 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 15:39:07 >FrontController/ __construct/ koniec
+2015-09-03 15:39:07 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:07 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-09-03 15:39:07 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:07 >View/ __construct
+2015-09-03 15:39:07 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 15:39:09 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:09 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:39:09 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:09 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:39:09 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:39:09 >FrontController/ poprawny kontroler
+2015-09-03 15:39:09 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 15:39:09 >FrontController/ __construct/ koniec
+2015-09-03 15:39:09 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:09 >View/ __construct
+2015-09-03 15:39:26 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:39:26 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:39:26 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:39:26 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:39:26 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:39:26 >FrontController/ poprawny kontroler
+2015-09-03 15:39:26 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 15:39:26 >FrontController/ __construct/ koniec
+2015-09-03 15:39:26 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:39:26 >View/ __construct
+2015-09-03 15:40:31 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:31 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:40:31 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:31 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:40:31 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:40:31 >FrontController/ poprawny kontroler
+2015-09-03 15:40:31 >FrontController/ zalogowany lub autoryzuje, kontroler: <About>
+2015-09-03 15:40:31 >FrontController/ __construct/ koniec
+2015-09-03 15:40:31 >FrontController/ execute/ wywolywanie konstruktora klasy About, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:31 >View/ __construct
+2015-09-03 15:40:38 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:38 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:38 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:38 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:38 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:40:38 >FrontController/ poprawny kontroler
+2015-09-03 15:40:38 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 15:40:38 >FrontController/ __construct/ koniec
+2015-09-03 15:40:38 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:38 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(0) {
+  }
+}
+2015-09-03 15:40:38 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:38 >View/ __construct
+2015-09-03 15:40:38 >Main/ get/ przygotowano widok, wywoluje view->show()
+2015-09-03 15:40:41 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:41 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(11) "Auth/logout"
+}
+2015-09-03 15:40:41 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:41 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(6) "logout"
+}
+2015-09-03 15:40:41 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:41 >FrontController/ poprawny kontroler
+2015-09-03 15:40:41 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:41 >FrontController/ __construct/ koniec
+2015-09-03 15:40:41 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:41 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(6) "logout"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:41 >Auth/ logout/ $_SESSION['logged']: NULL
+2015-09-03 15:40:41 >View/ __construct
+2015-09-03 15:40:42 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:42 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(6) "About/"
+}
+2015-09-03 15:40:42 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:42 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(5) "About"
+  [1]=>
+  string(0) ""
+}
+2015-09-03 15:40:42 >FrontController/ pobrany kontroler: string(5) "About"
+2015-09-03 15:40:42 >FrontController/ poprawny kontroler
+2015-09-03 15:40:42 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-09-03 15:40:42 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-09-03 15:40:42 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(5) "About"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(0) ""
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:42 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:42 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:42 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:42 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:42 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:42 >FrontController/ poprawny kontroler
+2015-09-03 15:40:42 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:42 >FrontController/ __construct/ koniec
+2015-09-03 15:40:42 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:42 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:42 >View/ __construct
+2015-09-03 15:40:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:47 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:47 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:47 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:40:47 >FrontController/ poprawny kontroler
+2015-09-03 15:40:47 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-09-03 15:40:47 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-09-03 15:40:47 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:47 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:47 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:47 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:47 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:47 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:47 >FrontController/ poprawny kontroler
+2015-09-03 15:40:47 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:47 >FrontController/ __construct/ koniec
+2015-09-03 15:40:47 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:47 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:47 >View/ __construct
+2015-09-03 15:40:48 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:48 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(19) "SimList/simulations"
+}
+2015-09-03 15:40:48 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:48 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(7) "SimList"
+  [1]=>
+  string(11) "simulations"
+}
+2015-09-03 15:40:48 >FrontController/ pobrany kontroler: string(7) "SimList"
+2015-09-03 15:40:48 >FrontController/ poprawny kontroler
+2015-09-03 15:40:48 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-09-03 15:40:48 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-09-03 15:40:48 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(7) "SimList"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(11) "simulations"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:48 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:48 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:48 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:48 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:48 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:48 >FrontController/ poprawny kontroler
+2015-09-03 15:40:48 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:48 >FrontController/ __construct/ koniec
+2015-09-03 15:40:48 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:48 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:48 >View/ __construct
+2015-09-03 15:40:49 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:49 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:49 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:49 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Main"
+}
+2015-09-03 15:40:49 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:40:49 >FrontController/ poprawny kontroler
+2015-09-03 15:40:49 >FrontController/ nie zalogowany lub nie autoryzuje, przekierowanie na <Auth>
+2015-09-03 15:40:49 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Auth
+2015-09-03 15:40:49 >FrontController/ execute/ wywolywanie konstruktora klasy , z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:49 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:49 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:49 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:49 >FrontContorller/ prepare_params/ $arr_url: array(1) {
+  [0]=>
+  string(4) "Auth"
+}
+2015-09-03 15:40:49 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:49 >FrontController/ poprawny kontroler
+2015-09-03 15:40:49 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:49 >FrontController/ __construct/ koniec
+2015-09-03 15:40:49 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:49 >Auth/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(0) {
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:49 >View/ __construct
+2015-09-03 15:40:50 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:50 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(10) "Auth/login"
+}
+2015-09-03 15:40:50 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:50 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Auth"
+  [1]=>
+  string(5) "login"
+}
+2015-09-03 15:40:50 >FrontController/ pobrany kontroler: string(4) "Auth"
+2015-09-03 15:40:50 >FrontController/ poprawny kontroler
+2015-09-03 15:40:50 >FrontController/ zalogowany lub autoryzuje, kontroler: <Auth>
+2015-09-03 15:40:50 >FrontController/ __construct/ koniec
+2015-09-03 15:40:50 >FrontController/ execute/ wywolywanie konstruktora klasy Auth, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(5) "login"
+    }
+  }
+  ["post"]=>
+  array(3) {
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["login"]=>
+    string(5) "Loguj"
+  }
+  ["ajax"]=>
+  array(3) {
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["login"]=>
+    NULL
+  }
+}
+2015-09-03 15:40:50 >Auth/ post/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Auth"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(5) "login"
+    }
+  }
+  ["post"]=>
+  array(3) {
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["login"]=>
+    string(5) "Loguj"
+  }
+  ["ajax"]=>
+  array(3) {
+    ["nick"]=>
+    NULL
+    ["password"]=>
+    NULL
+    ["login"]=>
+    NULL
+  }
+}
+2015-09-03 15:40:50 >Auth/ post/ tryb: login
+2015-09-03 15:40:50 >BaseModel/ __construct/ gettype($data): string(6) "string"
+2015-09-03 15:40:50 >BaseModel/ __construct/ $data: string(5) "users"
+2015-09-03 15:40:50 >Auth/ post/ login/ searched users: array(1) {
+  [0]=>
+  array(5) {
+    ["_id"]=>
+    object(MongoId)#11 (1) {
+      ["$id"]=>
+      string(24) "55be6b40f8f888cd0b8b4567"
+    }
+    ["email"]=>
+    string(15) "dawidk089@o2.pl"
+    ["nick"]=>
+    string(9) "dawidk089"
+    ["password"]=>
+    string(8) "makarena"
+    ["simulation"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["status"]=>
+        string(4) "died"
+        ["data"]=>
+        array(5) {
+          [0]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [1]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(true)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [2]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [3]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(true)
+              [3]=>
+              bool(true)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+          [4]=>
+          array(20) {
+            [0]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [1]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [2]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [3]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [4]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [5]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [6]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [7]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [8]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [9]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [10]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [11]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [12]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [13]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [14]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [15]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [16]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [17]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [18]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+            [19]=>
+            array(10) {
+              [0]=>
+              bool(false)
+              [1]=>
+              bool(false)
+              [2]=>
+              bool(false)
+              [3]=>
+              bool(false)
+              [4]=>
+              bool(false)
+              [5]=>
+              bool(false)
+              [6]=>
+              bool(false)
+              [7]=>
+              bool(false)
+              [8]=>
+              bool(false)
+              [9]=>
+              bool(false)
+            }
+          }
+        }
+      }
+    }
+  }
+}
+2015-09-03 15:40:50 >Auth/ post/ login/ przekierowanie na main
+2015-09-03 15:40:50 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/login
+2015-09-03 15:40:50 >FrontController/ redirect/ przekierowanie na: Location: http://localhost/Main/new_logged
+2015-09-03 15:40:50 >NOWE WYWOLANIE INDEX, wywoluje FrontController
+2015-09-03 15:40:50 >FrontController/ prepare_param/ $_GET: array(1) {
+  ["target"]=>
+  string(15) "Main/new_logged"
+}
+2015-09-03 15:40:50 >FrontController/ prepare_param/ w url'u jest target
+2015-09-03 15:40:50 >FrontContorller/ prepare_params/ $arr_url: array(2) {
+  [0]=>
+  string(4) "Main"
+  [1]=>
+  string(10) "new_logged"
+}
+2015-09-03 15:40:50 >FrontController/ pobrany kontroler: string(4) "Main"
+2015-09-03 15:40:50 >FrontController/ poprawny kontroler
+2015-09-03 15:40:50 >FrontController/ zalogowany lub autoryzuje, kontroler: <Main>
+2015-09-03 15:40:50 >FrontController/ __construct/ koniec
+2015-09-03 15:40:50 >FrontController/ execute/ wywolywanie konstruktora klasy Main, z parametrami: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:50 >Main/ get/ $params[get]: array(2) {
+  ["controller"]=>
+  string(4) "Main"
+  ["params"]=>
+  array(1) {
+    [0]=>
+    string(10) "new_logged"
+  }
+}
+2015-09-03 15:40:50 >Main/ get/ $params: array(3) {
+  ["get"]=>
+  array(2) {
+    ["controller"]=>
+    string(4) "Main"
+    ["params"]=>
+    array(1) {
+      [0]=>
+      string(10) "new_logged"
+    }
+  }
+  ["post"]=>
+  array(0) {
+  }
+  ["ajax"]=>
+  array(1) {
+    [""]=>
+    NULL
+  }
+}
+2015-09-03 15:40:50 >View/ __construct
+2015-09-03 15:40:50 >Main/ get/ przygotowano widok, wywoluje view->show()

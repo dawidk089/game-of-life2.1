@@ -13,7 +13,8 @@ new PrepareClass(array(
     "simulator/",
     "model/",
     "automaton/",
-    "list/"
+    "list/",
+    "about/"
 ));
 
 log::logging("NOWE WYWOLANIE INDEX, wywoluje FrontController\n");
